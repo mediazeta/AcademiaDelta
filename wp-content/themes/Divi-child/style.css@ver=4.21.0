@@ -79,10 +79,10 @@ form.mailchimp-form div.gform_body ul.gform_fields li.gfield div label{
 }
 form.payment-form div.gform_footer input,
 form.contact-form div.gform_footer input{
-    background-color: #46B7B4;
+    background-color: #567bfb;
     border-radius: 23px;
     padding: 10px;
-    border-color: #46B7B4;
+    border-color: #567bfb;
     color:white;
 	font-family: 'Handlee',handwriting;
 	text-transform: uppercase;
@@ -119,10 +119,10 @@ form.contact-form div.gform_body ul li div ul#input_11_11 {
 }
 }
 form.mailchimp-form div.gform_footer input{
-	background-color: #46B7B4;
+	background-color: #567bfb;
     border-radius: 30px !important;
     padding: 10px;
-    border-color: #46B7B4;
+    border-color: #567bfb;
     color:white;
 	font-family: 'Handlee',handwriting;
 	text-transform: uppercase;
