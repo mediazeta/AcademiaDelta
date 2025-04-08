@@ -7341,16 +7341,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
             }
 
             #top-menu li.current-menu-ancestor>a,
-			#top-menu li.current-menu-item>a,
-			#top-menu li.current_page_item>a {
-				color: #5b7dfa !important
-			}
+            #top-menu li.current-menu-item>a,
+            #top-menu li.current_page_item>a {
+                color: #5b7dfa !important
+            }
 
-			.et-fixed-header #top-menu li.current-menu-ancestor>a,
-			.et-fixed-header #top-menu li.current-menu-item>a,
-			.et-fixed-header #top-menu li.current_page_item>a {
-				color: #5b7dfa !important
-			}
+            .et-fixed-header #top-menu li.current-menu-ancestor>a,
+            .et-fixed-header #top-menu li.current-menu-item>a,
+            .et-fixed-header #top-menu li.current_page_item>a {
+                color: #5b7dfa !important
+            }
         }
 
         @media only screen and (min-width:1350px) {
@@ -7629,185 +7629,194 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
         }
 
         /* Estilos generales del blog */
-.ftco-section {
-    font-family: 'Arial', sans-serif;
-    padding: 50px 0;
-    background-color: #f8f9fa;
-}
+        .ftco-section {
+            font-family: 'Arial', sans-serif;
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
 
-/* Encabezado del blog */
-.heading-section h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #343a40;
-}
+        /* Encabezado del blog */
+        .heading-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #343a40;
+        }
 
-.heading-section .subheading {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #007bff;
-}
+        .heading-section .subheading {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #007bff;
+        }
 
-/* Contenedor de las tarjetas */
-.blog-entry {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out;
-    background: #ffffff;
-}
+        /* Contenedor de las tarjetas */
+        .blog-entry {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out;
+            background: #ffffff;
+        }
 
-.blog-entry:hover {
-    transform: scale(1.05);
-}
+        .blog-entry:hover {
+            transform: scale(1.05);
+        }
 
-/* Imagen de la tarjeta */
-.block-20 {
-    display: block;
-    width: 100%;
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
+        /* Imagen de la tarjeta */
+        .block-20 {
+            display: block;
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
 
-/* Contenido de la tarjeta */
-.text {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+        /* Contenido de la tarjeta */
+        .text {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
-/* Metadatos */
-.meta {
-    font-size: 0.9rem;
-    color: #6c757d;
-    display: flex;
-    justify-content: space-between;
-}
+        /* Metadatos */
+        .meta {
+            font-size: 0.9rem;
+            color: #6c757d;
+            display: flex;
+            justify-content: space-between;
+        }
 
-.meta div {
-    margin-right: 10px;
-}
+        .meta div {
+            margin-right: 10px;
+        }
 
-/* Título de la noticia */
-.heading a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #343a40;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
+        /* Título de la noticia */
+        .heading a {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #343a40;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
 
-.heading a:hover {
-    color: #007bff;
-}
+        .heading a:hover {
+            color: #007bff;
+        }
 
-/* Efecto en dispositivos móviles */
-@media (max-width: 768px) {
-    .blog-entry {
-        margin-bottom: 30px;
-    }
-    .block-20 {
-        height: 200px;
-    }
-    .heading a {
-        font-size: 1.3rem;
-    }
-}
-/* Contenedor principal del blog */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+        /* Efecto en dispositivos móviles */
+        @media (max-width: 768px) {
+            .blog-entry {
+                margin-bottom: 30px;
+            }
 
-/* Contenedor de las tarjetas en formato de cuadrícula */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
+            .block-20 {
+                height: 200px;
+            }
 
-/* Estilo de las tarjetas */
-.blog-entry {
-    flex: 1 1 calc(33.333% - 20px); /* Ajusta a tres columnas con espacio entre ellas */
-    max-width: 350px; /* Tamaño uniforme */
-    min-width: 300px;
-    height: 450px; /* Altura fija para mantener uniformidad */
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out;
-    background: #ffffff;
-}
+            .heading a {
+                font-size: 1.3rem;
+            }
+        }
 
-.blog-entry:hover {
-    transform: scale(1.05);
-}
+        /* Contenedor principal del blog */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-/* Imagen dentro de la tarjeta */
-.block-20 {
-    flex: 1; /* Para que ocupe parte del contenedor */
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
+        /* Contenedor de las tarjetas en formato de cuadrícula */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
 
-/* Contenido de la tarjeta */
-.text {
-    flex: 2; /* Hace que el texto ocupe el resto del espacio */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+        /* Estilo de las tarjetas */
+        .blog-entry {
+            flex: 1 1 calc(33.333% - 20px);
+            /* Ajusta a tres columnas con espacio entre ellas */
+            max-width: 350px;
+            /* Tamaño uniforme */
+            min-width: 300px;
+            height: 450px;
+            /* Altura fija para mantener uniformidad */
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out;
+            background: #ffffff;
+        }
 
-/* Metadatos */
-.meta {
-    font-size: 0.9rem;
-    color: #6c757d;
-    display: flex;
-    justify-content: space-between;
-}
+        .blog-entry:hover {
+            transform: scale(1.05);
+        }
 
-/* Título de la noticia */
-.heading a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #343a40;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
+        /* Imagen dentro de la tarjeta */
+        .block-20 {
+            flex: 1;
+            /* Para que ocupe parte del contenedor */
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
 
-.heading a:hover {
-    color: #007bff;
-}
+        /* Contenido de la tarjeta */
+        .text {
+            flex: 2;
+            /* Hace que el texto ocupe el resto del espacio */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
-/* Responsividad: Ajustes para pantallas más pequeñas */
-@media (max-width: 992px) {
-    .blog-entry {
-        flex: 1 1 calc(50% - 20px); /* Dos columnas en pantallas medianas */
-    }
-}
+        /* Metadatos */
+        .meta {
+            font-size: 0.9rem;
+            color: #6c757d;
+            display: flex;
+            justify-content: space-between;
+        }
 
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .blog-entry {
-        flex: 1 1 100%; /* Una columna en pantallas pequeñas */
-    }
-}
+        /* Título de la noticia */
+        .heading a {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #343a40;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
 
+        .heading a:hover {
+            color: #007bff;
+        }
+
+        /* Responsividad: Ajustes para pantallas más pequeñas */
+        @media (max-width: 992px) {
+            .blog-entry {
+                flex: 1 1 calc(50% - 20px);
+                /* Dos columnas en pantallas medianas */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .blog-entry {
+                flex: 1 1 100%;
+                /* Una columna en pantallas pequeñas */
+            }
+        }
     </style>
     <link rel="preload" as="style" id="et-core-unified-deferred-7976-cached-inline-styles"
         href="https://academialallibreta.es/wp-content/et-cache/7976/et-core-unified-deferred-7976.min.css?ver=1741952104"
@@ -7825,46 +7834,51 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     <div id="page-container">
 
         <div id="top-header">
-			<div class="container clearfix">
-				<div id="et-info">
-					<span id="et-info-phone">666 196 777</span>
-					<a style="color:white !important" href="mailto:gestion@deltagijon.es"><span id="et-info-email">gestion@deltagijon.es</span></a>
-					<ul class="et-social-icons">
+            <div class="container clearfix">
+                <div id="et-info">
+                    <span id="et-info-phone">666 196 777</span>
+                    <a style="color:white !important" href="mailto:gestion@deltagijon.es"><span
+                            id="et-info-email">gestion@deltagijon.es</span></a>
+                    <ul class="et-social-icons">
 
-						<li class="et-social-icon et-social-facebook">
-							<a style="color:white !important" href="https://www.facebook.com/AcademiaDeltaGijon/?locale=es_ES" class="icon">
-								<span style="color:white !important">Facebook</span>
-							</a>
-						</li>
-						<li class="et-social-icon et-social-instagram">
-							<a style="color:white !important" href="https://www.instagram.com/academia_delta/" class="icon">
-								<span style="color:white !important">Instagram</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div id="et-secondary-menu">
-					<div class="et_duplicate_social_icons">
-						<ul class="et-social-icons">
+                        <li class="et-social-icon et-social-facebook">
+                            <a style="color:white !important"
+                                href="https://www.facebook.com/AcademiaDeltaGijon/?locale=es_ES" class="icon">
+                                <span style="color:white !important">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="et-social-icon et-social-instagram">
+                            <a style="color:white !important" href="https://www.instagram.com/academia_delta/"
+                                class="icon">
+                                <span style="color:white !important">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="et-secondary-menu">
+                    <div class="et_duplicate_social_icons">
+                        <ul class="et-social-icons">
 
-							<li class="et-social-icon et-social-facebook">
-								<a style="color:white !important" href="https://www.facebook.com/AcademiaDeltaGijon/?locale=es_ES" class="icon">
-									<span style="color:white !important">Facebook</span>
-								</a>
-							</li>
-							<li class="et-social-icon et-social-instagram">
-								<a style="color:white !important" href="https://www.instagram.com/academiadeltaGijon" class="icon">
-									<span style="color:white !important">Instagram</span>
-								</a>
-							</li>
+                            <li class="et-social-icon et-social-facebook">
+                                <a style="color:white !important"
+                                    href="https://www.facebook.com/AcademiaDeltaGijon/?locale=es_ES" class="icon">
+                                    <span style="color:white !important">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="et-social-icon et-social-instagram">
+                                <a style="color:white !important" href="https://www.instagram.com/academiadeltaGijon"
+                                    class="icon">
+                                    <span style="color:white !important">Instagram</span>
+                                </a>
+                            </li>
 
-						</ul>
+                        </ul>
 
-					</div>
-				</div>
+                    </div>
+                </div>
 
-			</div>
-		</div>
+            </div>
+        </div>
 
         <!-- CABECERA -->
         <header id="main-header" data-height-onload="66">
@@ -7906,7 +7920,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
                                 </ul>
                             </li>
                             <li id="menu-item-35919"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35919">
+                                class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-35919">
                                 <a href="recursos.html">Recursos educativos</a>
                             </li>
                             <li id="menu-item-39979"
@@ -7917,8 +7931,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
                                 <a href="contacto.html" aria-current="page">Contacto</a>
                             </li>
                             <li id="menu-item-2299"
-                                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item menu-item-2299"><a
-                                    href="noticias.html">Noticias</a></li>
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2299">
+                                <a href="noticias.html">Noticias</a></li>
                         </ul>
                     </nav>
                     <div id="et_mobile_nav_menu">
@@ -7940,52 +7954,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
             </div>
         </header> <!-- #main-header -->
 
-        <section class="ftco-section">
-            <div class="container">
-              <div class="row justify-content-center mb-5 pb-3" style="text-align: center;">
-                <div class="col-md-7 heading-section ftco-animate">
-                  <span class="subheading mb-6">Academia Delta Blog</span>
-                  <br>
-                  <h2 class="mt-4 mb-4">Últimas noticias</h2>
-                  <p> En nuestro blog, exploraremos las últimas noticias de la Academia</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 col-lg-4 ftco-animate">
-                  <div class="blog-entry">
-                    <a href="https://www.uianet.org/fr/actualites/derecho-internacional-y-sostenibilidad-breve-historia-del-desarrollo-sostenible/" target="_blank" class="block-20" style="background-image: url(../images/derechoSostenible.png);">
-                    </a>
-                    <div class="text d-flex py-4">
-                      <div class="meta mb-3">
-                        <div>Mar. 18, 2025</div>
-                        <!-- <div><a href="#">Admin</a></div> -->
-                        <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
-                      </div>
-                      <div class="desc pl-3">
-                        <h3 class="heading"><a href="https://www.uianet.org/fr/actualites/derecho-internacional-y-sostenibilidad-breve-historia-del-desarrollo-sostenible/" target="_blank">Derecho Internacional y Sostenibilidad: breve historia del desarrollo sostenible</a></h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 ftco-animate">
-                  <div class="blog-entry">
-                    <a href="https://confilegal.com/20220510-luces-y-sombras-del-real-decreto-ley-de-medidas-frente-a-la-guerra-en-ucrania/" target="_blank" class="block-20" style="background-image: url(../images/LeyesUcrania.jpeg);">
-                    </a>
-                    <div class="text d-flex py-4">
-                      <div class="meta mb-3">
-                        <div>May. 10, 2025</div>
-                        <!-- <div><a href="#">Admin</a></div> -->
-                        <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
-                      </div>
-                      <div class="desc pl-3">
-                        <h3 class="heading"><a href="https://confilegal.com/20220510-luces-y-sombras-del-real-decreto-ley-de-medidas-frente-a-la-guerra-en-ucrania/" target="_blank">Real Decreto-Ley de medidas frente a la guerra en Ucrania: luces y sombras</a></h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </section>
-          <footer id="main-footer">
+
+
+        <footer id="main-footer">
             <div class="container">
                 <div id="footer-widgets" class="clearfix">
                     <div class="footer-widget">
