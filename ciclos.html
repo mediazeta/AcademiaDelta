@@ -4,20 +4,28 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var gform; gform || (document.addEventListener("gform_main_scripts_loaded", function () { gform.scriptsLoaded = !0 }), document.addEventListener("gform/theme/scripts_loaded", function () { gform.themeScriptsLoaded = !0 }), window.addEventListener("DOMContentLoaded", function () { gform.domLoaded = !0 }), gform = { domLoaded: !1, scriptsLoaded: !1, themeScriptsLoaded: !1, isFormEditor: () => "function" == typeof InitializeEditor, callIfLoaded: function (o) { return !(!gform.domLoaded || !gform.scriptsLoaded || !gform.themeScriptsLoaded && !gform.isFormEditor() || (gform.isFormEditor() && console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."), o(), 0)) }, initializeOnLoaded: function (o) { gform.callIfLoaded(o) || (document.addEventListener("gform_main_scripts_loaded", () => { gform.scriptsLoaded = !0, gform.callIfLoaded(o) }), document.addEventListener("gform/theme/scripts_loaded", () => { gform.themeScriptsLoaded = !0, gform.callIfLoaded(o) }), window.addEventListener("DOMContentLoaded", () => { gform.domLoaded = !0, gform.callIfLoaded(o) })) }, hooks: { action: {}, filter: {} }, addAction: function (o, r, e, t) { gform.addHook("action", o, r, e, t) }, addFilter: function (o, r, e, t) { gform.addHook("filter", o, r, e, t) }, doAction: function (o) { gform.doHook("action", o, arguments) }, applyFilters: function (o) { return gform.doHook("filter", o, arguments) }, removeAction: function (o, r) { gform.removeHook("action", o, r) }, removeFilter: function (o, r, e) { gform.removeHook("filter", o, r, e) }, addHook: function (o, r, e, t, n) { null == gform.hooks[o][r] && (gform.hooks[o][r] = []); var d = gform.hooks[o][r]; null == n && (n = r + "_" + d.length), gform.hooks[o][r].push({ tag: n, callable: e, priority: t = null == t ? 10 : t }) }, doHook: function (r, o, e) { var t; if (e = Array.prototype.slice.call(e, 1), null != gform.hooks[r][o] && ((o = gform.hooks[r][o]).sort(function (o, r) { return o.priority - r.priority }), o.forEach(function (o) { "function" != typeof (t = o.callable) && (t = window[t]), "action" == r ? t.apply(null, e) : e[0] = t.apply(null, e) })), "filter" == r) return e[0] }, removeHook: function (o, r, t, n) { var e; null != gform.hooks[o][r] && (e = (e = gform.hooks[o][r]).filter(function (o, r, e) { return !!(null != n && n != o.tag || null != t && t != o.priority) }), gform.hooks[o][r] = e) } });
+		/* ]]> */
+	</script>
+
 	<link rel="pingback" href="https://www.deltagijon.es/xmlrpc.php" />
 
 	<script type="text/javascript">
 		document.documentElement.className = 'js';
 	</script>
 
-	<meta name='robots' content='index, nofollow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 	<style>
 		img:is([sizes="auto" i], [sizes^="auto," i]) {
 			contain-intrinsic-size: 3000px 1500px
 		}
 	</style>
-	<link rel="alternate" hreflang="es" href="https://academialallibreta.es/politica-cookies/" />
-	<link rel="alternate" hreflang="x-default" href="https://academialallibreta.es/politica-cookies/" />
+	<link rel="alternate" hreflang="es"
+		href="https://academialallibreta.es/tu-centro-de-estudios-en-valencia/repaso-escolar/" />
+	<link rel="alternate" hreflang="x-default"
+		href="https://academialallibreta.es/tu-centro-de-estudios-en-valencia/repaso-escolar/" />
 
 	<!-- Google Tag Manager for WordPress by gtm4wp.com -->
 	<script data-cfasync="false" data-pagespeed-no-defer>
@@ -25,12 +33,10 @@
 		var dataLayer = dataLayer || [];
 	</script>
 	<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
-	<script type="text/javascript">
-		let jqueryParams = [], jQuery = function (r) { return jqueryParams = [...jqueryParams, r], jQuery }, $ = function (r) { return jqueryParams = [...jqueryParams, r], $ }; window.jQuery = jQuery, window.$ = jQuery; let customHeadScripts = !1; jQuery.fn = jQuery.prototype = {}, $.fn = jQuery.prototype = {}, jQuery.noConflict = function (r) { if (window.jQuery) return jQuery = window.jQuery, $ = window.jQuery, customHeadScripts = !0, jQuery.noConflict }, jQuery.ready = function (r) { jqueryParams = [...jqueryParams, r] }, $.ready = function (r) { jqueryParams = [...jqueryParams, r] }, jQuery.load = function (r) { jqueryParams = [...jqueryParams, r] }, $.load = function (r) { jqueryParams = [...jqueryParams, r] }, jQuery.fn.ready = function (r) { jqueryParams = [...jqueryParams, r] }, $.fn.ready = function (r) { jqueryParams = [...jqueryParams, r] };</script>
 	<!-- This site is optimized with the Yoast SEO Premium plugin v24.5 (Yoast SEO v24.5) - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>Política de cookies - Academia Delta Gijópn</title>
-	<link rel="canonical" href="https://deltagijon.es/" />
+	<title>Academia de preparación selectividad y pruebas de acceso - Academia Delta Gijón</title>
 	<meta name="description" content="Academia de clases particulares en Gijón. Primaria, ESO, Bachiller, EBAU, Pruebas de acceso y Graduado en ESO. Alto porcentaje de aprobados." />
+	<link rel="canonical" href="https://www.deltagijon.es/" />
 	<meta property="og:locale" content="es_ES" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Academia de Clases Particulares en Gijón de Primaria, ESO, Bachiller, EBAU, Pruebas de acceso y Graduado en ESO &#8211; Academia Delta en Gijón" />
@@ -723,6 +729,9 @@
 			line-height: 1.6;
 		}
 	</style>
+	<link rel='stylesheet' id='wpml-blocks-css'
+		href='https://academialallibreta.es/wp-content/plugins/sitepress-multilingual-cms/dist/css/blocks/styles.css?ver=4.6.15'
+		type='text/css' media='all' />
 	<link rel='stylesheet' id='sp_stylesheet-style-css'
 		href='https://academialallibreta.es/wp-content/plugins/certificate/assets/custom-style.css?ver=6.7.2'
 		type='text/css' media='all' />
@@ -2571,6 +2580,33 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			font-style: normal
 		}
 
+		@font-face {
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: 400;
+			font-display: block;
+			src: url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-regular-400.eot);
+			src: url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-regular-400.woff2) format("woff2"), url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-regular-400.woff) format("woff"), url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-regular-400.ttf) format("truetype"), url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-regular-400.svg#fontawesome) format("svg")
+		}
+
+		@font-face {
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: 900;
+			font-display: block;
+			src: url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-solid-900.eot);
+			src: url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-solid-900.woff2) format("woff2"), url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-solid-900.woff) format("woff"), url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-solid-900.ttf) format("truetype"), url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-solid-900.svg#fontawesome) format("svg")
+		}
+
+		@font-face {
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: 400;
+			font-display: block;
+			src: url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-brands-400.eot);
+			src: url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-brands-400.woff2) format("woff2"), url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-brands-400.woff) format("woff"), url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-brands-400.ttf) format("truetype"), url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-brands-400.svg#fontawesome) format("svg")
+		}
+
 		@media (min-width:981px) {
 
 			.et_pb_gutters3 .et_pb_column,
@@ -2710,6 +2746,218 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			.et_pb_gutters3.et_left_sidebar.woocommerce-page #main-content ul.products.columns-2 li:nth-child(3n+1),
 			.et_pb_gutters3.et_right_sidebar.woocommerce-page #main-content ul.products.columns-2 li:nth-child(3n+1) {
 				clear: none
+			}
+		}
+
+		@media (min-width:981px) {
+			.et_pb_gutter.et_pb_gutters1 #left-area {
+				width: 75%
+			}
+
+			.et_pb_gutter.et_pb_gutters1 #sidebar {
+				width: 25%
+			}
+
+			.et_pb_gutters1.et_right_sidebar #left-area {
+				padding-right: 0
+			}
+
+			.et_pb_gutters1.et_left_sidebar #left-area {
+				padding-left: 0
+			}
+
+			.et_pb_gutter.et_pb_gutters1.et_right_sidebar #main-content .container:before {
+				right: 25% !important
+			}
+
+			.et_pb_gutter.et_pb_gutters1.et_left_sidebar #main-content .container:before {
+				left: 25% !important
+			}
+
+			.et_pb_gutters1 .et_pb_column,
+			.et_pb_gutters1.et_pb_row .et_pb_column {
+				margin-right: 0
+			}
+
+			.et_pb_gutters1 .et_pb_column_4_4,
+			.et_pb_gutters1.et_pb_row .et_pb_column_4_4 {
+				width: 100%
+			}
+
+			.et_pb_gutters1 .et_pb_column_4_4 .et_pb_module,
+			.et_pb_gutters1.et_pb_row .et_pb_column_4_4 .et_pb_module {
+				margin-bottom: 0
+			}
+
+			.et_pb_gutters1 .et_pb_column_3_4,
+			.et_pb_gutters1.et_pb_row .et_pb_column_3_4 {
+				width: 75%
+			}
+
+			.et_pb_gutters1 .et_pb_column_3_4 .et_pb_module,
+			.et_pb_gutters1.et_pb_row .et_pb_column_3_4 .et_pb_module {
+				margin-bottom: 0
+			}
+
+			.et_pb_gutters1 .et_pb_column_2_3,
+			.et_pb_gutters1.et_pb_row .et_pb_column_2_3 {
+				width: 66.667%
+			}
+
+			.et_pb_gutters1 .et_pb_column_2_3 .et_pb_module,
+			.et_pb_gutters1.et_pb_row .et_pb_column_2_3 .et_pb_module {
+				margin-bottom: 0
+			}
+
+			.et_pb_gutters1 .et_pb_column_3_5,
+			.et_pb_gutters1.et_pb_row .et_pb_column_3_5 {
+				width: 60%
+			}
+
+			.et_pb_gutters1 .et_pb_column_3_5 .et_pb_module,
+			.et_pb_gutters1.et_pb_row .et_pb_column_3_5 .et_pb_module {
+				margin-bottom: 0
+			}
+
+			.et_pb_gutters1 .et_pb_column_1_2,
+			.et_pb_gutters1.et_pb_row .et_pb_column_1_2 {
+				width: 50%
+			}
+
+			.et_pb_gutters1 .et_pb_column_1_2 .et_pb_module,
+			.et_pb_gutters1.et_pb_row .et_pb_column_1_2 .et_pb_module {
+				margin-bottom: 0
+			}
+
+			.et_pb_gutters1 .et_pb_column_2_5,
+			.et_pb_gutters1.et_pb_row .et_pb_column_2_5 {
+				width: 40%
+			}
+
+			.et_pb_gutters1 .et_pb_column_2_5 .et_pb_module,
+			.et_pb_gutters1.et_pb_row .et_pb_column_2_5 .et_pb_module {
+				margin-bottom: 0
+			}
+
+			.et_pb_gutters1 .et_pb_column_1_3,
+			.et_pb_gutters1.et_pb_row .et_pb_column_1_3 {
+				width: 33.3333%
+			}
+
+			.et_pb_gutters1 .et_pb_column_1_3 .et_pb_module,
+			.et_pb_gutters1.et_pb_row .et_pb_column_1_3 .et_pb_module {
+				margin-bottom: 0
+			}
+
+			.et_pb_gutters1 .et_pb_column_1_4,
+			.et_pb_gutters1.et_pb_row .et_pb_column_1_4 {
+				width: 25%
+			}
+
+			.et_pb_gutters1 .et_pb_column_1_4 .et_pb_module,
+			.et_pb_gutters1.et_pb_row .et_pb_column_1_4 .et_pb_module {
+				margin-bottom: 0
+			}
+
+			.et_pb_gutters1 .et_pb_column_1_5,
+			.et_pb_gutters1.et_pb_row .et_pb_column_1_5 {
+				width: 20%
+			}
+
+			.et_pb_gutters1 .et_pb_column_1_5 .et_pb_module,
+			.et_pb_gutters1.et_pb_row .et_pb_column_1_5 .et_pb_module {
+				margin-bottom: 0
+			}
+
+			.et_pb_gutters1 .et_pb_column_1_6,
+			.et_pb_gutters1.et_pb_row .et_pb_column_1_6 {
+				width: 16.6667%
+			}
+
+			.et_pb_gutters1 .et_pb_column_1_6 .et_pb_module,
+			.et_pb_gutters1.et_pb_row .et_pb_column_1_6 .et_pb_module {
+				margin-bottom: 0
+			}
+
+			.et_pb_gutters1 .et_full_width_page.woocommerce-page ul.products li.product {
+				width: 25%;
+				margin-right: 0;
+				margin-bottom: 0
+			}
+
+			.et_pb_gutters1.et_left_sidebar.woocommerce-page #main-content ul.products li.product,
+			.et_pb_gutters1.et_right_sidebar.woocommerce-page #main-content ul.products li.product {
+				width: 33.333%;
+				margin-right: 0
+			}
+		}
+
+		@media (max-width:980px) {
+
+			.et_pb_gutters1 .et_pb_column,
+			.et_pb_gutters1 .et_pb_column .et_pb_module,
+			.et_pb_gutters1.et_pb_row .et_pb_column,
+			.et_pb_gutters1.et_pb_row .et_pb_column .et_pb_module {
+				margin-bottom: 0
+			}
+
+			.et_pb_gutters1 .et_pb_row_1-2_1-4_1-4>.et_pb_column.et_pb_column_1_4,
+			.et_pb_gutters1 .et_pb_row_1-4_1-4>.et_pb_column.et_pb_column_1_4,
+			.et_pb_gutters1 .et_pb_row_1-4_1-4_1-2>.et_pb_column.et_pb_column_1_4,
+			.et_pb_gutters1 .et_pb_row_1-5_1-5_3-5>.et_pb_column.et_pb_column_1_5,
+			.et_pb_gutters1 .et_pb_row_3-5_1-5_1-5>.et_pb_column.et_pb_column_1_5,
+			.et_pb_gutters1 .et_pb_row_4col>.et_pb_column.et_pb_column_1_4,
+			.et_pb_gutters1 .et_pb_row_5col>.et_pb_column.et_pb_column_1_5,
+			.et_pb_gutters1.et_pb_row_1-2_1-4_1-4>.et_pb_column.et_pb_column_1_4,
+			.et_pb_gutters1.et_pb_row_1-4_1-4>.et_pb_column.et_pb_column_1_4,
+			.et_pb_gutters1.et_pb_row_1-4_1-4_1-2>.et_pb_column.et_pb_column_1_4,
+			.et_pb_gutters1.et_pb_row_1-5_1-5_3-5>.et_pb_column.et_pb_column_1_5,
+			.et_pb_gutters1.et_pb_row_3-5_1-5_1-5>.et_pb_column.et_pb_column_1_5,
+			.et_pb_gutters1.et_pb_row_4col>.et_pb_column.et_pb_column_1_4,
+			.et_pb_gutters1.et_pb_row_5col>.et_pb_column.et_pb_column_1_5 {
+				width: 50%;
+				margin-right: 0
+			}
+
+			.et_pb_gutters1 .et_pb_row_1-2_1-6_1-6_1-6>.et_pb_column.et_pb_column_1_6,
+			.et_pb_gutters1 .et_pb_row_1-6_1-6_1-6>.et_pb_column.et_pb_column_1_6,
+			.et_pb_gutters1 .et_pb_row_1-6_1-6_1-6_1-2>.et_pb_column.et_pb_column_1_6,
+			.et_pb_gutters1 .et_pb_row_6col>.et_pb_column.et_pb_column_1_6,
+			.et_pb_gutters1.et_pb_row_1-2_1-6_1-6_1-6>.et_pb_column.et_pb_column_1_6,
+			.et_pb_gutters1.et_pb_row_1-6_1-6_1-6>.et_pb_column.et_pb_column_1_6,
+			.et_pb_gutters1.et_pb_row_1-6_1-6_1-6_1-2>.et_pb_column.et_pb_column_1_6,
+			.et_pb_gutters1.et_pb_row_6col>.et_pb_column.et_pb_column_1_6 {
+				width: 33.333%;
+				margin-right: 0
+			}
+
+			.et_pb_gutters1 .et_pb_row_1-6_1-6_1-6_1-6>.et_pb_column.et_pb_column_1_6,
+			.et_pb_gutters1.et_pb_row_1-6_1-6_1-6_1-6>.et_pb_column.et_pb_column_1_6 {
+				width: 50%;
+				margin-right: 0
+			}
+		}
+
+		@media (max-width:767px) {
+
+			.et_pb_gutters1 .et_pb_column,
+			.et_pb_gutters1 .et_pb_column .et_pb_module,
+			.et_pb_gutters1.et_pb_row .et_pb_column,
+			.et_pb_gutters1.et_pb_row .et_pb_column .et_pb_module {
+				margin-bottom: 0
+			}
+		}
+
+		@media (max-width:479px) {
+
+			.et_pb_gutters1 .et_pb_column,
+			.et_pb_gutters1.et_pb_row .et_pb_column {
+				margin: 0 !important
+			}
+
+			.et_pb_gutters1 .et_pb_column .et_pb_module,
+			.et_pb_gutters1.et_pb_row .et_pb_column .et_pb_module {
+				margin-bottom: 0
 			}
 		}
 
@@ -4439,512 +4687,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			}
 		}
 
-		.footer-widget h4,
-		#main-footer .widget_block h1,
-		#main-footer .widget_block h2,
-		#main-footer .widget_block h3,
-		#main-footer .widget_block h4,
-		#main-footer .widget_block h5,
-		#main-footer .widget_block h6 {
-			color: #2EA3F2
-		}
-
-		.footer-widget li:before {
-			border-color: #2EA3F2
-		}
-
-		.bottom-nav li.current-menu-item>a {
-			color: #2EA3F2
-		}
-
-		#main-footer {
-			background-color: #222222
-		}
-
-		#footer-widgets {
-			padding: 6% 0 0
-		}
-
-		.footer-widget {
-			float: left;
-			color: #fff
-		}
-
-		.last {
-			margin-right: 0
-		}
-
-		.footer-widget .fwidget:last-child {
-			margin-bottom: 0 !important
-		}
-
-		#footer-widgets .footer-widget li {
-			padding-left: 14px;
-			position: relative
-		}
-
-		#footer-widgets .footer-widget li:before {
-			border-radius: 3px;
-			border-style: solid;
-			border-width: 3px;
-			content: "";
-			left: 0;
-			position: absolute;
-			top: 9px
-		}
-
-		#footer-widgets .footer-widget a {
-			color: #fff
-		}
-
-		#footer-widgets .footer-widget li a {
-			color: #fff;
-			text-decoration: none
-		}
-
-		#footer-widgets .footer-widget li a:hover {
-			color: rgba(255, 255, 255, 0.7)
-		}
-
-		.footer-widget .widget_adsensewidget ins {
-			min-width: 160px
-		}
-
-		#footer-bottom {
-			background-color: #1f1f1f;
-			background-color: rgba(0, 0, 0, 0.32);
-			padding: 15px 0 5px
-		}
-
-		#footer-bottom a {
-			-webkit-transition: all 0.4s ease-in-out;
-			transition: all 0.4s ease-in-out
-		}
-
-		#footer-info {
-			text-align: left;
-			color: #666;
-			padding-bottom: 10px;
-			float: left
-		}
-
-		#footer-info a {
-			font-weight: 700;
-			color: #666
-		}
-
-		#footer-info a:hover {
-			opacity: .7
-		}
-
-		#et-footer-nav {
-			background-color: rgba(255, 255, 255, 0.05)
-		}
-
-		.bottom-nav {
-			padding: 15px 0
-		}
-
-		.bottom-nav li {
-			font-weight: 600;
-			display: inline-block;
-			font-size: 14px;
-			padding-right: 22px
-		}
-
-		.bottom-nav a {
-			color: #bbb;
-			-webkit-transition: all 0.4s ease-in-out;
-			transition: all 0.4s ease-in-out
-		}
-
-		.bottom-nav a:hover {
-			opacity: .7
-		}
-
-		@media all and (max-width: 980px) {
-			.footer-widget:nth-child(n) {
-				width: 46.25% !important;
-				margin: 0 7.5% 7.5% 0 !important
-			}
-
-			.et_pb_footer_columns1 .footer-widget {
-				width: 100% !important;
-				margin: 0 7.5% 7.5% 0 !important
-			}
-
-			#footer-widgets .footer-widget .fwidget {
-				margin-bottom: 16.21%
-			}
-
-			.et_pb_gutters1 .footer-widget:nth-child(n) {
-				width: 50% !important;
-				margin: 0 !important
-			}
-
-			.et_pb_gutters1 #footer-widgets .footer-widget .fwidget {
-				margin-bottom: 0
-			}
-
-			#footer-widgets {
-				padding: 8% 0
-			}
-
-			#footer-widgets .footer-widget:nth-child(2n) {
-				margin-right: 0 !important
-			}
-
-			#footer-widgets .footer-widget:nth-last-child(-n+2) {
-				margin-bottom: 0 !important
-			}
-
-			.bottom-nav {
-				text-align: center
-			}
-
-			#footer-info {
-				float: none;
-				text-align: center
-			}
-		}
-
-		@media all and (max-width: 767px) {
-
-			#footer-widgets .footer-widget,
-			.et_pb_gutters1 #footer-widgets .footer-widget {
-				width: 100% !important;
-				margin-right: 0 !important
-			}
-
-			#footer-widgets .footer-widget:nth-child(n),
-			#footer-widgets .footer-widget .fwidget {
-				margin-bottom: 9.5% !important
-			}
-
-			.et_pb_gutters1 #footer-widgets .footer-widget:nth-child(n),
-			.et_pb_gutters1 #footer-widgets .footer-widget .fwidget {
-				margin-bottom: 0 !important
-			}
-
-			#footer-widgets {
-				padding: 10% 0
-			}
-
-			#footer-widgets .footer-widget .fwidget:last-child {
-				margin-bottom: 0 !important
-			}
-
-			#footer-widgets .footer-widget:last-child {
-				margin-bottom: 0 !important
-			}
-		}
-
-		@media all and (max-width: 479px) {
-
-			#footer-widgets .footer-widget:nth-child(n),
-			.footer-widget .fwidget {
-				margin-bottom: 11.5% !important
-			}
-
-			#footer-widgets .footer-widget.last {
-				margin-bottom: 0 !important
-			}
-
-			.et_pb_gutters1 #footer-widgets .footer-widget:nth-child(n),
-			.et_pb_gutters1 #footer-widgets .footer-widget .fwidget {
-				margin-bottom: 0 !important
-			}
-
-			#footer-widgets {
-				padding: 12% 0
-			}
-		}
-
-		@media all and (min-width: 981px) {
-			.et_pb_gutters3 .footer-widget {
-				margin-right: 5.5%;
-				margin-bottom: 5.5%
-			}
-
-			.et_pb_gutters3 .footer-widget:last-child {
-				margin-right: 0
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns6 .footer-widget {
-				width: 12.083%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns6 .footer-widget .fwidget {
-				margin-bottom: 45.517%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns5 .footer-widget {
-				width: 15.6%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns5 .footer-widget .fwidget {
-				margin-bottom: 35.256%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns4 .footer-widget {
-				width: 20.875%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns4 .footer-widget .fwidget {
-				margin-bottom: 26.347%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns3 .footer-widget {
-				width: 29.667%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns3 .footer-widget .fwidget {
-				margin-bottom: 18.539%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns2 .footer-widget {
-				width: 47.25%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns2 .footer-widget .fwidget {
-				margin-bottom: 11.64%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns1 .footer-widget {
-				width: 100%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns1 .footer-widget .fwidget {
-				margin-bottom: 5.5%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_3_4__1_4 .footer-widget:nth-child(1) {
-				width: 73.625%;
-				clear: both
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_3_4__1_4 .footer-widget:nth-child(1) .fwidget {
-				margin-bottom: 7.47%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_3_4__1_4 .footer-widget:nth-child(2) {
-				width: 20.875%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_3_4__1_4 .footer-widget:nth-child(2) .fwidget {
-				margin-bottom: 26.347%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_4__3_4 .footer-widget:nth-child(1) {
-				width: 20.875%;
-				clear: both
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_4__3_4 .footer-widget:nth-child(1) .fwidget {
-				margin-bottom: 26.347%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_4__3_4 .footer-widget:nth-child(2) {
-				width: 73.625%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_4__3_4 .footer-widget:nth-child(2) .fwidget {
-				margin-bottom: 7.47%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_2_3__1_3 .footer-widget:nth-child(1) {
-				width: 64.833%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_2_3__1_3 .footer-widget:nth-child(1) .fwidget {
-				margin-bottom: 8.483%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_2_3__1_3 .footer-widget:nth-child(2) {
-				width: 29.667%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_2_3__1_3 .footer-widget:nth-child(2) .fwidget {
-				margin-bottom: 18.539%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_3__2_3 .footer-widget:nth-child(1) {
-				width: 29.667%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_3__2_3 .footer-widget:nth-child(1) .fwidget {
-				margin-bottom: 18.539%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_3__2_3 .footer-widget:nth-child(2) {
-				width: 64.833%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_3__2_3 .footer-widget:nth-child(2) .fwidget {
-				margin-bottom: 8.483%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_4__1_2 .footer-widget:nth-child(-n+2) {
-				width: 20.875%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_4__1_2 .footer-widget:nth-child(-n+2) .fwidget {
-				margin-bottom: 26.347%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_4__1_2 .footer-widget:nth-child(3) {
-				width: 47.25%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_4__1_2 .footer-widget:nth-child(3) .fwidget {
-				margin-bottom: 11.64%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_2__1_4 .footer-widget:first-child {
-				width: 47.25%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_2__1_4 .footer-widget:first-child .fwidget {
-				margin-bottom: 11.64%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_2__1_4 .footer-widget:nth-child(-n+3):not(:nth-child(1)) {
-				width: 20.875%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_2__1_4 .footer-widget:nth-child(-n+3):not(:nth-child(1)) .fwidget {
-				margin-bottom: 26.347%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_5__3_5 .footer-widget:nth-child(-n+2) {
-				width: 15.6%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_5__3_5 .footer-widget:nth-child(-n+2) .fwidget {
-				margin-bottom: 35.256%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_5__3_5 .footer-widget:nth-child(3) {
-				width: 57.8%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_5__3_5 .footer-widget:nth-child(3) .fwidget {
-				margin-bottom: 9.516%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_3_5__1_5 .footer-widget:first-child {
-				width: 57.8%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_3_5__1_5 .footer-widget:first-child .fwidget {
-				margin-bottom: 9.516%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_3_5__1_5 .footer-widget:nth-child(-n+3):not(:nth-child(1)) {
-				width: 15.6%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_3_5__1_5 .footer-widget:nth-child(-n+3):not(:nth-child(1)) .fwidget {
-				margin-bottom: 35.256%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_3_5__2_5 .footer-widget:nth-child(1) {
-				width: 57.8%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_3_5__2_5 .footer-widget:nth-child(1) .fwidget {
-				margin-bottom: 9.516%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_3_5__2_5 .footer-widget:nth-child(2) {
-				width: 36.7%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_3_5__2_5 .footer-widget:nth-child(2) .fwidget {
-				margin-bottom: 14.986%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_2_5__3_5 .footer-widget:nth-child(1) {
-				width: 36.7%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_2_5__3_5 .footer-widget:nth-child(1) .fwidget {
-				margin-bottom: 14.986%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_2_5__3_5 .footer-widget:nth-child(2) {
-				width: 57.8%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_2_5__3_5 .footer-widget:nth-child(2) .fwidget {
-				margin-bottom: 9.516%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_2__1_6 .footer-widget:first-child {
-				width: 47.25%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_2__1_6 .footer-widget:first-child .fwidget {
-				margin-bottom: 11.64%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_2__1_6 .footer-widget:nth-child(-n+4):not(:nth-child(1)) {
-				width: 12.083%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_2__1_6 .footer-widget:nth-child(-n+4):not(:nth-child(1)) .fwidget {
-				margin-bottom: 45.517%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_6__1_2 .footer-widget:nth-child(-n+3) {
-				width: 12.083%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_6__1_2 .footer-widget:nth-child(-n+3) .fwidget {
-				margin-bottom: 45.517%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_6__1_2 .footer-widget:nth-child(4) {
-				width: 47.25%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_6__1_2 .footer-widget:nth-child(4) .fwidget {
-				margin-bottom: 11.64%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_4_1_2_1_4 .footer-widget:nth-child(-n+3):not(:nth-child(2)) {
-				width: 20.875%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_4_1_2_1_4 .footer-widget:nth-child(-n+3):not(:nth-child(2)) .fwidget {
-				margin-bottom: 26.347%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_4_1_2_1_4 .footer-widget:nth-child(2) {
-				width: 47.25%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_4_1_2_1_4 .footer-widget:nth-child(2) .fwidget {
-				margin-bottom: 11.64%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_5_3_5_1_5 .footer-widget:nth-child(-n+3):not(:nth-child(2)) {
-				width: 15.6%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_5_3_5_1_5 .footer-widget:nth-child(-n+3):not(:nth-child(2)) .fwidget {
-				margin-bottom: 35.256%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_5_3_5_1_5 .footer-widget:nth-child(2) {
-				width: 57.8%
-			}
-
-			.et_pb_gutters3.et_pb_footer_columns_1_5_3_5_1_5 .footer-widget:nth-child(2) .fwidget {
-				margin-bottom: 9.516%
-			}
-		}
-
 		.et-social-icons {
 			float: right
 		}
@@ -5622,374 +5364,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			}
 		}
 
-		.et_pb_with_border.et_pb_fullwidth_header .header-image-container img,
-		.et_pb_with_border.et_pb_fullwidth_header .header-logo {
-			border: 0 solid #333
-		}
-
-		.et_pb_fullwidth_header {
-			padding: 50px 0;
-			position: relative;
-			background-position: 50%;
-			background-size: cover
-		}
-
-		.et_pb_fullwidth_header p {
-			padding-bottom: 0
-		}
-
-		.et_pb_fullwidth_header_subhead {
-			display: block
-		}
-
-		.et_pb_fullscreen {
-			padding: 0
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container {
-			position: relative;
-			z-index: 3;
-			width: 80%;
-			max-width: 1080px;
-			margin-left: auto;
-			margin-right: auto
-		}
-
-		.et_pb_fullscreen .et_pb_fullwidth_header_container {
-			min-height: 100vh;
-			width: 80%;
-			max-width: none;
-			height: 100%
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.center {
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-ms-flex-flow: row wrap;
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: normal;
-			flex-flow: row wrap;
-			-moz-justify-content: center;
-			-ms-justify-content: center;
-			-webkit-box-pack: center;
-			-ms-flex-pack: center;
-			justify-content: center
-		}
-
-		.et_pb_fullscreen .et_pb_fullwidth_header_container.center.bottom-bottom {
-			-ms-flex-flow: column wrap;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			flex-flow: column wrap;
-			-moz-justify-content: flex-end;
-			-ms-justify-content: flex-end;
-			-webkit-box-pack: end;
-			-ms-flex-pack: end;
-			justify-content: flex-end
-		}
-
-		.et_pb_fullscreen .et_pb_fullwidth_header_container.center.center-center {
-			-ms-flex-flow: column nowrap;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			flex-flow: column nowrap
-		}
-
-		.et_pb_fullscreen .et_pb_fullwidth_header_container.center.center-bottom .header-content-container {
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-ms-flex-flow: row wrap;
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: normal;
-			flex-flow: row wrap
-		}
-
-		.et_pb_fullscreen .et_pb_fullwidth_header_container.center.center-bottom .header-content-container .header-content {
-			-webkit-align-self: center;
-			-ms-align-self: center;
-			-ms-flex-item-align: center;
-			align-self: center
-		}
-
-		.et_pb_fullscreen .et_pb_fullwidth_header_container.center.bottom-center .header-image-container.center {
-			-webkit-align-self: flex-start;
-			-ms-align-self: flex-start;
-			-ms-flex-item-align: start;
-			align-self: flex-start
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content-container,
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-image-container {
-			width: 100%;
-			-webkit-align-self: center;
-			-ms-align-self: center;
-			-ms-flex-item-align: center;
-			align-self: center
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content-container.center,
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-image-container.center {
-			-webkit-align-self: center;
-			-ms-align-self: center;
-			-ms-flex-item-align: center;
-			align-self: center
-		}
-
-		.et_pb_fullscreen .et_pb_fullwidth_header_container.center .header-content-container.bottom,
-		.et_pb_fullscreen .et_pb_fullwidth_header_container.center .header-image-container.bottom {
-			-webkit-align-self: flex-end;
-			-ms-align-self: flex-end;
-			-ms-flex-item-align: end;
-			align-self: flex-end
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left {
-			display: -moz-flex;
-			display: -ms-flexbox;
-			display: -webkit-box;
-			display: flex;
-			-ms-flex-flow: row;
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: normal;
-			flex-flow: row
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right {
-			display: -moz-flex;
-			display: -ms-flexbox;
-			display: -webkit-box;
-			display: flex;
-			-ms-flex-flow: row-reverse;
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: reverse;
-			flex-flow: row-reverse
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-content-container,
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .header-content-container {
-			width: 100%
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-image-container,
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .header-image-container,
-		.et_pb_fullwidth_header.et_pb_header_with_image .et_pb_fullwidth_header_container.left .header-content-container,
-		.et_pb_fullwidth_header.et_pb_header_with_image .et_pb_fullwidth_header_container.right .header-content-container {
-			width: 50%;
-			-webkit-align-self: center;
-			-ms-align-self: center;
-			-ms-flex-item-align: center;
-			align-self: center
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-content-container.center,
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-image-container.center,
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .header-content-container.center,
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .header-image-container.center {
-			-webkit-align-self: center;
-			-ms-align-self: center;
-			-ms-flex-item-align: center;
-			align-self: center
-		}
-
-		.et_pb_fullscreen .et_pb_fullwidth_header_container.left .header-content-container.bottom,
-		.et_pb_fullscreen .et_pb_fullwidth_header_container.left .header-image-container.bottom,
-		.et_pb_fullscreen .et_pb_fullwidth_header_container.right .header-content-container.bottom,
-		.et_pb_fullscreen .et_pb_fullwidth_header_container.right .header-image-container.bottom,
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-content-container.bottom,
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-image-container.bottom,
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .header-content-container.bottom,
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .header-image-container.bottom {
-			-webkit-align-self: flex-end;
-			-ms-align-self: flex-end;
-			-ms-flex-item-align: end;
-			align-self: flex-end
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-content {
-			text-align: left;
-			margin-left: 0
-		}
-
-		.et_pb_fullwidth_header.et_pb_header_with_image .et_pb_fullwidth_header_container.left .header-content {
-			margin-right: 6%
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .header-content {
-			text-align: right;
-			margin-right: 0;
-			float: right
-		}
-
-		.et_pb_fullwidth_header.et_pb_header_with_image .et_pb_fullwidth_header_container.right .header-content {
-			margin-left: 6%
-		}
-
-		.et_pb_fullscreen .et_pb_fullwidth_header_container.left .header-content-container.bottom,
-		.et_pb_fullscreen .et_pb_fullwidth_header_container.right .header-content-container.bottom {
-			margin-bottom: 80px
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-content {
-			padding-left: 0
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .header-content {
-			padding-right: 0
-		}
-
-		.et_pb_fullwidth_header .header-content {
-			padding: 10px;
-			text-align: center
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content {
-			margin: 20px auto;
-			width: 80%;
-			max-width: 800px
-		}
-
-		.et_pb_fullwidth_header .header-image {
-			text-align: center;
-			margin-left: 2%;
-			margin-right: 2%;
-			line-height: 0
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container .header-content a.et_pb_button {
-			margin-top: 20px;
-			display: inline-block
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container .et_pb_button_one {
-			margin-right: 15px
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .et_pb_button_one {
-			margin-right: 0
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .et_pb_button_two {
-			margin-left: 15px
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_overlay {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			z-index: 2;
-			pointer-events: none
-		}
-
-		.et_pb_fullwidth_header .et_pb_parallax_css {
-			background-repeat: no-repeat;
-			background-position: top;
-			background-size: cover;
-			background-attachment: fixed;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			overflow: hidden
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_scroll {
-			width: 100%;
-			min-height: 30px;
-			text-align: center;
-			padding-top: 10px;
-			padding-bottom: 20px;
-			margin: 0 auto;
-			position: absolute;
-			z-index: 3;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			pointer-events: none
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_scroll a {
-			display: inline-block;
-			pointer-events: all
-		}
-
-		.et_pb_fullwidth_header .et_pb_fullwidth_header_scroll a .et-pb-icon {
-			color: #fff;
-			font-size: 3.5em
-		}
-
-		.et_pb_fullwidth_header .scroll-down-container .scroll-down-phone,
-		.et_pb_fullwidth_header .scroll-down-container .scroll-down-tablet {
-			display: none
-		}
-
-		@media (max-width:980px) {
-
-			.et_pb_fullwidth_header .scroll-down-container-tablet .scroll-down,
-			.et_pb_fullwidth_header .scroll-down-container-tablet .scroll-down-phone {
-				display: none
-			}
-
-			.et_pb_fullwidth_header .scroll-down-container-tablet .scroll-down-tablet {
-				display: inline-block
-			}
-		}
-
-		@media (max-width:767px) {
-
-			.et_pb_fullwidth_header .scroll-down-container-phone .scroll-down,
-			.et_pb_fullwidth_header .scroll-down-container-phone .scroll-down-tablet {
-				display: none
-			}
-
-			.et_pb_fullwidth_header .scroll-down-container-phone .scroll-down-phone {
-				display: inline-block
-			}
-
-			.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left,
-			.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right {
-				-ms-flex-flow: column;
-				-webkit-box-orient: vertical;
-				-webkit-box-direction: normal;
-				flex-flow: column;
-				-moz-justify-content: center;
-				-ms-justify-content: center;
-				-webkit-box-pack: center;
-				-ms-flex-pack: center;
-				justify-content: center
-			}
-
-			.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-content-container,
-			.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-image-container,
-			.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .header-content-container,
-			.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .header-image-container,
-			.et_pb_fullwidth_header.et_pb_header_with_image .et_pb_fullwidth_header_container.left .header-content-container,
-			.et_pb_fullwidth_header.et_pb_header_with_image .et_pb_fullwidth_header_container.right .header-content-container {
-				width: 100%
-			}
-
-			.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-content,
-			.et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .header-content {
-				margin: 20px 2%
-			}
-		}
-
-		.ie .et_pb_fullwidth_header.et_pb_fullscreen .et_pb_fullwidth_header_container.left,
-		.ie .et_pb_fullwidth_header.et_pb_fullscreen .et_pb_fullwidth_header_container.right {
-			height: 100px
-		}
-
-		.ie .et_pb_fullwidth_header .et_pb_fullwidth_header_container.right .header-content {
-			float: none
-		}
-
 		.et_pb_text {
 			word-wrap: break-word
 		}
@@ -6005,6 +5379,59 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 		.et_pb_text_inner {
 			position: relative
+		}
+
+		.et_pb_bg_layout_light.et_pb_module.et_pb_button {
+			color: #2ea3f2
+		}
+
+		.et_pb_module.et_pb_button {
+			display: inline-block;
+			color: inherit
+		}
+
+		.et_pb_button_module_wrapper.et_pb_button_alignment_left {
+			text-align: left
+		}
+
+		.et_pb_button_module_wrapper.et_pb_button_alignment_right {
+			text-align: right
+		}
+
+		.et_pb_button_module_wrapper.et_pb_button_alignment_center {
+			text-align: center
+		}
+
+		.et_pb_button_module_wrapper>a {
+			display: inline-block
+		}
+
+		@media (max-width:980px) {
+			.et_pb_button_module_wrapper.et_pb_button_alignment_tablet_left {
+				text-align: left
+			}
+
+			.et_pb_button_module_wrapper.et_pb_button_alignment_tablet_right {
+				text-align: right
+			}
+
+			.et_pb_button_module_wrapper.et_pb_button_alignment_tablet_center {
+				text-align: center
+			}
+		}
+
+		@media (max-width:767px) {
+			.et_pb_button_module_wrapper.et_pb_button_alignment_phone_left {
+				text-align: left
+			}
+
+			.et_pb_button_module_wrapper.et_pb_button_alignment_phone_right {
+				text-align: right
+			}
+
+			.et_pb_button_module_wrapper.et_pb_button_alignment_phone_center {
+				text-align: center
+			}
 		}
 
 		.et_pb_button[data-icon]:not([data-icon=""]):after {
@@ -6023,6 +5450,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			}
 		}
 	</style>
+	<link rel='preload' id='divi-dynamic-late-css'
+		href='https://academialallibreta.es/wp-content/et-cache/283/et-divi-dynamic-283-late.css?ver=1742557039'
+		as='style' media='all' onload="this.onload=null;this.rel='stylesheet'" />
+	<link rel='preload' id='divi-dynamic-css'
+		href='https://academialallibreta.es/wp-content/et-cache/283/et-divi-dynamic-283.css?ver=1742557039' as='style'
+		media='all' onload="this.onload=null;this.rel='stylesheet'" />
 	<link rel='stylesheet' id='et-builder-googlefonts-cached-css'
 		href='https://fonts.googleapis.com/css?family=Handlee:regular&#038;subset=latin&#038;display=swap'
 		type='text/css' media='all' />
@@ -6095,6 +5528,18 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			--bw: 100
 		}
 	</style>
+	<link rel='stylesheet' id='gforms_reset_css-css'
+		href='https://academialallibreta.es/wp-content/plugins/gravityforms/legacy/css/formreset.min.css?ver=2.9.5'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='gforms_formsmain_css-css'
+		href='https://academialallibreta.es/wp-content/plugins/gravityforms/legacy/css/formsmain.min.css?ver=2.9.5'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='gforms_ready_class_css-css'
+		href='https://academialallibreta.es/wp-content/plugins/gravityforms/legacy/css/readyclass.min.css?ver=2.9.5'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='gforms_browsers_css-css'
+		href='https://academialallibreta.es/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.9.5'
+		type='text/css' media='all' />
 	<link rel='stylesheet' id='addtoany-css'
 		href='https://academialallibreta.es/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.16' type='text/css'
 		media='all' />
@@ -6139,17 +5584,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	<script type="text/javascript"
 		src="https://academialallibreta.es/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
 		id="jquery-migrate-js"></script>
-	<script type="text/javascript" id="jquery-js-after">
-		/* <![CDATA[ */
-		jqueryParams.length && $.each(jqueryParams, function (e, r) { if ("function" == typeof r) { var n = String(r); n.replace("$", "jQuery"); var a = new Function("return " + n)(); $(document).ready(a) } });
-		/* ]]> */
-	</script>
 	<script type="text/javascript" defer
 		src="https://academialallibreta.es/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.1"
 		id="addtoany-jquery-js"></script>
 	<script type="text/javascript" id="cookie-notice-front-js-before">
 		/* <![CDATA[ */
-		var cnArgs = { "ajaxUrl": "https:\/\/academialallibreta.es\/wp-admin\/admin-ajax.php", "nonce": "5401bd26d5", "hideEffect": "fade", "position": "bottom", "onScroll": false, "onScrollOffset": 100, "onClick": false, "cookieName": "cookie_notice_accepted", "cookieTime": 2592000, "cookieTimeRejected": 2592000, "globalCookie": false, "redirection": false, "cache": false, "revokeCookies": false, "revokeCookiesOpt": "automatic" };
+		var cnArgs = { "ajaxUrl": "https:\/\/academialallibreta.es\/wp-admin\/admin-ajax.php", "nonce": "4aed437630", "hideEffect": "fade", "position": "bottom", "onScroll": false, "onScrollOffset": 100, "onClick": false, "cookieName": "cookie_notice_accepted", "cookieTime": 2592000, "cookieTimeRejected": 2592000, "globalCookie": false, "redirection": false, "cache": false, "revokeCookies": false, "revokeCookiesOpt": "automatic" };
 		/* ]]> */
 	</script>
 	<script type="text/javascript"
@@ -6157,17 +5597,40 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		id="cookie-notice-front-js"></script>
 	<script type="text/javascript" src="https://academialallibreta.es/wp-content/themes/Divi-child/menu.js?ver=6.7.2"
 		id="menu-js-js"></script>
+	<script type="text/javascript" defer='defer'
+		src="https://academialallibreta.es/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.9.5"
+		id="gform_json-js"></script>
+	<script type="text/javascript" id="gform_gravityforms-js-extra">
+		/* <![CDATA[ */
+		var gf_global = { "gf_currency_config": { "name": "Euro", "symbol_left": "", "symbol_right": "&#8364;", "symbol_padding": " ", "thousand_separator": ".", "decimal_separator": ",", "decimals": 2, "code": "EUR" }, "base_url": "https:\/\/academialallibreta.es\/wp-content\/plugins\/gravityforms", "number_formats": [], "spinnerUrl": "https:\/\/academialallibreta.es\/wp-content\/plugins\/gravityforms\/images\/spinner.svg", "version_hash": "2ee721dd909f722fede0ccffa064af59", "strings": { "newRowAdded": "Nueva fila a\u00f1adida.", "rowRemoved": "Fila eliminada", "formSaved": "Se ha guardado el formulario. El contenido incluye el enlace para volver y completar el formulario." } };
+		var gf_global = { "gf_currency_config": { "name": "Euro", "symbol_left": "", "symbol_right": "&#8364;", "symbol_padding": " ", "thousand_separator": ".", "decimal_separator": ",", "decimals": 2, "code": "EUR" }, "base_url": "https:\/\/academialallibreta.es\/wp-content\/plugins\/gravityforms", "number_formats": [], "spinnerUrl": "https:\/\/academialallibreta.es\/wp-content\/plugins\/gravityforms\/images\/spinner.svg", "version_hash": "2ee721dd909f722fede0ccffa064af59", "strings": { "newRowAdded": "Nueva fila a\u00f1adida.", "rowRemoved": "Fila eliminada", "formSaved": "Se ha guardado el formulario. El contenido incluye el enlace para volver y completar el formulario." } };
+		var gform_i18n = { "datepicker": { "days": { "monday": "Lu", "tuesday": "Ma", "wednesday": "Mi", "thursday": "Ju", "friday": "Vi", "saturday": "Sa", "sunday": "Do" }, "months": { "january": "Enero", "february": "Febrero", "march": "Marzo", "april": "Abril", "may": "Mayo", "june": "Junio", "july": "Julio", "august": "Agosto", "september": "Septiembre", "october": "Octubre", "november": "Noviembre", "december": "Diciembre" }, "firstDay": 1, "iconText": "Elige una fecha" } };
+		var gf_legacy_multi = { "2": "1", "3": "1" };
+		var gform_gravityforms = { "strings": { "invalid_file_extension": "Este tipo de archivo no est\u00e1 permitido. Debe ser uno de los siguientes:", "delete_file": "Borrar este archivo", "in_progress": "en curso", "file_exceeds_limit": "El archivo excede el l\u00edmite de tama\u00f1o", "illegal_extension": "Este tipo de archivo no est\u00e1 permitido.", "max_reached": "N\u00ba m\u00e1ximo de archivos alcanzado", "unknown_error": "Hubo un problema al guardar el archivo en el servidor", "currently_uploading": "Por favor espera a que se complete la subida", "cancel": "Cancelar", "cancel_upload": "Cancelar esta subida", "cancelled": "Cancelada" }, "vars": { "images_url": "https:\/\/academialallibreta.es\/wp-content\/plugins\/gravityforms\/images" } };
+		/* ]]> */
+	</script>
+	<script type="text/javascript" id="gform_gravityforms-js-before">
+		/* <![CDATA[ */
+
+		/* ]]> */
+	</script>
+	<script type="text/javascript" defer='defer'
+		src="https://academialallibreta.es/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.9.5"
+		id="gform_gravityforms-js"></script>
+	<script type="text/javascript" defer='defer'
+		src="https://academialallibreta.es/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=a8f8e72876ba5bc3f797026fe4225946"
+		id="gform_gravityforms_utils-js"></script>
 	<link rel="https://api.w.org/" href="https://academialallibreta.es/wp-json/" />
 	<link rel="alternate" title="JSON" type="application/json"
-		href="https://academialallibreta.es/wp-json/wp/v2/pages/17678" />
+		href="https://academialallibreta.es/wp-json/wp/v2/pages/283" />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://academialallibreta.es/xmlrpc.php?rsd" />
 	<meta name="generator" content="WordPress 6.7.2" />
-	<link rel='shortlink' href='https://academialallibreta.es/?p=17678' />
+	<link rel='shortlink' href='https://academialallibreta.es/?p=283' />
 	<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
-		href="https://academialallibreta.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Facademialallibreta.es%2Fpolitica-cookies%2F" />
+		href="https://academialallibreta.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Facademialallibreta.es%2Ftu-centro-de-estudios-en-valencia%2Frepaso-escolar%2F" />
 	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
-		href="https://academialallibreta.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Facademialallibreta.es%2Fpolitica-cookies%2F&#038;format=xml" />
-	<meta name="generator" content="WPML ver:4.7.3 stt:1,4,2,65;" />
+		href="https://academialallibreta.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Facademialallibreta.es%2Ftu-centro-de-estudios-en-valencia%2Frepaso-escolar%2F&#038;format=xml" />
+	<meta name="generator" content="WPML ver:4.6.15 stt:1,4,2,65;" />
 
 	<!-- Google Tag Manager for WordPress by gtm4wp.com -->
 	<!-- GTM Container placement set to automatic -->
@@ -6600,44 +6063,152 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			}
 		}
 
+		div.et_pb_section.et_pb_section_0 {
+			/* background-blend-mode: overlay; */
+			background-image: url(/Images/Ciclos.jpg) !important
+		}
+
 		.et_pb_section_0.et_pb_section {
-			background-color: #2ea3f2 !important
+			padding-top: 90px;
+			padding-bottom: 92px;
+			background-color: rgba(0, 0, 0, 0.3) !important
 		}
 
-		.et_pb_fullwidth_header_0.et_pb_fullwidth_header .header-content h1,
-		.et_pb_fullwidth_header_0.et_pb_fullwidth_header .header-content h2.et_pb_module_header,
-		.et_pb_fullwidth_header_0.et_pb_fullwidth_header .header-content h3.et_pb_module_header,
-		.et_pb_fullwidth_header_0.et_pb_fullwidth_header .header-content h4.et_pb_module_header,
-		.et_pb_fullwidth_header_0.et_pb_fullwidth_header .header-content h5.et_pb_module_header,
-		.et_pb_fullwidth_header_0.et_pb_fullwidth_header .header-content h6.et_pb_module_header {
-			font-family: 'Handlee', handwriting;
-			font-weight: 700;
-			text-transform: uppercase
+		.et_pb_section_0.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider {
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI4N3B4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTcyNS4yOSAxMDEuMkMzMjUuMjIgMTIyLjQ4IDAgMCAwIDB2MTQwaDEyODBWMHMtMTU0LjY0IDc5LjkyLTU1NC43MSAxMDEuMnoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNNTU2LjQ1IDExOS43NEM5NTMuNDEgMTQwIDEyODAgMTQgMTI4MCAxNHYxMjZIMFYwczE1OS41IDk5LjQ4IDU1Ni40NSAxMTkuNzR6IiBmaWxsLW9wYWNpdHk9Ii41Ii8+PHBhdGggZD0iTTY0MCAxNDBjMzUzLjQ2IDAgNjQwLTE0MCA2NDAtMTM5djE0MEgwVjBzMjg2LjU0IDE0MCA2NDAgMTQweiIvPjwvZz48L3N2Zz4=);
+			background-size: 100% 87px;
+			bottom: 0;
+			height: 87px;
+			z-index: 1;
+			transform: scale(1, 1)
 		}
 
-		.et_pb_fullwidth_header_0.et_pb_fullwidth_header .et_pb_header_content_wrapper {
-			font-family: 'Handlee', handwriting;
-			font-weight: 700
+		.et_pb_row_0 {
+			background-color: RGBA(255, 255, 255, 0)
 		}
 
-		.et_pb_fullwidth_header_0.et_pb_fullwidth_header .et_pb_fullwidth_header_subhead {
+		.et_pb_row_0.et_pb_row {
+			margin-top: 10px !important;
+			margin-bottom: 10px !important
+		}
+
+		.et_pb_row_0,
+		body #page-container .et-db #et-boc .et-l .et_pb_row_0.et_pb_row,
+		body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,
+		body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0.et_pb_row {
+			max-width: 510px
+		}
+
+		.et_pb_text_0.et_pb_text {
+			color: #FFFFFF !important
+		}
+
+		.et_pb_text_0 {
 			font-family: 'Handlee', handwriting;
-			font-weight: 700;
+			font-weight: 600;
+			font-variant: small-caps;
 			font-size: 20px
 		}
 
-		.et_pb_fullwidth_header.et_pb_fullwidth_header_0 {
-			background-color: rgba(255, 255, 255, 0)
+		.et_pb_text_0 h1 {
+			font-family: 'Handlee', handwriting;
+			font-weight: 700;
+			font-size: 60px;
+			color: #FFFFFF !important;
+			letter-spacing: 2px
 		}
 
-		.et_pb_fullwidth_header_0.et_pb_fullwidth_header .et_pb_fullwidth_header_container .header-content {
-			max-width: none
+		.et_pb_text_0 h2 {
+			font-weight: 800;
+			font-size: 30px
+		}
+
+		.et_pb_button_0_wrapper {
+			margin-top: 20px !important;
+			margin-bottom: 20px !important
+		}
+
+		.et_pb_button_0,
+		.et_pb_button_0:after,
+		.et_pb_button_1,
+		.et_pb_button_1:after {
+			transition: all 300ms ease 0ms
+		}
+
+		body #page-container .et_pb_section .et_pb_button_1 {
+			color: #FFFFFF !important;
+			border-width: 2px !important;
+			border-color: #7a6b97;
+			letter-spacing: 0px;
+			font-size: 20px;
+			background-color: #7a6b97
+		}
+
+		body #page-container .et_pb_section .et_pb_button_1:after {
+			font-size: 1.6em;
+			color: #FFFFFF
+		}
+
+		body.et_button_custom_icon #page-container .et_pb_button_1:after {
+			font-size: 20px
+		}
+
+		.et_pb_button_1 {
+			box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3)
+		}
+
+		.et_pb_column_0 {
+			padding-top: 10px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			padding-left: 10px
+		}
+
+		@media only screen and (max-width:980px) {
+			.et_pb_text_0 h1 {
+				font-size: 54px
+			}
+
+			.et_pb_text_0 h2 {
+				font-size: 30px
+			}
+
+			body #page-container .et_pb_section .et_pb_button_1:after {
+				display: inline-block;
+				opacity: 0
+			}
+
+			body #page-container .et_pb_section .et_pb_button_1:hover:after {
+				opacity: 1
+			}
+		}
+
+		@media only screen and (max-width:767px) {
+			.et_pb_text_0 h1 {
+				font-size: 40px
+			}
+
+			.et_pb_text_0 h2 {
+				font-size: 30px
+			}
+
+			body #page-container .et_pb_section .et_pb_button_1:after {
+				display: inline-block;
+				opacity: 0
+			}
+
+			body #page-container .et_pb_section .et_pb_button_1:hover:after {
+				opacity: 1
+			}
 		}
 	</style>
+	<link rel="preload" as="style" id="et-core-unified-deferred-283-cached-inline-styles"
+		href="https://academialallibreta.es/wp-content/et-cache/283/et-core-unified-deferred-283.min.css?ver=1742557041"
+		onload="this.onload=null;this.rel='stylesheet';" />
 </head>
 
 <body
-	class="page-template-default page page-id-17678 custom-background cookies-set cookies-refused et_pb_button_helper_class et_fullwidth_nav et_fixed_nav et_show_nav et_hide_primary_logo et_secondary_nav_enabled et_secondary_nav_two_panels et_primary_nav_dropdown_animation_slide et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns3 et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
+	class="page-template-default page page-id-283 page-parent page-child parent-pageid-7976 custom-background cookies-not-set et_pb_button_helper_class et_fullwidth_nav et_fixed_nav et_show_nav et_hide_primary_logo et_secondary_nav_enabled et_secondary_nav_two_panels et_primary_nav_dropdown_animation_slide et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns3 et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
 
 	<!-- GTM Container placement set to automatic -->
 	<!-- Google Tag Manager (noscript) -->
@@ -6710,7 +6281,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 								<a href="academia.html">La academia</a>
 							</li>
 							<li id="menu-item-8868"
-								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8868">
+								class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-has-children menu-item-8868">
 								<a href="#">Las Clases</a>
 								<ul class="sub-menu">
 									<li id="menu-item-27111"
@@ -6718,7 +6289,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 										<a href="primaria.html">Primaria</a>
 									</li>
 									<li id="menu-item-27111"
-										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27111">
+										class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item menu-item-27111">
 										<a href="esobachiller.html">ESO y bachiller</a>
 									</li>
 											<li id="menu-item-27112"
@@ -6740,7 +6311,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39979"><a
 									href="trabaja.html">Trabaja con nosotros</a></li>
 							<li id="menu-item-36318"
-								class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-36318">
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36318">
 								<a href="contacto.html" aria-current="page">Contacto</a>
 							</li>
 							<!-- <li id="menu-item-2299"
@@ -6773,44 +6344,56 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 
-				<article id="post-17678" class="post-17678 page type-page status-publish hentry">
+				<article id="post-283" class="post-283 page type-page status-publish has-post-thumbnail hentry">
 
 
 					<div class="entry-content">
 						<div class="et-l et-l--post">
 							<div class="et_builder_inner_content et_pb_gutters3">
-								<div class="ditty ditty--pre" data-id="36282" data-uniqid="ditty-67f0e67a8d62b"></div>
-								<div
-									class="et_pb_section et_pb_section_0 et_pb_with_background et_pb_fullwidth_section et_section_regular">
+								<div class="ditty ditty--pre" data-id="36282" data-uniqid="ditty-67e991800fcbc"></div>
+								<div style="background-image: url(/Images/Ciclos.jpg) !important;"
+									class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider">
 
 
 
 
 
 
-									<section
-										class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_0 et_pb_text_align_left et_pb_bg_layout_dark">
+									<div class="et_pb_row et_pb_row_0 et_animated et_pb_gutters3">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
 
 
 
 
-										<div class="et_pb_fullwidth_header_container left">
-											<div class="header-content-container center">
-												<div class="header-content">
+											<div
+												class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_center et_pb_bg_layout_dark">
 
-													<h1 class="et_pb_module_header">POLÍTICA DE PRIVACIDAD</h1>
 
-													<div class="et_pb_header_content_wrapper"></div>
 
+
+												<div class="et_pb_text_inner">
+													<h1 style="text-align: center;">academia de REPASO ESCOLAR</h1>
+													<h2>Acceso a ciclo medio y Superior</h2>
 												</div>
 											</div>
-
+											<div
+												class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_module ">
+												<!-- <a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="#PRECIOS">PRECIOS Y HORARIOS</a> -->
+											</div>
+											<div
+												class="et_pb_button_module_wrapper et_pb_button_1_wrapper et_pb_button_alignment_center et_pb_module ">
+												<a class="et_pb_button et_pb_button_1 et_animated et_pb_bg_layout_light"
+														href="#contacto">¡Me apunto!</a>
+											</div>
 										</div>
-										<div class="et_pb_fullwidth_header_overlay"></div>
-										<div class="et_pb_fullwidth_header_scroll"></div>
-									</section>
 
 
+
+
+									</div>
+
+									<div class="et_pb_bottom_inside_divider et-no-transition"></div>
 								</div>
 								<div class="et_pb_section et_pb_section_1 et_section_regular">
 
@@ -6819,256 +6402,654 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 
-									<div class="et_pb_row et_pb_row_0">
+									<div class="et_pb_row et_pb_row_1 et_pb_gutters3">
 										<div
-											class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+											class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
 
 
 
 
 											<div
-												class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
-
-												<div
-													class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+												class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
 
 
 
 
-													<div class="et_pb_text_inner">
-														<h1>1. INFORMACIÓN AL USUARIO</h1>
-														<p><strong> MARÍA FERNÁNDEZ CARRIÓ</strong>, en adelante
-															RESPONSABLE, es el Responsable del tratamiento de los datos
-															personales del Usuario y le informa que estos datos serán
-															tratados de conformidad con lo dispuesto en el Reglamento
-															(UE) 2016/679 de 27 de abril (GDPR) y la Ley Orgánica 3/2018
-															de 5 de diciembre (LOPDGDD), por lo que se le facilita la
-															siguiente información del tratamiento:
-														</p>
-														<p><strong>Fin del tratamiento:</strong> mantener una relación
-															comercial con el Usuario. Las operaciones previstas para
-															realizar el tratamiento son:</p>
+												<div class="et_pb_blurb_content">
+													<div class="et_pb_main_blurb_image"><span
+															class="et_pb_image_wrap"><span
+															style="color: #5b7dfa !important;" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
+													</div>
+													<div class="et_pb_blurb_container">
+														<h4 class="et_pb_module_header"><span>ENSEÑANDO A
+																APRENDER</span></h4>
+
 													</div>
 												</div>
-												<div
-													class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
-
-
-
-													<p> Remisión de comunicaciones comerciales publicitarias por email,
-														fax, SMS, MMS, comunidades sociales o cualquier otro medio
-														electrónico o físico, presente o futuro, que posibilite realizar
-														comunicaciones comerciales. Estas comunicaciones serán
-														realizadas por el RESPONSABLE y relacionadas sobre sus productos
-														y servicios, o de sus colaboradores o proveedores con los que
-														éste haya alcanzado algún acuerdo de promoción. En este caso,
-														los terceros nunca tendrán acceso a los datos personales.
-													<p>Realizar estudios estadísticos.</p>
-													<p>Tramitar encargos, solicitudes o cualquier tipo de petición que
-														sea realizada por el usuario a través de cualquiera de las
-														formas de contacto que se ponen a su disposición.</p>
-													<p>Remitir el boletín de noticias de la página web.</p>
-													<div></div> <span></span>
-													<p></p>
-													<p></p>
-
-
-													<p>Base jurídica del tratamiento: consentimiento del interesado.</p>
-
-													<p>Criterios de conservación de los datos: se conservarán durante no
-														más tiempo del necesario para mantener el fin del tratamiento y
-														cuando ya no sea necesario para tal fin, se suprimirán con
-														medidas de seguridad adecuadas para garantizar la
-														seudonimización de los datos o la destrucción total de los
-														mismos.</p>
-
-													<strong>
-														<p>
-														<h3>Comunicación de los datos:
-													</strong></p>
-													</h3>
-													<p>No se comunicarán los datos a terceros, salvo obligación legal.
-													</p>
-
-													<h3>
-														<p><strong>Derechos que asisten al Usuario:</strong></p>
-													</h3>
-
-													<p>Derecho a retirar el consentimiento en cualquier momento.</p>
-													<p>Derecho de acceso, rectificación, portabilidad y supresión de sus
-														datos y a la limitación u oposición al su tratamiento.</p>
-													<p>Derecho a presentar una reclamación ante la autoridad de control
-														(www.agpd.es) si considera que el tratamiento no se ajusta a la
-														normativa vigente.</p>
-
-
-													<h3>
-														<p><strong>Datos de contacto para ejercer sus derechos:</strong>
-														</p>
-													</h3>
-
-													<p>Dirección postal: FLOR MARÍA FERNÁNDEZ CARRIÓ. CALLE FUENTE DEL
-														REAL, 44 BAJO 33209 GIJÓN</p>
-													<p>(ASTURIAS). Email: correo deltagijon</p>
-													<p>Dirección electrónica: correo deltagijon</p>
-
-													<p></p>
-													<p></p>
-													<div class="et_pb_text_inner">
-														<h1>2. CARÁCTER OBLIGATORIO O FACULTATIVO DE LA INFORMACIÓN
-															FACILITADA POR EL USUARIO</h1>
-														<p>Los Usuarios, mediante la marcación de las casillas
-															correspondientes y entrada de datos en los campos, marcados
-															con un asterisco (*) en el formulario de contacto o
-															presentados en formularios de descarga, aceptan expresamente
-															y de forma libre e inequívoca, que sus datos son necesarios
-															para atender su petición, por parte del prestador, siendo
-															voluntaria la inclusión de datos en los campos restantes. El
-															Usuario garantiza que los datos personales facilitados al
-															RESPONSABLE son veraces y se hace responsable de comunicar
-															cualquier modificación de los mismos. </p>
-														<p>El RESPONSABLE informa y garantiza expresamente a los
-															usuarios que sus datos personales no serán cedidos en ningún
-															caso a terceros, y que siempre que realizara algún tipo de
-															cesión de datos personales, se pedirá previamente el
-															consentimiento expreso, informado e inequívoco por parte los
-															Usuarios. Todos los datos solicitados a través del sitio web
-															son obligatorios, ya que son necesarios para la prestación
-															de un servicio óptimo al Usuario. En caso de que no sean
-															facilitados todos los datos,
-															no se garantiza que la información y servicios facilitados
-															sean completamente ajustados a sus necesidades.</p>
-													</div>
-
-
-													<p></p>
-													<p></p>
-													<div class="et_pb_text_inner">
-														<h1>3. MEDIDAS DE SEGURIDAD</h1>
-														<p>Que de conformidad con lo dispuesto en las normativas
-															vigentes en protección de datos personales, el RESPONSABLE
-															está cumpliendo con todas las disposiciones de las
-															normativas GDPR para el tratamiento de los datos personales
-															de su responsabilidad, y manifiestamente con los principios
-															descritos en el artículo 5 del GDPR, por los cuales son
-															tratados de manera lícita, leal y transparente en relación
-															con el interesado y adecuados, pertinentes y limitados a lo
-															necesario en relación con los fines para los que son
-															tratados. </p>
-														<p>El RESPONSABLE garantiza que ha implementado políticas
-															técnicas y organizativas apropiadas para aplicar las medidas
-															de seguridad que establecen el GDPR con el fin de proteger
-															los derechos y libertades de los Usuarios y les ha
-															comunicado la información adecuada para que puedan
-															ejercerlos.</p>
-													</div>
-
-												</div>
-
-
-
-											</div>
-											<div
-												class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
-
-
-
 											</div>
 										</div>
+
+
+
+
 									</div>
+									<div class="et_pb_row et_pb_row_2 et_pb_gutters3">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+
+
+												<div class="et_pb_text_inner">
+													<p style="text-align: justify;">En Academia Delta Gijón acompañamos
+														a cada estudiante en su proceso de aprendizaje, actuando como
+														impulsores de su desarrollo académico y personal. Nuestro
+														propósito es ayudarte a ganar confianza y autonomía para que
+														puedas alcanzar tus objetivos con solidez. Aquí no solo
+														aprenderás contenidos, sino que desarrollarás habilidades para
+														pensar de forma crítica, resolver problemas con lógica y
+														comprender en profundidad cada materia desde una perspectiva
+														global y práctica.</p>
+												</div>
+											</div>
+											<div
+												class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+
+
+												<div class="et_pb_text_inner">
+													<div
+														class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+														<div class="et_pb_text_inner">
+															<h4 style="color: #5b7dfa !important;">¿Por qué Delta?</h4>
+															<ol>
+																<li>Nuestro equipo de profesores está formado por
+																	profesionales apasionados por la enseñanza, con
+																	experiencia y vocación, que acompañan a cada
+																	estudiante en su camino académico y personal.</li>
+																<li>Nos enfocamos en las necesidades individuales de
+																	cada alumno, brindando un acompañamiento cercano que
+																	permite potenciar sus fortalezas y reforzar las
+																	áreas que requieren mayor apoyo.</li>
+																<li>Trabajarás con tu propio material, pero si lo vemos
+																	conveniente te daremos fichas propias con
+																	<strong>resúmenes</strong> y
+																	<strong>esquemas</strong> para ayudarte a estudiar.
+																</li>
+																<li>Fomentamos la <strong>autonomía</strong> y la
+																	<strong>confianza. </strong>Asegurandonos de que
+																	cada alumno sea capaz de conseguir la meta que se
+																	proponga</li>
+																<li><strong>Transmitimos nuestra pasión por el
+																		aprendizaje.</strong> Cuando se entienden las
+																	cosas, ¡Todo es mucho mas sencillo!</li>
+															</ol>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+
+									</div>
+
+
+								</div>
+								<div
+									class="et_pb_with_border et_pb_section et_pb_section_2 et_pb_with_background et_section_regular">
+
+
+
+
+
+
+									<div class="et_pb_row et_pb_row_3">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
+											<div
+												class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+
+
+												<div class="et_pb_blurb_content">
+													<div class="et_pb_main_blurb_image"><span
+															class="et_pb_image_wrap"><span
+															style="color: #5b7dfa !important;" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
+													</div>
+													<div class="et_pb_blurb_container">
+														<h4 style="color: #5b7dfa !important;" class="et_pb_module_header"><span>¿CÓMO TRABAJAMOS?</span>
+														</h4>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+
+									</div>
+									<div class="et_pb_row et_pb_row_4 et_pb_gutters3">
+										<div
+											class="et_pb_column et_pb_column_1_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough">
+
+
+
+
+											<div
+												class="et_pb_module et_pb_blurb et_pb_blurb_2  et_pb_text_align_justified  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+
+
+												<div class="et_pb_blurb_content">
+													<div class="et_pb_main_blurb_image"><span
+															class="et_pb_image_wrap"><span
+															style="color: #5b7dfa !important;" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
+													</div>
+													<div class="et_pb_blurb_container">
+														<h4 class="et_pb_module_header"><span>GRUPOS REDUCIDOS</span>
+														</h4>
+														<div class="et_pb_blurb_description">
+															<p>El aula de repaso está limitada a un máximo de 6
+																estudiantes por grupo. Esto nos permite ofrecer una
+																atención más individualizada, resolviendo dudas
+																específicas y asegurando un seguimiento cercano de su
+																progreso.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div
+											class="et_pb_column et_pb_column_1_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
+
+
+
+
+											<div
+												class="et_pb_module et_pb_blurb et_pb_blurb_3  et_pb_text_align_justified  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+
+
+												<div class="et_pb_blurb_content">
+													<div class="et_pb_main_blurb_image"><span
+															class="et_pb_image_wrap"><span
+															style="color: #5b7dfa !important;" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
+													</div>
+													<div class="et_pb_blurb_container">
+														<h4 class="et_pb_module_header"><span>Especialización</span>
+														</h4>
+														<div class="et_pb_blurb_description">
+															<p style="text-align: justify;"><span>Los grupos están
+																	segregados entre
+																	opción </span><strong>Ciclo medio</strong><span> o </span><strong>Ciclo superior</strong><span>
+																	Te preparamos para que consigas superar la prueba de acceso del ciclo que te propongas</span>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div
+											class="et_pb_column et_pb_column_1_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough">
+
+
+
+
+											<div
+												class="et_pb_module et_pb_blurb et_pb_blurb_4  et_pb_text_align_justified  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+
+
+												<div class="et_pb_blurb_content">
+													<div class="et_pb_main_blurb_image"><span
+															class="et_pb_image_wrap"><span
+															style="color: #5b7dfa !important;" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
+													</div>
+													<div class="et_pb_blurb_container">
+														<h4 class="et_pb_module_header"><span>Aprendizaje
+																significativo</span></h4>
+														<div class="et_pb_blurb_description">
+															<p style="text-align: justify;">El aprendizaje significativo
+																implica comprender a fondo lo que se estudia, integrarlo
+																y conectarlo con otros conocimientos. En Academia Delta,
+																somos expertos en hacer que este proceso sea una
+																realidad: enseñamos a aprender..</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div
+											class="et_pb_column et_pb_column_1_4 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
+											<div
+												class="et_pb_module et_pb_blurb et_pb_blurb_5  et_pb_text_align_justified  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+
+
+												<div class="et_pb_blurb_content">
+													<div class="et_pb_main_blurb_image"><span
+															class="et_pb_image_wrap"><span
+															style="color: #5b7dfa !important;" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
+													</div>
+													<div class="et_pb_blurb_container">
+														<h4 class="et_pb_module_header"><span>Horarios flexibles</span>
+														</h4>
+														<div class="et_pb_blurb_description">
+															<p style="text-align: justify;"><span>Si hay plazas
+																	disponibles, podrás solicitar unirte al grupo que
+																	mejor se adapte a tus necesidades, previa consulta
+																	con secretaría.</span></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+
+									</div>
+
+
+
 								</div>
 
+							</div>
 
-				</article>
+						</div>
+
+
+
+
+					</div>
 
 
 
 			</div>
+			<div class="et_pb_row et_pb_row_8">
+
+				<div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
 
 
-			<footer id="main-footer">
-				<div class="container">
-					<div id="footer-widgets" class="clearfix">
-						<div class="footer-widget">
-							<div id="block-22" class="fwidget et_pb_widget widget_block">
-								<h4 class="wp-block-heading">ACADEMIA DELTA GIJÓN</h4>
-							</div>
-							<div id="block-21" class="fwidget et_pb_widget widget_block widget_media_image">
-								<figure class="wp-block-image size-large"><a href="" target="_blank"
-										rel=" noreferrer noopener"><img decoding="async" width="1024" height="687"
-											data-src="Images\Logo-Academia.jpg" alt="" class="wp-image-37030 lazyload"
-											data-srcset="Images\Logo-Academia.jpg 1024w, Images\Logo-Academia.jpg 980w, Images\Logo-Academia.jpg 480w"
-											data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1024px, 100vw"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-											style="--smush-placeholder-width: 1024px; --smush-placeholder-aspect-ratio: 1024/687;" /></a>
-								</figure>
-							</div>
+					<p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_">
+						<label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8"
+								maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js"
+							value="99" />
+						<script>document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());</script>
+					</p>
+					</form>
+				</div>
+				<script type="text/javascript">
+					/* <![CDATA[ */
+					gform.initializeOnLoaded(function () { gformInitSpinner(2, 'https://academialallibreta.es/wp-content/plugins/gravityforms/images/spinner.svg', true); jQuery('#gform_ajax_frame_2').on('load', function () { var contents = jQuery(this).contents().find('*').html(); var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0; if (!is_postback) { return; } var form_content = jQuery(this).contents().find('#gform_wrapper_2'); var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_2').length > 0; var is_redirect = contents.indexOf('gformRedirect(){') >= 0; var is_form = form_content.length > 0 && !is_redirect && !is_confirmation; var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100; if (is_form) { jQuery('#gform_wrapper_2').html(form_content.html()); if (form_content.hasClass('gform_validation_error')) { jQuery('#gform_wrapper_2').addClass('gform_validation_error'); } else { jQuery('#gform_wrapper_2').removeClass('gform_validation_error'); } setTimeout(function () { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ }, 50); if (window['gformInitDatepicker']) { gformInitDatepicker(); } if (window['gformInitPriceFields']) { gformInitPriceFields(); } var current_page = jQuery('#gform_source_page_number_2').val(); gformInitSpinner(2, 'https://academialallibreta.es/wp-content/plugins/gravityforms/images/spinner.svg', true); jQuery(document).trigger('gform_page_loaded', [2, current_page]); window['gf_submitting_2'] = false; } else if (!is_redirect) { var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html(); if (!confirmation_content) { confirmation_content = contents; } jQuery('#gform_wrapper_2').replaceWith(confirmation_content); jQuery(document).trigger('gform_confirmation_loaded', [2]); window['gf_submitting_2'] = false; wp.a11y.speak(jQuery('#gform_confirmation_message_2').text()); } else { jQuery('#gform_2').append(contents); if (window['gformRedirect']) { gformRedirect(); } } jQuery(document).trigger("gform_pre_post_render", [{ formId: "2", currentPage: "current_page", abort: function () { this.preventDefault(); } }]); if (event && event.defaultPrevented) { return; } const gformWrapperDiv = document.getElementById("gform_wrapper_2"); if (gformWrapperDiv) { const visibilitySpan = document.createElement("span"); visibilitySpan.id = "gform_visibility_test_2"; gformWrapperDiv.insertAdjacentElement("afterend", visibilitySpan); } const visibilityTestDiv = document.getElementById("gform_visibility_test_2"); let postRenderFired = false; function triggerPostRender() { if (postRenderFired) { return; } postRenderFired = true; gform.core.triggerPostRenderEvents(2, current_page); if (visibilityTestDiv) { visibilityTestDiv.parentNode.removeChild(visibilityTestDiv); } } function debounce(func, wait, immediate) { var timeout; return function () { var context = this, args = arguments; var later = function () { timeout = null; if (!immediate) func.apply(context, args); }; var callNow = immediate && !timeout; clearTimeout(timeout); timeout = setTimeout(later, wait); if (callNow) func.apply(context, args); }; } const debouncedTriggerPostRender = debounce(function () { triggerPostRender(); }, 200); if (visibilityTestDiv && visibilityTestDiv.offsetParent === null) { const observer = new MutationObserver((mutations) => { mutations.forEach((mutation) => { if (mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null) { debouncedTriggerPostRender(); observer.disconnect(); } }); }); observer.observe(document.body, { attributes: true, childList: false, subtree: true, attributeFilter: ['style', 'class'], }); } else { triggerPostRender(); } }); });
+					/* ]]&gt; */
+				</script>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	</div>
+
+
+	</div>
+	<div id="PRECIOS" class="et_pb_section et_pb_section_5 et_pb_with_background et_section_regular">
+
+
+
+
+
+
+		<div class="et_pb_row et_pb_row_9">
+			<div
+				class="et_pb_column et_pb_column_4_4 et_pb_column_13  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
+				<div
+					class="et_pb_module et_pb_blurb et_pb_blurb_13  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+
+
+					<div class="et_pb_blurb_content">
+						<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span
+							style="color: #5b7dfa !important;" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
 						</div>
-						<div class="footer-widget">
-							<div id="block-18" class="fwidget et_pb_widget widget_block">
-								<h4 class="wp-block-heading">Términos legales y formularios</h4>
-							</div>
-							<div id="block-19" class="fwidget et_pb_widget widget_block">
-								<p><a href="privacidad.html">Política de privacidad</a></p>
-								<p><a href="avisolegal.html">Aviso</a></p>
-								<p><a href="cookies.html">Política de cookies</a></p>
-								<p><a href="trabaja.html">Trabaja con nosotros</a></p>
-							</div>
+						<div class="et_pb_blurb_container">
+							<h4 div id="contacto" class="et_pb_module_header"><span>CONTACTO</span></h4>
+
 						</div>
-						<div class="footer-widget">
-							<div id="block-17" class="fwidget et_pb_widget widget_block">
-								<h4 class="wp-block-heading">Contacto</h4>
-							</div>
-							<div id="block-15" class="fwidget et_pb_widget widget_block">
-								<blockquote style="color: #5b7dfa !important"
-									class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-									<p class="mb-3" style="color: white">C. Fuente del Real, 44, Centro, &#8211; 33209
-										Gijón, Asturias</p>
-									<p class="mb-3" style="color: white">984192167 / 666196777</p>
-									<p style="color: white" style="margin-bottom: -20px;">gestion@deltagijon.es</p>
-							</div>
-							<div id="block-30" class="fwidget et_pb_widget widget_block">
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+		<div class="et_pb_row et_pb_row_10">
+			<div class="et_pb_column et_pb_column_1_2 et_pb_column_14  et_pb_css_mix_blend_mode_passthrough">
+
+
+
+
+				<div
+					class="et_pb_module et_pb_blurb et_pb_blurb_14  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+
+
+					<div class="et_pb_blurb_content">
+						<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span
+							style="color: #5b7dfa !important;" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon">R</span></span>
+						</div>
+						<div class="et_pb_blurb_container">
+							<h4 class="et_pb_module_header"><span>Apúntate</span></h4>
+							<div class="et_pb_blurb_description">
+								<p>Decide cuándo y a cuántas clases quieres venir. No dudes en mejorar tu situación
+									academica, ¡Apuntate!</p>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div
+				class="et_pb_column et_pb_column_1_2 et_pb_column_15  et_pb_css_mix_blend_mode_passthrough et-last-child">
 
 
-				<div id="footer-bottom">
-					<div class="container clearfix">
-						<ul class="et-social-icons">
 
-							<li class="et-social-icon et-social-facebook">
-								<a href="https://www.facebook.com/AcademiaDeltaGijon" class="icon">
-									<span>Facebook</span>
-								</a>
-							</li>
-							<li class="et-social-icon et-social-instagram">
-								<a href="https://www.instagram.com/academia_delta" class="icon">
-									<span>Instagram</span>
-								</a>
-							</li>
 
-							<li class="et-social-icon et-social-yt">
-								<!-- <a href="https://www.youtube.com/@AcademiaDeltaGijon" class="icon top-icon-youtube" style="margin-bottom: -3px;">
+				<div class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+
+
+					<div class="et_pb_text_inner">
+						<h3>Más información y reservas</h3>
+					</div>
+				</div>
+				<div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+
+
+					<div class="et_pb_text_inner">
+						<div class='gf_browser_chrome gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework contact-form_wrapper'
+							data-form-theme='legacy' data-form-index='0' id='gform_wrapper_3'>
+							<div id='gf_3' class='gform_anchor' tabindex='-1'></div>
+							<form method='post' enctype='multipart/form-data' target='gform_ajax_frame_3' id='gform_3'
+								class='contact-form' action='/tu-centro-de-estudios-en-valencia/repaso-escolar/#gf_3'
+								data-formid='3' novalidate>
+								<div class='gform-body gform_body'>
+									<ul id='gform_fields_3'
+										class='gform_fields top_label form_sublabel_below description_below validation_below'>
+										<li id="field_3_9"
+											class="gfield gfield--type-text gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"
+											data-js-reload="field_3_9"><label class='gfield_label gform-field-label'
+												for='input_3_9'>Nombre<span class="gfield_required"><span
+														class="gfield_required gfield_required_asterisk">*</span></span></label>
+											<div class='ginput_container ginput_container_text'><input name='input_9'
+													id='input_3_9' type='text' value='' class='large'
+													placeholder='Nombre' aria-required="true" aria-invalid="false" />
+											</div>
+										</li>
+										<li id="field_3_2"
+											class="gfield gfield--type-email gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"
+											data-js-reload="field_3_2"><label class='gfield_label gform-field-label'
+												for='input_3_2'>Email<span class="gfield_required"><span
+														class="gfield_required gfield_required_asterisk">*</span></span></label>
+											<div class='ginput_container ginput_container_email'>
+												<input name='input_2' id='input_3_2' type='email' value='' class='small'
+													placeholder='Email' aria-required="true" aria-invalid="false" />
+											</div>
+										</li>
+										<li id="field_3_11"
+											class="gfield gfield--type-phone gfield--width-full field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"
+											data-js-reload="field_3_11"><label class='gfield_label gform-field-label'
+												for='input_3_11'>Teléfono</label>
+											<div class='ginput_container ginput_container_phone'><input name='input_11'
+													id='input_3_11' type='tel' value='' class='large'
+													placeholder='Teléfono' aria-invalid="false" /></div>
+										</li>
+										<li id="field_3_10"
+											class="gfield gfield--type-textarea gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"
+											data-js-reload="field_3_10"><label class='gfield_label gform-field-label'
+												for='input_3_10'>Mensaje<span class="gfield_required"><span
+														class="gfield_required gfield_required_asterisk">*</span></span></label>
+											<div class='ginput_container ginput_container_textarea'><textarea
+													name='input_10' id='input_3_10' class='textarea medium'
+													placeholder='Mensaje' aria-required="true" aria-invalid="false"
+													rows='10' cols='50'></textarea></div>
+										</li>
+										<li id="field_3_6"
+											class="gfield gfield--type-hidden gform_hidden field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"
+											data-js-reload="field_3_6">
+											<div class='ginput_container ginput_container_text'><input name='input_6'
+													id='input_3_6' type='hidden' class='gform_hidden'
+													aria-invalid="false" value='Repaso escolar' /></div>
+										</li>
+										<li id="field_3_8"
+											class="gfield gfield--type-consent gfield--type-choice gfield--input-type-consent gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"
+											data-js-reload="field_3_8"><label
+												class='gfield_label gform-field-label gfield_label_before_complex'>Privacidad<span
+													class="gfield_required"><span
+														class="gfield_required gfield_required_asterisk">*</span></span></label>
+											<div class='ginput_container ginput_container_consent'><input
+													name='input_8.1' id='input_3_8_1' type='checkbox' value='1'
+													aria-required="true" aria-invalid="false" /> <label
+													class="gform-field-label gform-field-label--type-inline gfield_consent_label"
+													for='input_3_8_1'>He leído y acepto la <a
+														href="privacidad.html"
+														target="_blank">política de privacidad</a>.<span
+														class="gfield_required gfield_required_asterisk">*</span></label><input
+													type='hidden' name='input_8.2'
+													value='He leído y acepto la &lt;a href=&quot;privacidad.html&quot; target=&quot;_blank&quot;&gt;política de privacidad&lt;/a&gt;.'
+													class='gform_hidden' /><input type='hidden' name='input_8.3'
+													value='3' class='gform_hidden' /></div>
+										</li>
+										<li id="field_3_12"
+											class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible"
+											data-js-reload="field_3_12"><label class='gfield_label gform-field-label'
+												for='input_3_12'>Email</label>
+											<div class='ginput_container'><input name='input_12' id='input_3_12'
+													type='text' value='' autocomplete='new-password' /></div>
+											<div class='gfield_description' id='gfield_description_3_12'>Este campo es
+												un campo de validación y debe quedar sin cambios.</div>
+										</li>
+									</ul>
+								</div>
+								<div class='gform-footer gform_footer top_label'> <input type='submit'
+										id='gform_submit_button_3' class='gform_button button' style="border:none; background-color: #5b7dfa !important;"
+										onclick='gform.submission.handleButtonClick(this);' value='Enviar' /> <input
+										type='hidden' name='gform_ajax'
+										value='form_id=3&amp;title=&amp;description=&amp;tabindex=0&amp;theme=legacy&amp;styles=[]&amp;hash=876896084d396af26f247204b5ac8a2a' />
+									<input type='hidden' class='gform_hidden' name='gform_submission_method'
+										data-js='gform_submission_method_3' value='iframe' />
+									<input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_3'
+										id='gform_theme_3' value='legacy' />
+									<input type='hidden' class='gform_hidden' name='gform_style_settings'
+										data-js='gform_style_settings_3' id='gform_style_settings_3' value='[]' />
+									<input type='hidden' class='gform_hidden' name='is_submit_3' value='1' />
+									<input type='hidden' class='gform_hidden' name='gform_submit' value='3' />
+
+									<input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+									<input type='hidden' class='gform_hidden' name='state_3'
+										value='WyJ7XCI4LjFcIjpcIjZkMjExNWFkZjc0Yjg4NTIxMTI4OTZiMWNiMjc1ODcwXCIsXCI4LjJcIjpcIjgzOTcwOWM5OGRhOTA5MDI2NDQ1OGQwMDI2NjMxMzNiXCIsXCI4LjNcIjpcIjUxYjMwNTc0MGMzOWM1NTNlYzNjZGY0NTI4MjA1MDU4XCJ9IiwiNmM2NmUzNTk4MzJlNTdmNjFjYWQ5OTQ4NjdkNjQ0NjEiXQ==' />
+									<input type='hidden' autocomplete='off' class='gform_hidden'
+										name='gform_target_page_number_3' id='gform_target_page_number_3' value='0' />
+									<input type='hidden' autocomplete='off' class='gform_hidden'
+										name='gform_source_page_number_3' id='gform_source_page_number_3' value='1' />
+									<input type='hidden' name='gform_field_values' value='' />
+
+								</div>
+								<p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_">
+									<label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8"
+											maxlength="100"></textarea></label><input type="hidden" id="ak_js_2"
+										name="ak_js" value="225" />
+									<script>document.getElementById("ak_js_2").setAttribute("value", (new Date()).getTime());</script>
+								</p>
+							</form>
+						</div>
+						<iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_3'
+							id='gform_ajax_frame_3'
+							title='Este iframe contiene la lógica necesaria para gestionar formularios con ajax activado.'></iframe>
+						<script type="text/javascript">
+							/* <![CDATA[ */
+							gform.initializeOnLoaded(function () { gformInitSpinner(3, 'https://academialallibreta.es/wp-content/plugins/gravityforms/images/spinner.svg', true); jQuery('#gform_ajax_frame_3').on('load', function () { var contents = jQuery(this).contents().find('*').html(); var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0; if (!is_postback) { return; } var form_content = jQuery(this).contents().find('#gform_wrapper_3'); var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_3').length > 0; var is_redirect = contents.indexOf('gformRedirect(){') >= 0; var is_form = form_content.length > 0 && !is_redirect && !is_confirmation; var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100; if (is_form) { jQuery('#gform_wrapper_3').html(form_content.html()); if (form_content.hasClass('gform_validation_error')) { jQuery('#gform_wrapper_3').addClass('gform_validation_error'); } else { jQuery('#gform_wrapper_3').removeClass('gform_validation_error'); } setTimeout(function () { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_3').offset().top - mt); }, 50); if (window['gformInitDatepicker']) { gformInitDatepicker(); } if (window['gformInitPriceFields']) { gformInitPriceFields(); } var current_page = jQuery('#gform_source_page_number_3').val(); gformInitSpinner(3, 'https://academialallibreta.es/wp-content/plugins/gravityforms/images/spinner.svg', true); jQuery(document).trigger('gform_page_loaded', [3, current_page]); window['gf_submitting_3'] = false; } else if (!is_redirect) { var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html(); if (!confirmation_content) { confirmation_content = contents; } jQuery('#gform_wrapper_3').replaceWith(confirmation_content); jQuery(document).scrollTop(jQuery('#gf_3').offset().top - mt); jQuery(document).trigger('gform_confirmation_loaded', [3]); window['gf_submitting_3'] = false; wp.a11y.speak(jQuery('#gform_confirmation_message_3').text()); } else { jQuery('#gform_3').append(contents); if (window['gformRedirect']) { gformRedirect(); } } jQuery(document).trigger("gform_pre_post_render", [{ formId: "3", currentPage: "current_page", abort: function () { this.preventDefault(); } }]); if (event && event.defaultPrevented) { return; } const gformWrapperDiv = document.getElementById("gform_wrapper_3"); if (gformWrapperDiv) { const visibilitySpan = document.createElement("span"); visibilitySpan.id = "gform_visibility_test_3"; gformWrapperDiv.insertAdjacentElement("afterend", visibilitySpan); } const visibilityTestDiv = document.getElementById("gform_visibility_test_3"); let postRenderFired = false; function triggerPostRender() { if (postRenderFired) { return; } postRenderFired = true; gform.core.triggerPostRenderEvents(3, current_page); if (visibilityTestDiv) { visibilityTestDiv.parentNode.removeChild(visibilityTestDiv); } } function debounce(func, wait, immediate) { var timeout; return function () { var context = this, args = arguments; var later = function () { timeout = null; if (!immediate) func.apply(context, args); }; var callNow = immediate && !timeout; clearTimeout(timeout); timeout = setTimeout(later, wait); if (callNow) func.apply(context, args); }; } const debouncedTriggerPostRender = debounce(function () { triggerPostRender(); }, 200); if (visibilityTestDiv && visibilityTestDiv.offsetParent === null) { const observer = new MutationObserver((mutations) => { mutations.forEach((mutation) => { if (mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null) { debouncedTriggerPostRender(); observer.disconnect(); } }); }); observer.observe(document.body, { attributes: true, childList: false, subtree: true, attributeFilter: ['style', 'class'], }); } else { triggerPostRender(); } }); });
+							/* ]]&gt; */
+						</script>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+
+	</div>
+	</div>
+	</div>
+	</div>
+
+
+	</article>
+
+
+
+	</div>
+
+
+	<footer id="main-footer">
+		<div class="container">
+			<div id="footer-widgets" class="clearfix">
+				<div class="footer-widget">
+					<div id="block-22" class="fwidget et_pb_widget widget_block">
+						<h4 class="wp-block-heading">ACADEMIA DELTA GIJÓN</h4>
+					</div>
+					<div id="block-21" class="fwidget et_pb_widget widget_block widget_media_image">
+						<figure class="wp-block-image size-large"><a href="" target="_blank"
+								rel=" noreferrer noopener"><img decoding="async" width="1024" height="687"
+									data-src="Images\Logo-Academia.jpg" alt="" class="wp-image-37030 lazyload"
+									data-srcset="Images\Logo-Academia.jpg 1024w, Images\Logo-Academia.jpg 980w, Images\Logo-Academia.jpg 480w"
+									data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1024px, 100vw"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									style="--smush-placeholder-width: 1024px; --smush-placeholder-aspect-ratio: 1024/687;" /></a>
+						</figure>
+					</div>
+				</div>
+				<div class="footer-widget">
+					<div id="block-18" class="fwidget et_pb_widget widget_block">
+						<h4 class="wp-block-heading">Términos legales y formularios</h4>
+					</div>
+					<div id="block-19" class="fwidget et_pb_widget widget_block">
+						<p><a href="privacidad.html">Política de privacidad</a></p>
+						<p><a href="avisolegal.html">Aviso</a></p>
+						<p><a href="cookies.html">Política de cookies</a></p>
+						<p><a href="trabaja.html">Trabaja con nosotros</a></p>
+					</div>
+				</div>
+				<div class="footer-widget">
+					<div id="block-17" class="fwidget et_pb_widget widget_block">
+						<h4 class="wp-block-heading">Contacto</h4>
+					</div>
+					<div id="block-15" class="fwidget et_pb_widget widget_block">
+						<blockquote style="color: #5b7dfa !important"
+							class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+							<p class="mb-3" style="color: white">C. Fuente del Real, 44, Centro, &#8211; 33209 Gijón,
+								Asturias</p>
+							<p class="mb-3" style="color: white">984192167 / 666196777</p>
+							<p style="color: white" style="margin-bottom: -20px;">gestion@deltagijon.es</p>
+					</div>
+					<div id="block-30" class="fwidget et_pb_widget widget_block">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="footer-bottom">
+			<div class="container clearfix">
+				<ul class="et-social-icons">
+
+					<li class="et-social-icon et-social-facebook">
+						<a href="https://www.facebook.com/AcademiaDeltaGijon" class="icon">
+							<span>Facebook</span>
+						</a>
+					</li>
+					<li class="et-social-icon et-social-instagram">
+						<a href="https://www.instagram.com/academia_delta" class="icon">
+							<span>Instagram</span>
+						</a>
+					</li>
+
+					<li class="et-social-icon et-social-yt">
+						<!-- <a href="https://www.youtube.com/@AcademiaDeltaGijon" class="icon top-icon-youtube" style="margin-bottom: -3px;">
 	<span>Youtube</span>
 	</a> -->
-							</li>
+					</li>
 
 
-							<div id="footer-info">Academia Delta Gijón. C. Fuente del Real, 44, Centro, 33209 Gijón,
-								Asturias 984192167 / 666196777 - gestion@deltagijon.es
-								<a href="avisolegal.html" target="_blank">Aviso legal </a>
-							</div>
+					<div id="footer-info">Academia Delta Gijón. C. Fuente del Real, 44, Centro, 33209 Gijón,
+						Asturias 984192167 / 666196777 - gestion@deltagijon.es
+						<a href="avisolegal.html" target="_blank">Aviso legal </a>
 					</div>
-				</div>
-			</footer>
+			</div>
 		</div>
+	</footer>
+	</div>
 
 
 	</div>
 
 	<a id="scroll-to-top" href="#" title="Scroll to Top">Top</a>
+	<script type="application/javascript">
+		(function () {
+			var file = ["https:\/\/academialallibreta.es\/wp-content\/et-cache\/283\/et-divi-dynamic-283-late.css"];
+			var handle = document.getElementById('divi-style-parent-inline-inline-css');
+			var location = handle.parentNode;
+
+			if (0 === document.querySelectorAll('link[href="' + file + '"]').length) {
+				var link = document.createElement('link');
+				link.rel = 'stylesheet';
+				link.id = 'et-dynamic-late-css';
+				link.href = file;
+
+				location.insertBefore(link, handle.nextSibling);
+			}
+		})();
+	</script>
+	<script type="text/javascript">
+		var et_animation_data = [{ "class": "et_pb_row_0", "style": "slide", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_button_1", "style": "bounce", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }];
+	</script>
 
 	<div class="joinchat joinchat--right joinchat--show joinchat--noanim joinchat--btn"
 		data-settings='{"telephone":"34666196777","mobile_only":false,"button_delay":0,"whatsapp_web":true,"qr":true,"message_views":2,"message_delay":-1,"message_badge":false,"message_send":"","message_hash":""}'>
@@ -7119,7 +7100,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		var DIVI = { "item_count": "%d Item", "items_count": "%d Items" };
 		var et_builder_utils_params = { "condition": { "diviTheme": true, "extraTheme": false }, "scrollLocations": ["app", "top"], "builderScrollLocations": { "desktop": "app", "tablet": "app", "phone": "app" }, "onloadScrollLocation": "app", "builderType": "fe" };
 		var et_frontend_scripts = { "builderCssContainerPrefix": "#et-boc", "builderCssLayoutPrefix": "#et-boc .et-l" };
-		var et_pb_custom = { "ajaxurl": "https:\/\/academialallibreta.es\/wp-admin\/admin-ajax.php", "images_uri": "https:\/\/academialallibreta.es\/wp-content\/themes\/Divi\/images", "builder_images_uri": "https:\/\/academialallibreta.es\/wp-content\/themes\/Divi\/includes\/builder\/images", "et_frontend_nonce": "857c51ccfb", "subscription_failed": "Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.", "et_ab_log_nonce": "ddfe49b1f1", "fill_message": "Por favor, rellene los siguientes campos:", "contact_error_message": "Por favor, arregle los siguientes errores:", "invalid": "De correo electr\u00f3nico no v\u00e1lida", "captcha": "Captcha", "prev": "Anterior", "previous": "Anterior", "next": "Siguiente", "wrong_captcha": "Ha introducido un n\u00famero equivocado de captcha.", "wrong_checkbox": "Caja", "ignore_waypoints": "no", "is_divi_theme_used": "1", "widget_search_selector": ".widget_search", "ab_tests": [], "is_ab_testing_active": "", "page_id": "17678", "unique_test_id": "", "ab_bounce_rate": "5", "is_cache_plugin_active": "no", "is_shortcode_tracking": "", "tinymce_uri": "https:\/\/academialallibreta.es\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors", "accent_color": "#5b7dfa !important", "waypoints_options": [] };
+		var et_pb_custom = { "ajaxurl": "https:\/\/academialallibreta.es\/wp-admin\/admin-ajax.php", "images_uri": "https:\/\/academialallibreta.es\/wp-content\/themes\/Divi\/images", "builder_images_uri": "https:\/\/academialallibreta.es\/wp-content\/themes\/Divi\/includes\/builder\/images", "et_frontend_nonce": "25b9cf1336", "subscription_failed": "Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.", "et_ab_log_nonce": "5cf36066dc", "fill_message": "Por favor, rellene los siguientes campos:", "contact_error_message": "Por favor, arregle los siguientes errores:", "invalid": "De correo electr\u00f3nico no v\u00e1lida", "captcha": "Captcha", "prev": "Anterior", "previous": "Anterior", "next": "Siguiente", "wrong_captcha": "Ha introducido un n\u00famero equivocado de captcha.", "wrong_checkbox": "Caja", "ignore_waypoints": "no", "is_divi_theme_used": "1", "widget_search_selector": ".widget_search", "ab_tests": [], "is_ab_testing_active": "", "page_id": "283", "unique_test_id": "", "ab_bounce_rate": "5", "is_cache_plugin_active": "no", "is_shortcode_tracking": "", "tinymce_uri": "https:\/\/academialallibreta.es\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors", "accent_color": "#5b7dfa !important", "waypoints_options": [] };
 		var et_pb_box_shadow_elements = [];
 		/* ]]> */
 	</script>
@@ -7133,6 +7114,46 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		src="https://academialallibreta.es/wp-content/plugins/creame-whatsapp-me/public/js/joinchat.min.js?ver=5.2.3"
 		id="joinchat-js"></script>
 	<script type="text/javascript"
+		src="https://academialallibreta.es/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381"
+		id="wp-dom-ready-js"></script>
+	<script type="text/javascript"
+		src="https://academialallibreta.es/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6"
+		id="wp-hooks-js"></script>
+	<script type="text/javascript"
+		src="https://academialallibreta.es/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
+		id="wp-i18n-js"></script>
+	<script type="text/javascript" id="wp-i18n-js-after">
+		/* <![CDATA[ */
+		wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
+		/* ]]> */
+	</script>
+	<script type="text/javascript" id="wp-a11y-js-translations">
+		/* <![CDATA[ */
+		(function (domain, translations) {
+			var localeData = translations.locale_data[domain] || translations.locale_data.messages;
+			localeData[""].domain = domain;
+			wp.i18n.setLocaleData(localeData, domain);
+		})("default", { "translation-revision-date": "2025-03-22 16:26:39+0000", "generator": "GlotPress\/4.0.1", "domain": "messages", "locale_data": { "messages": { "": { "domain": "messages", "plural-forms": "nplurals=2; plural=n != 1;", "lang": "es" }, "Notifications": ["Avisos"] } }, "comment": { "reference": "wp-includes\/js\/dist\/a11y.js" } });
+		/* ]]> */
+	</script>
+	<script type="text/javascript"
+		src="https://academialallibreta.es/wp-includes/js/dist/a11y.min.js?ver=3156534cc54473497e14"
+		id="wp-a11y-js"></script>
+	<script type="text/javascript" defer='defer'
+		src="https://academialallibreta.es/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.9.5"
+		id="gform_placeholder-js"></script>
+	<script type="text/javascript" defer='defer'
+		src="https://academialallibreta.es/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=989ad253b7e7917a0c0a170dddfff3e5"
+		id="gform_gravityforms_theme_vendors-js"></script>
+	<script type="text/javascript" id="gform_gravityforms_theme-js-extra">
+		/* <![CDATA[ */
+		var gform_theme_config = { "common": { "form": { "honeypot": { "version_hash": "2ee721dd909f722fede0ccffa064af59" }, "ajax": { "ajaxurl": "https:\/\/academialallibreta.es\/wp-admin\/admin-ajax.php", "ajax_submission_nonce": "92c7fe2c57", "i18n": { "step_announcement": "Paso %1$s de %2$s, %3$s", "unknown_error": "Se ha producido un error desconocido al procesar tu solicitud. Por favor, int\u00e9ntalo de nuevo." } } } }, "hmr_dev": "", "public_path": "https:\/\/academialallibreta.es\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/", "config_nonce": "f1d0804fd1" };
+		/* ]]> */
+	</script>
+	<script type="text/javascript" defer='defer'
+		src="https://academialallibreta.es/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=29de0d6110e39c07ef4a83085c09d4f4"
+		id="gform_gravityforms_theme-js"></script>
+	<script type="text/javascript"
 		src="https://academialallibreta.es/wp-content/themes/Divi/core/admin/js/common.js?ver=4.21.0"
 		id="et-core-common-js"></script>
 	<script type="text/javascript"
@@ -7143,6 +7164,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		function rw() { Waypoint.refreshAll(); } window.addEventListener('lazybeforeunveil', rw, false); window.addEventListener('lazyloaded', rw, false);
 		/* ]]> */
 	</script>
+	<script defer type="text/javascript"
+		src="https://academialallibreta.es/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1740676881"
+		id="akismet-frontend-js"></script>
 	<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=default&amp;ver=1.3.13"
 		id="mathjax-js"></script>
@@ -7150,7 +7174,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		id="jquery-effects-core-js"></script>
 	<script type="text/javascript" id="ditty-js-before">
 		/* <![CDATA[ */
-		const dittyVars = { "ajaxurl": "https:\/\/academialallibreta.es\/wp-admin\/admin-ajax.php", "security": "b78c72296e", "mode": "production", "strings": { "add_title": "Add title", "confirm_delete_item": "Are you sure you want to delete this Item? This action cannot be undone.", "confirm_delete_display": "Are you sure you want to delete this Display?", "confirm_delete_layout": "Are you sure you want to delete this Layout?", "layout_css_error": "There is an error in your css.<br\/>Click to close this message." }, "adminStrings": false, "globals": [{ "selector": "", "position": false, "ditty": false, "display": false, "custom_id": false, "custom_classes": false, "live_updates": 0 }], "updateIcon": "fas fa-sync-alt fa-spin", "updateInterval": 600, "googleFonts": true, "dittyDevelopment": false }
+		const dittyVars = { "ajaxurl": "https:\/\/academialallibreta.es\/wp-admin\/admin-ajax.php", "security": "dd20087652", "mode": "production", "strings": { "add_title": "Add title", "confirm_delete_item": "Are you sure you want to delete this Item? This action cannot be undone.", "confirm_delete_display": "Are you sure you want to delete this Display?", "confirm_delete_layout": "Are you sure you want to delete this Layout?", "layout_css_error": "There is an error in your css.<br\/>Click to close this message." }, "adminStrings": false, "globals": [{ "selector": "", "position": false, "ditty": false, "display": false, "custom_id": false, "custom_classes": false, "live_updates": 0 }], "updateIcon": "fas fa-sync-alt fa-spin", "updateInterval": 600, "googleFonts": true, "dittyDevelopment": false }
 		/* ]]> */
 	</script>
 	<script type="text/javascript"
@@ -7164,12 +7188,26 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		id="ditty-display-ticker-js"></script>
 	<!-- <script id="ditty-singles">
 				jQuery( function( $ ) {
-						$( 'div[data-uniqid="ditty-67f0e67a8d62b"]' ).ditty_ticker({"direction":"left","minHeight":"300px","spacing":"20","speed":"8","heightEase":"easeInOutQuint","heightSpeed":"1.5","scrollInit":"empty","scrollDelay":"2","cloneItems":"yes","wrapItems":"yes","hoverPause":"1","titleDisplay":"none","titleContentsSize":"stretch","titleContentsPosition":"start","titleElement":"h3","titleElementPosition":"start","titleElementVerticalPosition":"start","itemElementsWrap":"wrap","paging":"0","perPage":"10","autoplay":"0","transition":"slideLeft","transitionEase":"easeInOutQuint","transitionSpeed":"1","initTransition":"fade","initTransitionEase":"easeInOutQuint","initTransitionSpeed":"1","initHeightEase":"easeInOutQuint","initHeightSpeed":"1","arrows":"style1","arrowsPosition":"center","arrowsIconColor":"#777","arrowsStatic":"","arrowsPadding":{"paddingTop":"","paddingBottom":"","paddingLeft":"","paddingRight":""},"bullets":"style1","bulletsPosition":"bottomCenter","bulletsColor":"#777","bulletsColorActive":"#000","bulletsSpacing":"5px","bulletsPadding":{"paddingTop":"","paddingBottom":"","paddingLeft":"","paddingRight":""},"borderStyle":"none","contentsBorderStyle":"none","pageBorderStyle":"none","itemBorderStyle":"none","orderby":"list","order":"desc","itemMaxWidth":"-1px","shuffle":"","itemTypography":{"fontType":"google","fontFamily":"Handlee","fontSize":"16px","lineHeight":"","letterSpacing":"0px"},"itemTextColor":"","itemLinkColor":"","itemBorderWidth":{"borderTopWidth":"","borderLeftWidth":""},"itemBgColor":"","itemBorderColor":"#5b7dfa !important","id":"36282","uniqid":"ditty-67f0e67a8d62b","title":"New Ditty","status":"publish","display":"36282","items":[{"id":"22","uniq_id":"22","parent_id":"0","timestamp":"1736165994","timestamp_iso":"2025-01-06T12:19:54+00:00","html":"<div class=\"ditty-item ditty-item--22 ditty-item-type--default ditty-layout--22_default\" data-item_id=\"22\" data-item_uniq_id=\"22\" data-parent_id=\"0\" data-item_type=\"default\" data-layout_id=\"22_default\"><div class=\"ditty-item__elements\"><div class=\"ditty-item__content\"><a href=\"https:\/\/academialallibreta.es\/tu-centro-de-estudios-en-valencia\/estudia-en-espana-pce-unedassis\/cursos-expres-pce-2025\/\" class=\"ditty-item__link\" target=\"_self\" rel=\"nofollow\" title=\"\">&#x1f4e2; Curso Expr\u00e9s PCE mayo 2025<\/a><\/div><\/div><\/div>","css":"","layout_id":"22_default","meta":[]},{"id":"16","uniq_id":"16","parent_id":"0","timestamp":"1725614678","timestamp_iso":"2024-09-06T09:24:38+00:00","html":"<div class=\"ditty-item ditty-item--16 ditty-item-type--default ditty-layout--16_default\" data-item_id=\"16\" data-item_uniq_id=\"16\" data-parent_id=\"0\" data-item_type=\"default\" data-layout_id=\"16_default\"><div class=\"ditty-item__elements\"><div class=\"ditty-item__content\"><a href=\"https:\/\/academialallibreta.es\/tu-centro-de-estudios-en-valencia\/pruebas-acceso-universidad\/curso-expres-pau-evau-comunidad-valenciana\/\" class=\"ditty-item__link\" target=\"_self\" rel=\"nofollow\" title=\"\">&#x1f4e2; Curso Expr\u00e9s PAU mayo 2025<\/a><\/div><\/div><\/div>","css":"","layout_id":"16_default","meta":[]},{"id":"9","uniq_id":"9","parent_id":"0","timestamp":"1706554831","timestamp_iso":"2024-01-29T19:00:31+00:00","html":"<div class=\"ditty-item ditty-item--9 ditty-item-type--default ditty-layout--9_default\" data-item_id=\"9\" data-item_uniq_id=\"9\" data-parent_id=\"0\" data-item_type=\"default\" data-layout_id=\"9_default\"><div class=\"ditty-item__elements\"><div class=\"ditty-item__content\"><a href=\"https:\/\/tienda.academialallibreta.es\/\" class=\"ditty-item__link\" target=\"_self\" rel=\"nofollow\" title=\"\">&#x1f525; 2x1 en TODOS los cursos de la tienda &#x1f525; Compra uno y ll\u00e9vate otro GRATIS. \u00a1Solo hasta el 30 de abril!<\/a><\/div><\/div><\/div>","css":"","layout_id":"9_default","meta":[]},{"id":"23","uniq_id":"23","parent_id":"0","timestamp":"1741610655","timestamp_iso":"2025-03-10T12:44:15+00:00","html":"<div class=\"ditty-item ditty-item--23 ditty-item-type--default ditty-layout--23_default\" data-item_id=\"23\" data-item_uniq_id=\"23\" data-parent_id=\"0\" data-item_type=\"default\" data-layout_id=\"23_default\"><div class=\"ditty-item__elements\"><div class=\"ditty-item__content\"><a href=\"https:\/\/tienda.academialallibreta.es\/\" class=\"ditty-item__link\" target=\"_self\" rel=\"nofollow\" title=\"\">Compra nuestros APUNTES &#x1f4dd; y prep\u00e1rate por tu cuenta. Disponibles en nuestra tienda online. <\/a><\/div><\/div><\/div>","css":"","layout_id":"23_default","meta":[]},{"id":"21","uniq_id":"21","parent_id":"0","timestamp":"1732265312","timestamp_iso":"2024-11-22T08:48:32+00:00","html":"<div class=\"ditty-item ditty-item--21 ditty-item-type--default ditty-layout--21_default\" data-item_id=\"21\" data-item_uniq_id=\"21\" data-parent_id=\"0\" data-item_type=\"default\" data-layout_id=\"21_default\"><div class=\"ditty-item__elements\"><div class=\"ditty-item__content\"><a href=\"https:\/\/academialallibreta.es\/tu-centro-de-estudios-en-valencia\/pruebas-acceso-universidad\/aula-virtual-para-la-selectividad-apuntes-y-recursos-para-institutos\/\" class=\"ditty-item__link\" target=\"_self\" rel=\"nofollow\" title=\"\">&#x1f680; \u00a1Aula Virtual para colegios e Institutos! Accede a apuntes, videoclases y ex\u00e1menes resueltos para la PAU y PCE<\/a><\/div><\/div><\/div>","css":"","layout_id":"21_default","meta":[]},{"id":"15","uniq_id":"15","parent_id":"0","timestamp":"1725614678","timestamp_iso":"2024-09-06T09:24:38+00:00","html":"<div class=\"ditty-item ditty-item--15 ditty-item-type--default ditty-layout--15_default\" data-item_id=\"15\" data-item_uniq_id=\"15\" data-parent_id=\"0\" data-item_type=\"default\" data-layout_id=\"15_default\"><div class=\"ditty-item__elements\"><div class=\"ditty-item__content\"><a href=\"https:\/\/academialallibreta.es\/noticias-recientes-selectividad-pau-pce\/\" class=\"ditty-item__link\" target=\"_self\" rel=\"nofollow\" title=\"\">NOVEDAD 2024-2025 &#x1f4e2; suscr\u00edbete a nuestros canales informativos GRATUITOS y mantente informada\/o de las novedades<\/a><\/div><\/div><\/div>","css":"","layout_id":"15_default","meta":[]}]});
+						$( 'div[data-uniqid="ditty-67e991800fcbc"]' ).ditty_ticker({"direction":"left","minHeight":"300px","spacing":"20","speed":"8","heightEase":"easeInOutQuint","heightSpeed":"1.5","scrollInit":"empty","scrollDelay":"2","cloneItems":"yes","wrapItems":"yes","hoverPause":"1","titleDisplay":"none","titleContentsSize":"stretch","titleContentsPosition":"start","titleElement":"h3","titleElementPosition":"start","titleElementVerticalPosition":"start","itemElementsWrap":"wrap","paging":"0","perPage":"10","autoplay":"0","transition":"slideLeft","transitionEase":"easeInOutQuint","transitionSpeed":"1","initTransition":"fade","initTransitionEase":"easeInOutQuint","initTransitionSpeed":"1","initHeightEase":"easeInOutQuint","initHeightSpeed":"1","arrows":"style1","arrowsPosition":"center","arrowsIconColor":"#777","arrowsStatic":"","arrowsPadding":{"paddingTop":"","paddingBottom":"","paddingLeft":"","paddingRight":""},"bullets":"style1","bulletsPosition":"bottomCenter","bulletsColor":"#777","bulletsColorActive":"#000","bulletsSpacing":"5px","bulletsPadding":{"paddingTop":"","paddingBottom":"","paddingLeft":"","paddingRight":""},"borderStyle":"none","contentsBorderStyle":"none","pageBorderStyle":"none","itemBorderStyle":"none","orderby":"list","order":"desc","itemMaxWidth":"-1px","shuffle":"","itemTypography":{"fontType":"google","fontFamily":"Handlee","fontSize":"16px","lineHeight":"","letterSpacing":"0px"},"itemTextColor":"","itemLinkColor":"","itemBorderWidth":{"borderTopWidth":"","borderLeftWidth":""},"itemBgColor":"","itemBorderColor":"#5b7dfa !important","id":"36282","uniqid":"ditty-67e991800fcbc","title":"New Ditty","status":"publish","display":"36282","items":[{"id":"22","uniq_id":"22","parent_id":"0","timestamp":"1736165994","timestamp_iso":"2025-01-06T12:19:54+00:00","html":"<div class=\"ditty-item ditty-item--22 ditty-item-type--default ditty-layout--22_default\" data-item_id=\"22\" data-item_uniq_id=\"22\" data-parent_id=\"0\" data-item_type=\"default\" data-layout_id=\"22_default\"><div class=\"ditty-item__elements\"><div class=\"ditty-item__content\"><a href=\"https:\/\/academialallibreta.es\/tu-centro-de-estudios-en-valencia\/estudia-en-espana-pce-unedassis\/cursos-expres-pce-2025\/\" class=\"ditty-item__link\" target=\"_self\" rel=\"nofollow\" title=\"\">&#x1f4e2; Curso Expr\u00e9s PCE mayo 2025<\/a><\/div><\/div><\/div>","css":"","layout_id":"22_default","meta":[]},{"id":"16","uniq_id":"16","parent_id":"0","timestamp":"1725614678","timestamp_iso":"2024-09-06T09:24:38+00:00","html":"<div class=\"ditty-item ditty-item--16 ditty-item-type--default ditty-layout--16_default\" data-item_id=\"16\" data-item_uniq_id=\"16\" data-parent_id=\"0\" data-item_type=\"default\" data-layout_id=\"16_default\"><div class=\"ditty-item__elements\"><div class=\"ditty-item__content\"><a href=\"https:\/\/academialallibreta.es\/tu-centro-de-estudios-en-valencia\/pruebas-acceso-universidad\/curso-expres-pau-evau-comunidad-valenciana\/\" class=\"ditty-item__link\" target=\"_self\" rel=\"nofollow\" title=\"\">&#x1f4e2; Curso Expr\u00e9s PAU mayo 2025<\/a><\/div><\/div><\/div>","css":"","layout_id":"16_default","meta":[]},{"id":"9","uniq_id":"9","parent_id":"0","timestamp":"1706554831","timestamp_iso":"2024-01-29T19:00:31+00:00","html":"<div class=\"ditty-item ditty-item--9 ditty-item-type--default ditty-layout--9_default\" data-item_id=\"9\" data-item_uniq_id=\"9\" data-parent_id=\"0\" data-item_type=\"default\" data-layout_id=\"9_default\"><div class=\"ditty-item__elements\"><div class=\"ditty-item__content\"><a href=\"https:\/\/tienda.academialallibreta.es\/\" class=\"ditty-item__link\" target=\"_self\" rel=\"nofollow\" title=\"\">Videocursos PAU y PCE al 50% de descuento. \u00a1Solo hasta el 31 de marzo!&#x1f393;&#x1f525;<\/a><\/div><\/div><\/div>","css":"","layout_id":"9_default","meta":[]},{"id":"23","uniq_id":"23","parent_id":"0","timestamp":"1741610655","timestamp_iso":"2025-03-10T12:44:15+00:00","html":"<div class=\"ditty-item ditty-item--23 ditty-item-type--default ditty-layout--23_default\" data-item_id=\"23\" data-item_uniq_id=\"23\" data-parent_id=\"0\" data-item_type=\"default\" data-layout_id=\"23_default\"><div class=\"ditty-item__elements\"><div class=\"ditty-item__content\"><a href=\"https:\/\/tienda.academialallibreta.es\/\" class=\"ditty-item__link\" target=\"_self\" rel=\"nofollow\" title=\"\">Compra nuestros APUNTES &#x1f4dd; y prep\u00e1rate por tu cuenta. Disponibles en nuestra tienda online. <\/a><\/div><\/div><\/div>","css":"","layout_id":"23_default","meta":[]},{"id":"21","uniq_id":"21","parent_id":"0","timestamp":"1732265312","timestamp_iso":"2024-11-22T08:48:32+00:00","html":"<div class=\"ditty-item ditty-item--21 ditty-item-type--default ditty-layout--21_default\" data-item_id=\"21\" data-item_uniq_id=\"21\" data-parent_id=\"0\" data-item_type=\"default\" data-layout_id=\"21_default\"><div class=\"ditty-item__elements\"><div class=\"ditty-item__content\"><a href=\"https:\/\/academialallibreta.es\/tu-centro-de-estudios-en-valencia\/pruebas-acceso-universidad\/aula-virtual-para-la-selectividad-apuntes-y-recursos-para-institutos\/\" class=\"ditty-item__link\" target=\"_self\" rel=\"nofollow\" title=\"\">&#x1f680; \u00a1Aula Virtual para colegios e Institutos! Accede a apuntes, videoclases y ex\u00e1menes resueltos para la PAU y PCE<\/a><\/div><\/div><\/div>","css":"","layout_id":"21_default","meta":[]},{"id":"15","uniq_id":"15","parent_id":"0","timestamp":"1725614678","timestamp_iso":"2024-09-06T09:24:38+00:00","html":"<div class=\"ditty-item ditty-item--15 ditty-item-type--default ditty-layout--15_default\" data-item_id=\"15\" data-item_uniq_id=\"15\" data-parent_id=\"0\" data-item_type=\"default\" data-layout_id=\"15_default\"><div class=\"ditty-item__elements\"><div class=\"ditty-item__content\"><a href=\"https:\/\/academialallibreta.es\/noticias-recientes-selectividad-pau-pce\/\" class=\"ditty-item__link\" target=\"_self\" rel=\"nofollow\" title=\"\">NOVEDAD 2024-2025 &#x1f4e2; suscr\u00edbete a nuestros canales informativos GRATUITOS y mantente informada\/o de las novedades<\/a><\/div><\/div><\/div>","css":"","layout_id":"15_default","meta":[]}]});
 						} );
 			</script> -->
 	<a id="cwc-button" target="_blank" class="cwc-link">
 
-		
+		<div class="cwc-container">
+			<img data-src="https://academialallibreta.es/wp-content/plugins/certificate/assets/warranty.png"
+				width="100px" height="100px"
+				src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload"
+				style="--smush-placeholder-width: 100px; --smush-placeholder-aspect-ratio: 100/100;">
+			<div style="font-size: 12px">Garantía de</div>
+			<div style="margin-top: -6px;font-size: 12px">calidad</div>
+			<div style="margin-top:-8px" class="star-container show">
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</div>
+		</div>
 
 		
 
@@ -7218,6 +7256,42 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		</div>
 
 	</div>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		gform.initializeOnLoaded(function () {
+			jQuery(document).on('gform_post_render', function (event, formId, currentPage) {
+				if (formId == 2) {
+					gf_global["number_formats"][2] = { "1": { "price": false, "value": false }, "2": { "price": false, "value": false }, "3": { "price": false, "value": false }, "6": { "price": false, "value": false }, "7": { "price": "decimal_comma", "value": false }, "8": { "price": false, "value": false }, "9": { "price": false, "value": false } }; if (window["gformInitPriceFields"]) jQuery(document).ready(function () { gformInitPriceFields(); }); if (typeof Placeholders != 'undefined') {
+						Placeholders.enable();
+					}
+				}
+			}); jQuery(document).on('gform_post_conditional_logic', function (event, formId, fields, isInit) { })
+		});
+		/* ]]> */
+	</script>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		gform.initializeOnLoaded(function () { jQuery(document).trigger("gform_pre_post_render", [{ formId: "2", currentPage: "1", abort: function () { this.preventDefault(); } }]); if (event && event.defaultPrevented) { return; } const gformWrapperDiv = document.getElementById("gform_wrapper_2"); if (gformWrapperDiv) { const visibilitySpan = document.createElement("span"); visibilitySpan.id = "gform_visibility_test_2"; gformWrapperDiv.insertAdjacentElement("afterend", visibilitySpan); } const visibilityTestDiv = document.getElementById("gform_visibility_test_2"); let postRenderFired = false; function triggerPostRender() { if (postRenderFired) { return; } postRenderFired = true; gform.core.triggerPostRenderEvents(2, 1); if (visibilityTestDiv) { visibilityTestDiv.parentNode.removeChild(visibilityTestDiv); } } function debounce(func, wait, immediate) { var timeout; return function () { var context = this, args = arguments; var later = function () { timeout = null; if (!immediate) func.apply(context, args); }; var callNow = immediate && !timeout; clearTimeout(timeout); timeout = setTimeout(later, wait); if (callNow) func.apply(context, args); }; } const debouncedTriggerPostRender = debounce(function () { triggerPostRender(); }, 200); if (visibilityTestDiv && visibilityTestDiv.offsetParent === null) { const observer = new MutationObserver((mutations) => { mutations.forEach((mutation) => { if (mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null) { debouncedTriggerPostRender(); observer.disconnect(); } }); }); observer.observe(document.body, { attributes: true, childList: false, subtree: true, attributeFilter: ['style', 'class'], }); } else { triggerPostRender(); } });
+		/* ]]> */
+	</script>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		gform.initializeOnLoaded(function () {
+			jQuery(document).on('gform_post_render', function (event, formId, currentPage) {
+				if (formId == 3) {
+					if (typeof Placeholders != 'undefined') {
+						Placeholders.enable();
+					}
+				}
+			}); jQuery(document).on('gform_post_conditional_logic', function (event, formId, fields, isInit) { })
+		});
+		/* ]]> */
+	</script>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		gform.initializeOnLoaded(function () { jQuery(document).trigger("gform_pre_post_render", [{ formId: "3", currentPage: "1", abort: function () { this.preventDefault(); } }]); if (event && event.defaultPrevented) { return; } const gformWrapperDiv = document.getElementById("gform_wrapper_3"); if (gformWrapperDiv) { const visibilitySpan = document.createElement("span"); visibilitySpan.id = "gform_visibility_test_3"; gformWrapperDiv.insertAdjacentElement("afterend", visibilitySpan); } const visibilityTestDiv = document.getElementById("gform_visibility_test_3"); let postRenderFired = false; function triggerPostRender() { if (postRenderFired) { return; } postRenderFired = true; gform.core.triggerPostRenderEvents(3, 1); if (visibilityTestDiv) { visibilityTestDiv.parentNode.removeChild(visibilityTestDiv); } } function debounce(func, wait, immediate) { var timeout; return function () { var context = this, args = arguments; var later = function () { timeout = null; if (!immediate) func.apply(context, args); }; var callNow = immediate && !timeout; clearTimeout(timeout); timeout = setTimeout(later, wait); if (callNow) func.apply(context, args); }; } const debouncedTriggerPostRender = debounce(function () { triggerPostRender(); }, 200); if (visibilityTestDiv && visibilityTestDiv.offsetParent === null) { const observer = new MutationObserver((mutations) => { mutations.forEach((mutation) => { if (mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null) { debouncedTriggerPostRender(); observer.disconnect(); } }); }); observer.observe(document.body, { attributes: true, childList: false, subtree: true, attributeFilter: ['style', 'class'], }); } else { triggerPostRender(); } });
+		/* ]]> */
+	</script>
 
 	<!-- Cookie Notice plugin v2.5.5 by Hu-manity.co https://hu-manity.co/ -->
 	<div id="cookie-notice" role="dialog" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom"
