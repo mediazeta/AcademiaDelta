@@ -245,6 +245,16 @@
 			margin: 0 0 1em
 		}
 
+		#main-footer .footer-widget h4,
+		#main-footer .widget_block h1,
+		#main-footer .widget_block h2,
+		#main-footer .widget_block h3,
+		#main-footer .widget_block h4,
+		#main-footer .widget_block h5,
+		#main-footer .widget_block h6 {
+			color: #5b7dfa !important
+		}
+
 		:root :where(.wp-block-template-part.has-background) {
 			margin-bottom: 0;
 			margin-top: 0;
@@ -833,7 +843,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			-ms-text-size-adjust: 100%;
 			-webkit-text-size-adjust: 100%;
 			vertical-align: baseline;
-			background: transparent
+			background: transparent;
+			text-align: center;
 		}
 
 		body {
@@ -897,7 +908,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		}
 
 		body {
-			font-family: Open Sans, Arial, sans-serif;
+			font-family: 'Montserrat', Open Sans, Arial, sans-serif !important;
 			font-size: 14px;
 			color: #666;
 			background-color: #fff;
@@ -1700,7 +1711,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			right: 30px;
 			z-index: 999999;
 			text-decoration: none;
-			font-family: Open Sans, sans-serif;
+			font-family: 'Montserrat', Open Sans, sans-serif;
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale
 		}
@@ -2321,7 +2332,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		}
 
 		.et-waypoint:not(.et_pb_counters) {
-			opacity: 0
+			/* opacity: 0; */
+			border-radius: 20px;
+			text-align: center;
 		}
 
 		@media (min-width:981px) {
@@ -7391,11 +7404,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		h4,
 		h5,
 		h6 {
-			font-family: 'Handlee', handwriting
+			font-family: 'Montserrat', Open Sans, handwriting
 		}
 
 		.et_pb_button {
-			font-family: 'Handlee', handwriting
+			font-family: 'Montserrat', Open Sans, handwriting
 		}
 
 		#et-secondary-menu {
@@ -7445,16 +7458,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 		#cn-accept-cookie {
 			background-color: #5b7dfa;
-			font-family: Open Sans, Arial, sans-serif
+			font-family: 'Montserrat', Open Sans, Arial, sans-serif !important;
 		}
 
 		#cn-refuse-cookie {
 			background-color: #5b7dfa;
-			font-family: Open Sans, Arial, sans-serif
+			font-family: 'Montserrat', Open Sans, Arial, sans-serif !important;
 		}
 
 		#cn-notice-text {
-			font-family: Open Sans, Arial, sans-serif
+			font-family: 'Montserrat', Open Sans, Arial, sans-serif !important;
 		}
 
 		#top-header>div {
@@ -7587,14 +7600,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		}
 
 		.et_pb_text_0 {
-			font-family: 'Handlee', handwriting;
+			font-family: 'Montserrat', Open Sans, handwriting;
 			font-weight: 600;
 			font-variant: small-caps;
 			font-size: 20px
 		}
 
 		.et_pb_text_0 h1 {
-			font-family: 'Handlee', handwriting;
+			font-family: 'Montserrat', Open Sans, handwriting;
 			font-weight: 700;
 			font-size: 60px;
 			color: #FFFFFF !important;
@@ -7871,11 +7884,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 												class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
 
 												<div class="et_pb_blurb_content">
-													<div class="et_pb_main_blurb_image"><span
+													<!-- <div class="et_pb_main_blurb_image"><span
 															class="et_pb_image_wrap"><span
 																style="color: #5b7dfa !important;"
 																class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
-													</div>
+													</div> -->
 													<div class="et_pb_blurb_container">
 														<h1 class="et_pb_module_header"><span> La educación es la llave que abre todas las puertas</span></h1>
 
@@ -8043,7 +8056,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 														<div class="et_pb_main_blurb_image"><span
 																class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img
 																	decoding="async" width="1236" height="860"
-																	data-src="Images\Alumnos1.jpg"
+																	data-src="Images/Alumnos1.jpg"
 																	alt="Alumnos en la academia"
 																	data-srcset="Images\Alumnos1.jpg 1236w, Images\Alumnos1.jpg 980w, Images\Alumnos1.jpg 480w"
 																	data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1236px, 100vw"
@@ -8288,7 +8301,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 										<!-- MAPS COORDENADAS  -->
 
-										<div
+										<!-- <div
 											class="et_pb_section et_pb_section_12 et_pb_fullwidth_section et_section_regular">
 											<div class="et_pb_module et_pb_fullwidth_map_0 et_pb_map_container">
 												<div class="et_pb_map" data-center-lat="43.53179796273838"
@@ -8300,7 +8313,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 													<div class="infowindow">Academia Delta Gijón</div>
 												</div>
 											</div>
-
+										</div> -->
+									</div>
 
 											<!-- CONTACTO -->
 											<!-- </div> -->
@@ -8374,112 +8388,51 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 											<!-- FOOTER -->
 
-											<footer id="main-footer">
-												<div class="container">
-													<div id="footer-widgets" class="clearfix">
-														<div class="footer-widget">
-															<div id="block-22"
-																class="fwidget et_pb_widget widget_block">
-																<h4 class="wp-block-heading">ACADEMIA DELTA GIJÓN</h4>
-															</div>
-															<div id="block-21"
-																class="fwidget et_pb_widget widget_block widget_media_image">
-																<figure class="wp-block-image size-large"><a href=""
-																		target="_blank" rel=" noreferrer noopener"><img
-																			decoding="async" width="1024" height="687"
-																			data-src="Images\Logo-Academia.jpg" alt=""
-																			class="wp-image-37030 lazyload"
-																			data-srcset="Images\Logo-Academia.jpg 1024w, Images\Logo-Academia.jpg 980w, Images\Logo-Academia.jpg 480w"
-																			data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1024px, 100vw"
-																			src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-																			style="--smush-placeholder-width: 1024px; --smush-placeholder-aspect-ratio: 1024/687;" /></a>
-																</figure>
-<!-- <h6 class="wp-block-heading" style="color: white">Horario: </h6>
-																<h6 class="wp-block-heading" style="color: white">Mañanas de 11:00-13:00, Tardes de 15:30 a 20:30</h6> -->
-															</div>
-														</div>
-														<div class="footer-widget">
-															<div id="block-18"
-																class="fwidget et_pb_widget widget_block">
-																<h4 class="wp-block-heading">Términos legales y
-																	formularios</h4>
-															</div>
-															<div id="block-19" class="fwidget et_pb_widget widget_block">
-						<p><a href="privacidad.html">Política de privacidad</a></p>
-						<p><a href="avisolegal.html">Aviso</a></p>
-						<p><a href="cookies.html">Política de cookies</a></p>
-						<p><a href="trabaja.html">Trabaja con nosotros</a></p>
-						<p><a href="https://www.google.com/search?q=academia+delta+gijon&rlz=1C1UEAD_esES1077ES1077&oq=&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg8MgYIARBFGDwyBggCEEUYOzIGCAMQRRg5MggIBBBFGCcYOzIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDI2MzFqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#vhid=/g/1tpc97t2&vssid=lcl">Déjanos una reseña</a></p>
-					</div>
-														</div>
-														<div class="footer-widget">
-															<div id="block-17"
-																class="fwidget et_pb_widget widget_block">
-																<h4 class="wp-block-heading">Contacto</h4>
-															</div>
-															<div id="block-15"
-																class="fwidget et_pb_widget widget_block">
-																<blockquote style="color: #5b7dfa !important"
-																	class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-																	<p class="mb-3" style="color: white">C. Fuente del
-																		Real, 44, Centro, &#8211; 33209 Gijón,
-																		Asturias</p>
-																	<p class="mb-3" style="color: white">984192167 /
-																		666196777</p>
-																	<p style="color: white"
-																		style="margin-bottom: -20px;">
-																		gestion@deltagijon.es</p>
-															</div>
-															<div id="block-30"
-																class="fwidget et_pb_widget widget_block">
-															</div>
-														</div>
-													</div>
+											<footer id="main-footer" style="background-color: #1c1c1c; color: #f0f0f0; padding: 60px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px;">
+												<div class="container" style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+												  
+												  <!-- Columna 1 -->
+												  <div class="footer-widget" style="flex: 1 1 300px;">
+													<h4 style="color: #ffffff; margin-bottom: 16px;">ACADEMIA DELTA GIJÓN</h4>
+													<a href="#" target="_blank" rel="noopener noreferrer">
+													  <img src="Images/Logo-Academia.jpg" alt="Logo Academia Delta" style="max-width: 200px; height: auto; border-radius: 6px;">
+													</a>
+												  </div>
+											  
+												  <!-- Columna 2 -->
+												  <div class="footer-widget" style="flex: 1 1 200px;">
+													<h4 style="color: #ffffff; margin-bottom: 16px;">Términos legales</h4>
+													<p><a href="privacidad.html" style="color: #5b7dfa; text-decoration: none;">Política de privacidad</a></p>
+													<p><a href="avisolegal.html" style="color: #5b7dfa; text-decoration: none;">Aviso legal</a></p>
+													<p><a href="cookies.html" style="color: #5b7dfa; text-decoration: none;">Política de cookies</a></p>
+													<p><a href="trabaja.html" style="color: #5b7dfa; text-decoration: none;">Trabaja con nosotros</a></p>
+													<p><a href="https://www.google.com/search?q=academia+delta+gijon" style="color: #5b7dfa; text-decoration: none;">Déjanos una reseña</a></p>
+												  </div>
+											  
+												  <!-- Columna 3 -->
+												  <div class="footer-widget" style="flex: 1 1 200px;">
+													<h4 style="color: #ffffff; margin-bottom: 16px;">Contacto</h4>
+													<p style="margin-bottom: 8px;">C. Fuente del Real, 44, Centro<br>33209 Gijón, Asturias</p>
+													<p style="margin-bottom: 8px;">984 192 167 / 666 196 777</p>
+													<p style="margin-bottom: 8px;">gestion@deltagijon.es</p>
+												  </div>
+											  
+												  <!-- Columna 4 - Redes -->
+												  <div class="footer-widget" style="flex: 1 1 200px;">
+													<h4 style="color: #ffffff; margin-bottom: 16px;">Síguenos</h4>
+													<p><a href="https://www.facebook.com/AcademiaDeltaGijon" style="color: #5b7dfa; text-decoration: none;">Facebook</a></p>
+													<p><a href="https://www.instagram.com/academia_delta" style="color: #5b7dfa; text-decoration: none;">Instagram</a></p>
+													<p><a href="https://www.youtube.com/@AcademiaDeltaGijon/" style="color: #5b7dfa; text-decoration: none;">YouTube</a></p>
+												  </div>
+											  
 												</div>
-
-
-												<div id="footer-bottom">
-													<div class="container clearfix">
-														<ul class="et-social-icons">
-
-															<li class="et-social-icon et-social-facebook">
-																<a href="https://www.facebook.com/AcademiaDeltaGijon"
-																	class="icon">
-																	<span>Facebook</span>
-																</a>
-															</li>
-															<li class="et-social-icon et-social-instagram">
-																<a href="https://www.instagram.com/academia_delta"
-																	class="icon">
-																	<span>Instagram</span>
-																</a>
-															</li>
-															<li class="et-social-icon et-social-youtube">
-																<a href="https://www.youtube.com/@AcademiaDeltaGijon/"
-																	class="icon">
-																	<span>Youtube</span>
-																</a>
-															</li>
-
-															<li class="et-social-icon et-social-yt">
-																<!-- <a href="https://www.youtube.com/@AcademiaDeltaGijon" class="icon top-icon-youtube" style="margin-bottom: -3px;">
-								<span>Youtube</span>
-								</a> -->
-															</li>
-															
-
-										
-
-
-										<div id="footer-info">Academia Delta Gijón. C. Fuente del
-											Real, 44, Centro, 33209 Gijón,
-											Asturias 984192167 / 666196777 - gestion@deltagijon.es
-											<a href="avisolegal.html" target="_blank">Aviso legal
-											</a>
-										</div>
-									</div>
-								</div>
-								</footer>
+											  
+												<!-- Línea inferior -->
+												<div style="border-top: 1px solid #333; margin-top: 40px; padding-top: 20px; text-align: center; font-size: 13px; color: #999;">
+												  <p>© 2025 Academia Delta Gijón. Todos los derechos reservados. | <a href="avisolegal.html" target="_blank" style="color: #5b7dfa; text-decoration: underline;">Aviso legal</a></p>
+												</div>
+											  </footer>
+											  
 							</div>
 
 
