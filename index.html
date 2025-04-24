@@ -739,6 +739,52 @@
 			line-height: 1.6;
 		}
 	</style>
+
+<style>
+    .reseñas {
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+    .reseñas h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+    .grid-reseñas {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card-reseña {
+      position: relative;            /* para posicionar el logo */
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card-reseña h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+    }
+    .estrellas {
+      color: #f5c518;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .card-reseña p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    .logo-google {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      width: 24px;
+      height: auto;
+      opacity: 0.8;
+    }
+  </style>
+
 	<link rel='stylesheet' id='wpml-blocks-css'
 		href='wp-content/plugins/sitepress-multilingual-cms/dist/css/blocks/styles.css?ver=4.6.15' type='text/css'
 		media='all' />
@@ -8385,6 +8431,73 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 				</article>
 			</div> -->
+
+
+
+						<section class="reseñas">
+							<h2>Lo que dicen nuestros clientes</h2>
+							<div class="grid-reseñas">
+						
+							<!-- Tarjeta de reseña 1 -->
+							<div class="card-reseña">
+								<img 
+								src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
+								alt="Logo de Google" 
+								class="logo-google"
+								/>
+								<h3>Javier Sánchez</h3>
+								<div class="estrellas">★★★★★</div>
+								<p>Una academia muy buena, con trato personal perfecto y en el caso de mi hija, con resultados académicos muy buenos. Muy aconsejable en todos los aspectos.</p>
+							</div>
+						
+							<!-- Tarjeta de reseña 2 -->
+							<div class="card-reseña">
+								<img 
+								src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
+								alt="Logo de Google" 
+								class="logo-google"
+								/>
+								<h3>Mireya Barrial Gallego</h3>
+								<div class="estrellas">★★★★★</div>
+								<p>Flor y todo su equipo son encantadores, siempre me ayudan con todo, llevo 9 años con ellos y mis notas han mejorado notablemente. Gracias por todo!!</p>
+							</div>
+
+							<div class="card-reseña">
+								<img 
+								src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
+								alt="Logo de Google" 
+								class="logo-google"
+								/>
+								<h3>Paula M.g</h3>
+								<div class="estrellas">★★★★★</div>
+								<p>Mi hijo cursó este año segundo de Bachiller y fue a la academia a reforzar matemáticas, lengua e inglés. Tienen un equipo muy competente que explica y prepara las asignaturas de cara a la Ebau. Estamos muy satisfechos y recomendamos esta academia 100%.</p>
+							</div>
+
+							<div class="card-reseña">
+								<img 
+								src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
+								alt="Logo de Google" 
+								class="logo-google"
+								/>
+								<h3>Vania Fidalgo</h3>
+								<div class="estrellas">★★★★★</div>
+								<p>La academia ayuda mucho, tienen muchos ejercicios y siempre estan dispuesyos a darte más. Flor es una persona excelente, siempre pendiente de todos y ayudando en todo lo posible.</p>
+							</div>
+
+							<div class="card-reseña">
+								<img 
+								src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
+								alt="Logo de Google" 
+								class="logo-google"
+								/>
+								<h3>Paula Corrales Cortina</h3>
+								<div class="estrellas">★★★★★</div>
+								<p>Llevamos en esta academia unos años, y gracias a Flor y al resto de profesores pudimos sacar adelante las asignaturas que más nos costaban. Sobre todo en segundo de bachiller, ya que empezamos a tener más confianza gracias a estas clases y a los profes preocupándose por nosotros.</p>
+							</div>
+						
+							</div>
+						</section>
+							
 
 											<!-- FOOTER -->
 
