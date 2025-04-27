@@ -740,50 +740,6 @@
 		}
 	</style>
 
-<style>
-    .reseñas {
-      padding: 2rem;
-      background: #f9f9f9;
-    }
-    .reseñas h2 {
-      text-align: center;
-      margin-bottom: 1.5rem;
-      font-size: 2rem;
-    }
-    .grid-reseñas {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-    .card-reseña {
-      position: relative;            /* para posicionar el logo */
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .card-reseña h3 {
-      margin: 0 0 0.5rem;
-      font-size: 1.1rem;
-    }
-    .estrellas {
-      color: #f5c518;
-      margin-bottom: 0.5rem;
-      font-size: 1rem;
-    }
-    .card-reseña p {
-      font-size: 0.95rem;
-      line-height: 1.4;
-    }
-    .logo-google {
-      position: absolute;
-      top: 0.5rem;
-      right: 0.5rem;
-      width: 24px;
-      height: auto;
-      opacity: 0.8;
-    }
-  </style>
 
 	<link rel='stylesheet' id='wpml-blocks-css'
 		href='wp-content/plugins/sitepress-multilingual-cms/dist/css/blocks/styles.css?ver=4.6.15' type='text/css'
@@ -8434,82 +8390,133 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 
-						<section class="reseñas">
-							<h2>Lo que dicen nuestros clientes</h2>
-							<div class="grid-reseñas">
-						
-							<!-- Tarjeta de reseña 1 -->
-							<div class="card-reseña">
-								<img 
-								src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
-								alt="Logo de Google" 
-								class="logo-google"
-								/>
-								<h3>Javier Sánchez</h3>
-								<div class="estrellas">★★★★★</div>
-								<p>Una academia muy buena, con trato personal perfecto y en el caso de mi hija, con resultados académicos muy buenos. Muy aconsejable en todos los aspectos.</p>
-							</div>
-						
-							<!-- Tarjeta de reseña 2 -->
-							<div class="card-reseña">
-								<img 
-								src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
-								alt="Logo de Google" 
-								class="logo-google"
-								/>
-								<h3>Mireya Barrial Gallego</h3>
-								<div class="estrellas">★★★★★</div>
-								<p>Flor y todo su equipo son encantadores, siempre me ayudan con todo, llevo 9 años con ellos y mis notas han mejorado notablemente. Gracias por todo!!</p>
-							</div>
-
-							<div class="card-reseña">
-								<img 
-								src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
-								alt="Logo de Google" 
-								class="logo-google"
-								/>
-								<h3>Paula M.g</h3>
-								<div class="estrellas">★★★★★</div>
-								<p>Mi hijo cursó este año segundo de Bachiller y fue a la academia a reforzar matemáticas, lengua e inglés. Tienen un equipo muy competente que explica y prepara las asignaturas de cara a la Ebau. Estamos muy satisfechos y recomendamos esta academia 100%.</p>
-							</div>
-
-							<div class="card-reseña">
-								<img 
-								src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
-								alt="Logo de Google" 
-								class="logo-google"
-								/>
-								<h3>Vania Fidalgo</h3>
-								<div class="estrellas">★★★★★</div>
-								<p>La academia ayuda mucho, tienen muchos ejercicios y siempre estan dispuesyos a darte más. Flor es una persona excelente, siempre pendiente de todos y ayudando en todo lo posible.</p>
-							</div>
-
-							<div class="card-reseña">
-								<img 
-								src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
-								alt="Logo de Google" 
-								class="logo-google"
-								/>
-								<h3>Paula Corrales Cortina</h3>
-								<div class="estrellas">★★★★★</div>
-								<p>Llevamos en esta academia unos años, y gracias a Flor y al resto de profesores pudimos sacar adelante las asignaturas que más nos costaban. Sobre todo en segundo de bachiller, ya que empezamos a tener más confianza gracias a estas clases y a los profes preocupándose por nosotros.</p>
-							</div>
-
-							<!-- Tarjeta de reseña 6 -->
-							<div class="card-reseña">
-								<img 
-								src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
-								alt="Logo de Google" 
-								class="logo-google"
-								/>
-								<h3>Almudena Gallego Braña</h3>
-								<div class="estrellas">★★★★★</div>
-								<p>Un equipo de profesionales....desde que mi hija acude está mucho más segura y tranquila para enfrentarse a lo exámenes y ha mejorado notablemente. Siempre en contacto directo con Flor....que le soluciona en cualquier momento cualquier duda que le surja.....y por supuesto el resto del equipo también estupendo. Recomiendo está academia al 100% sin ninguna duda.</p>
-							</div>
-						
-						
-							</div>
-						</section>
+			<section class="reseñas">
+				<h2>Lo que dicen nuestros clientes</h2>
+				<div class="carousel">
+				  <div class="carousel-track">
+					<!-- Tarjetas originales -->
+					<div class="card-reseña">
+					  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Logo de Google" class="logo-google"/>
+					  <h3>Javier Sánchez</h3>
+					  <div class="estrellas">★★★★★</div>
+					  <p>Una academia muy buena, con trato personal perfecto y en el caso de mi hija, con resultados académicos muy buenos. Muy aconsejable en todos los aspectos.</p>
+					</div>
+					<div class="card-reseña">
+					  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Logo de Google" class="logo-google"/>
+					  <h3>Mireya Barrial Gallego</h3>
+					  <div class="estrellas">★★★★★</div>
+					  <p>Flor y todo su equipo son encantadores, siempre me ayudan con todo, llevo 9 años con ellos y mis notas han mejorado notablemente. Gracias por todo!!</p>
+					</div>
+					<div class="card-reseña">
+					  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Logo de Google" class="logo-google"/>
+					  <h3>Paula M.g</h3>
+					  <div class="estrellas">★★★★★</div>
+					  <p>Mi hijo cursó este año segundo de Bachiller y fue a la academia a reforzar matemáticas, lengua e inglés. Tienen un equipo muy competente que explica y prepara las asignaturas de cara a la Ebau. Estamos muy satisfechos y recomendamos esta academia 100%.</p>
+					</div>
+					<div class="card-reseña">
+					  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Logo de Google" class="logo-google"/>
+					  <h3>Vania Fidalgo</h3>
+					  <div class="estrellas">★★★★★</div>
+					  <p>La academia ayuda mucho, tienen muchos ejercicios y siempre están dispuestos a darte más. Flor es una persona excelente, siempre pendiente de todos y ayudando en todo lo posible.</p>
+					</div>
+					<div class="card-reseña">
+					  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Logo de Google" class="logo-google"/>
+					  <h3>Paula Corrales Cortina</h3>
+					  <div class="estrellas">★★★★★</div>
+					  <p>Llevamos en esta academia unos años, y gracias a Flor y al resto de profesores pudimos sacar adelante las asignaturas que más nos costaban. Sobre todo en segundo de bachiller, ya que empezamos a tener más confianza gracias a estas clases y a los profes preocupándose por nosotros.</p>
+					</div>
+					<div class="card-reseña">
+					  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Logo de Google" class="logo-google"/>
+					  <h3>Almudena Gallego Braña</h3>
+					  <div class="estrellas">★★★★★</div>
+					  <p>Un equipo de profesionales... desde que mi hija acude está mucho más segura y tranquila para enfrentarse a los exámenes y ha mejorado notablemente. Siempre en contacto directo con Flor... que le soluciona en cualquier momento cualquier duda que le surja... y por supuesto el resto del equipo también estupendo. Recomiendo esta academia al 100% sin ninguna duda.</p>
+					</div>
+					<!-- FIN tarjetas originales -->
+				  </div>
+				</div>
+			  </section>
+			  
+			  <style>
+				.reseñas {
+				  padding: 2rem;
+				  background: #f9f9f9;
+				}
+				.reseñas h2 {
+				  text-align: center;
+				  margin-bottom: 1.5rem;
+				  font-size: 2rem;
+				}
+			  
+				.carousel {
+				  overflow: hidden;
+				  position: relative;
+				}
+				.carousel-track {
+				  display: flex;
+				  gap: 2rem;            /* más espacio entre tarjetas */
+				  padding-bottom: 1rem;
+				  /* ocultar scrollbar en Chrome/Safari/Edge */
+				  -ms-overflow-style: none;
+				  scrollbar-width: none;
+				}
+				.carousel-track::-webkit-scrollbar {
+				  display: none;
+				}
+			  
+				.card-reseña {
+				  flex: 0 0 250px;      /* ancho fijo */
+				  position: relative;
+				  background: white;
+				  padding: 1rem;
+				  border-radius: 8px;
+				  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+				  box-sizing: border-box;
+				}
+				.card-reseña h3 {
+				  margin: 0 0 0.5rem;
+				  font-size: 1.1rem;
+				}
+				.estrellas {
+				  color: #f5c518;
+				  margin-bottom: 0.5rem;
+				  font-size: 1rem;
+				}
+				.card-reseña p {
+				  font-size: 0.95rem;
+				  line-height: 1.4;
+				}
+				.logo-google {
+				  position: absolute;
+				  top: 0.5rem;
+				  right: 0.5rem;
+				  width: 24px;
+				  opacity: 0.8;
+				}
+			  </style>
+			  
+			  <script>
+				document.addEventListener('DOMContentLoaded', () => {
+				  const carousel = document.querySelector('.carousel');
+				  const track    = carousel.querySelector('.carousel-track');
+			  
+				  // duplicamos contenido para loop infinito
+				  track.innerHTML += track.innerHTML;
+				  const halfWidth = track.scrollWidth / 2;
+				  let pos = 0;
+			  
+				  // velocidad en px por frame (ej. 0.3 es más lento)
+				  const speed = 0.4;
+			  
+				  function loopScroll() {
+					pos += speed;                // antes era pos++
+					if (pos >= halfWidth) pos = 0;
+					carousel.scrollLeft = pos;
+					requestAnimationFrame(loopScroll);
+				  }
+			  
+				  loopScroll();
+				});
+			  </script>
 							
 
 											<!-- FOOTER -->
