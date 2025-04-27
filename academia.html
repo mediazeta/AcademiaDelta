@@ -5907,8 +5907,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			}
 		}
 
-		div.et_pb_section.et_pb_section_0 {
-			background-image: url(/Images/Entrada1.jpg) !important
+		/* 1) Sobre-escribe por completo la imagen de fondo */
+		.et_pb_section.et_pb_section_0.et_pb_with_background {
+		background: url('/Images/Entrada1.jpg') no-repeat center center / cover !important;
+		}
+
+		/* 2) Anula el ::before que Divi inyecta */
+		.et_pb_section.et_pb_section_0.et_pb_with_background::before {
+		background: none !important;
 		}
 
 		.et_pb_section_0.et_pb_section {
