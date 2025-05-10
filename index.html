@@ -7798,6 +7798,21 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 						transform: translateX(-100%);
 					  }
 					}
+
+					@media only screen and (max-width: 767px) {
+						/* 1) Apila los bloques de #et-info verticalmente */
+						#et-info {
+							flex-direction: column;
+							align-items: flex-start; /* si quieres que queden alineados a la izquierda */
+							gap: 10px;               /* ajusta separación en móvil */
+						}
+
+						/* 2) Haz que el carrusel ocupe todo el ancho */
+						#et-info .announcement-carousel {
+							width: 100% !important;
+							margin-top: 0; /* separa si lo necesitas */
+						}
+					}
 				  </style>
 				<div id="et-secondary-menu">
 					<div class="et_duplicate_social_icons">
@@ -8065,18 +8080,45 @@ style="position: relative; overflow: hidden;">
 											</div>
 											<div
 												class="et_pb_column et_pb_column_1_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
-												<div
-													class="et_pb_module et_pb_image et_pb_image_0 et_animated et-waypoint">
-													<span class="et_pb_image_wrap "><img fetchpriority="high"
-															decoding="async" width="8000" height="4500"
-															src="Images\Logo-Academia.jpg"
-															alt="Logo Academia La llibreta"
-															title="Academia Pruebas de Acceso Grado Superior" srcset="Images\Logo-Academia.jpg 8000w, 
-					Images\Logo-Academia.jpg 1280w,
-					Images\Logo-Academia.jpg 980w, 
-					Images\Logo-Academia.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, 
-					 (min-width: 1281px) 8000px, 100vw" class="wp-image-123" /></span>
-												</div>
+												<style>
+  @media only screen and (max-width: 980px) {
+    .et_pb_module.et_pb_image.et_pb_image_0 {
+      display: none !important;
+      visibility: hidden;
+      height: 0;
+      overflow: hidden;
+    }
+  }
+</style>
+
+<div
+  class="et_pb_module et_pb_image et_pb_image_0 et_animated et-waypoint">
+  <span class="et_pb_image_wrap">
+    <img
+      fetchpriority="high"
+      decoding="async"
+      width="8000"
+      height="4500"
+      src="Images/Logo-Academia.jpg"
+      alt="Logo Academia La llibreta"
+      title="Academia Pruebas de Acceso Grado Superior"
+      srcset="
+        Images/Logo-Academia.jpg 8000w,
+        Images/Logo-Academia.jpg 1280w,
+        Images/Logo-Academia.jpg 980w,
+        Images/Logo-Academia.jpg 480w
+      "
+      sizes="
+        (min-width: 0px) and (max-width: 480px) 480px,
+        (min-width: 481px) and (max-width: 980px) 980px,
+        (min-width: 981px) and (max-width: 1280px) 1280px,
+        (min-width: 1281px) 8000px,
+        100vw
+      "
+      class="wp-image-123"
+    />
+  </span>
+</div>
 											</div>
 										</div>
 
