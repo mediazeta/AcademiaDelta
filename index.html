@@ -4453,9 +4453,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		}
 
 		.et_header_style_left .logo_container {
+			padding-right: 1100px;
 			position: absolute;
 			height: 100%;
 			width: 100%
+		}
+
+		@media (max-width: 768px) {
+			.et_header_style_left .logo_container {
+				padding-right: 0 !important;
+			}
 		}
 
 		.et_header_style_left #et-top-navigation .mobile_menu_bar {
@@ -7479,7 +7486,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 		#et-info {
 			padding-top: 0.75em !important;
-			margin-right: 100px
+			/* margin-right: 100px */
 		}
 
 		#top-header>div {
@@ -7714,29 +7721,84 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			<div class="container clearfix">
 				<div id="et-info">
 					<span id="et-info-phone">666 196 777</span>
-					<a href="mailto:gestion@deltagijon.es"><span id="et-info-email">gestion@deltagijon.es</span></a>
+					<a href="mailto:gestion@deltagijon.es">
+					  <span id="et-info-email">gestion@deltagijon.es</span>
+					</a>
 					<ul class="et-social-icons">
-
-						<li class="et-social-icon et-social-facebook">
-							<a href="https://www.facebook.com/AcademiaDeltaGijon/?locale=es_ES" class="icon">
-								<span>Facebook</span>
-							</a>
-						</li>
-						<li class="et-social-icon et-social-instagram">
-							<a href="https://www.instagram.com/academia_delta/" class="icon">
-								<span>Instagram</span>
-							</a>
-						</li>
-						<li class="et-social-icon et-social-youtube">
-							<a href="https://www.youtube.com/@AcademiaDeltaGijon//" class="icon">
-								<span>Youtube</span>
-							</a>
-						</li>
-						<li>
-							<span>Horario: Mañanas de 11:00-13:00, Tardes de 15:30 a 20:30</span>
-						</li>
+					  <li class="et-social-icon et-social-facebook">
+						<a href="https://www.facebook.com/AcademiaDeltaGijon/?locale=es_ES" class="icon">
+						  <span>Facebook</span>
+						</a>
+					  </li>
+					  <li class="et-social-icon et-social-instagram">
+						<a href="https://www.instagram.com/academia_delta/" class="icon">
+						  <span>Instagram</span>
+						</a>
+					  </li>
+					  <li class="et-social-icon et-social-youtube">
+						<a href="https://www.youtube.com/@AcademiaDeltaGijon//" class="icon">
+						  <span>Youtube</span>
+						</a>
+					  </li>
+					  <li>
+						<span>Horario: Mañanas de 11:00-13:00, Tardes de 15:30 a 20:30</span>
+					  </li>
 					</ul>
-				</div>
+				  
+					<!-- CARRUSEL DE ANUNCIOS -->
+					<div class="announcement-carousel">
+					  <ul>
+						<li>📢 Curso Exprés PCE mayo 2025</li>
+						<li>📢 Curso Exprés PAU mayo 2025</li>
+						<li>🔥 2x1 en TODOS los cursos de la tienda 🔥</li>
+						<li>Compra uno y llévate otro GRATIS</li>
+						<!-- Si quieres bucle sin “huecos”, duplica estas líneas aquí -->
+					  </ul>
+					</div>
+				  </div>
+				  
+				  <!-- ESTILOS (ponlo en tu CSS adicional) -->
+				  <style>
+					/* 1) Convertimos et-info en flexbox */
+					#et-info {
+					  display: flex;
+					  align-items: center;
+					  gap: 20px;            /* separación entre bloques */
+					  overflow: hidden;
+					}
+				  
+					/* 2) El carrusel: contenedor fijo y overflow oculto */
+					#et-info .announcement-carousel {
+					  position: relative;
+					  width: 300px;         /* ancho del carrusel: ajústalo */
+					  overflow: hidden;
+					}
+				  
+					/* 3) Lista horizontal con animación */
+					#et-info .announcement-carousel ul {
+					  display: flex;
+					  padding: 0;
+					  margin: 0;
+					  list-style: none;
+					  animation: scroll-news 15s linear infinite;
+					}
+				  
+					#et-info .announcement-carousel li {
+					  flex: none;
+					  margin-right: 50px;   /* espacio entre anuncios */
+					  white-space: nowrap;  /* que no salte de línea */
+					}
+				  
+					/* 4) Keyframes para desplazar de izquierda a derecha */
+					@keyframes scroll-news {
+					  0% {
+						transform: translateX(0);
+					  }
+					  100% {
+						transform: translateX(-100%);
+					  }
+					}
+				  </style>
 				<div id="et-secondary-menu">
 					<div class="et_duplicate_social_icons">
 						<ul class="et-social-icons">
@@ -7815,9 +7877,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36318">
 							<a href="contacto.html" aria-current="page">Contacto</a>
 						</li>
-						<li id="menu-item-2299"
-								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2299"><a
-									href="noticias.html">Noticias</a></li>
+						
 						</ul>
 					</nav>
 					<div id="et_mobile_nav_menu">
@@ -7850,31 +7910,72 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 								<div
 									class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider" style="background-image: url(/Images/Entrada2.jpg) !important";>
 
-									<div class="et_pb_row et_pb_row_0 et_animated et_pb_gutters3">
-										<div
-											class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
-											<div class="et_pb_module et_pb_divider_0 et_pb_space et_pb_divider_hidden">
-												<div class="et_pb_divider_internal"></div>
-											</div>
-											<div
-												class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_center et_pb_bg_layout_dark">
+									<!-- START SECCIÓN CON OVERLAY -->
+<div class="et_pb_row et_pb_row_0 et_animated et_pb_gutters3"
+style="position: relative; overflow: hidden;">
 
-												<div class="et_pb_text_inner">
-													<h1 style="text-align: center;">Academia Delta Gijón</h1>
-													<h2 style="text-align: center;">TE AYUDAMOS A CUMPLIR TUS OBJETIVOS</h2>
-													<p style="text-align: center;">Apostamos por la atención individualizada y de calidad</p>
-												</div>
-											</div>
-											<div class="et_pb_module et_pb_divider_1 et_pb_space et_pb_divider_hidden">
-												<div class="et_pb_divider_internal"></div>
-											</div>
-											<div
-												class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_module ">
-												<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light"
-													href="#cursos">ver cursos</a>
-											</div>
-										</div>
-									</div>
+<!-- Capa oscura semitransparente -->
+<div style="
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+"></div>
+
+<!-- Contenido -->
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_0 et_pb_css_mix_blend_mode_passthrough et-last-child"
+  style="position: relative; z-index: 2;">
+
+<div class="et_pb_module et_pb_divider_0 et_pb_space et_pb_divider_hidden">
+ <div class="et_pb_divider_internal"></div>
+</div>
+
+<div class="et_pb_module et_pb_text et_pb_text_0 et_pb_text_align_center et_pb_bg_layout_dark"
+	style="position: relative; z-index: 2;">
+
+ <div class="et_pb_text_inner">
+   <h1 style="
+		text-align: center;
+		color: #ffffff !important;
+		text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+	  ">
+	 Academia Delta Gijón
+   </h1>
+   <h2 style="
+		text-align: center;
+		color: #ffffff !important;
+		text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+	  ">
+	 TE AYUDAMOS A CUMPLIR TUS OBJETIVOS
+   </h2>
+   <p style="
+		text-align: center;
+		color: #ffffff !important;
+		text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+	  ">
+	 Apostamos por la atención individualizada y de calidad
+   </p>
+ </div>
+</div>
+
+<div class="et_pb_module et_pb_divider_1 et_pb_space et_pb_divider_hidden">
+ <div class="et_pb_divider_internal"></div>
+</div>
+
+<div class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_module"
+	style="position: relative; z-index: 2;">
+ <a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light"
+	href="#cursos"
+	style="color: #fff !important; text-shadow: 1px 1px 4px rgba(0,0,0,0.7);">
+   ver cursos
+ </a>
+</div>
+
+</div>
+</div>
+<!-- END SECCIÓN CON OVERLAY -->
+
 									<div class="et_pb_bottom_inside_divider et-no-transition"></div>
 								</div>
 								<div class="et_pb_section et_pb_section_1 et_section_regular">
