@@ -43,7 +43,8 @@
 	<meta property="og:title" content="Refuerzo escolar" />
 	<meta property="og:description"
 		content="Ofrecemos clases de Refuerzo escolar en grupos reducidos (máximo 6) o particulares. Nuestro principal objetivo es dotarte de autonomía y seguridad para que logres tus metas. Aprender a Aprender es nuestro lema y describe a la perfección nuestra visión." />
-	<meta property="og:url" content="https://academialallibreta.es/tu-centro-de-estudios-en-valencia/Refuerzo-escolar/" />
+	<meta property="og:url"
+		content="https://academialallibreta.es/tu-centro-de-estudios-en-valencia/Refuerzo-escolar/" />
 	<meta property="og:site_name" content="Academia La llibreta" />
 	<meta property="article:publisher" content="https://www.facebook.com/academialallibreta" />
 	<meta property="article:modified_time" content="2025-03-14T11:05:26+00:00" />
@@ -6213,13 +6214,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			}
 		}
 
-		.et_pb_main_blurb_image{
+		.et_pb_main_blurb_image {
 			display: inline-block;
 			margin-bottom: 30px;
 			line-height: 0;
 			max-width: 100%;
 		}
-		
 	</style>
 	<link rel="preload" as="style" id="et-core-unified-deferred-283-cached-inline-styles"
 		href="https://academialallibreta.es/wp-content/et-cache/283/et-core-unified-deferred-283.min.css?ver=1742557041"
@@ -6267,372 +6267,448 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 						</li>
 					</ul>
 				</div>
-				<div id="et-secondary-menu">
-					<div class="et_duplicate_social_icons">
-						<ul class="et-social-icons">
+				<!-- CARRUSEL DE ANUNCIOS -->
+				<div class="announcement-carousel">
+					<ul>
+						<li>📢 Abierto plazo de matrícula para las clases de Refuerzo Verano 2025</li>
+						<li>🔥 En grupo o de forma individual 🔥</li>
+						<li>📢 Aprovecha el verano para reforzar cualquier materia de cara al próximo curso</li>
+					</ul>
+				</div>
+			</div>
 
-							<li class="et-social-icon et-social-facebook">
-								<a style="color:white !important"
-									href="https://www.facebook.com/AcademiaDeltaGijon/?locale=es_ES" class="icon">
-									<span style="color:white !important">Facebook</span>
-								</a>
-							</li>
-							<li class="et-social-icon et-social-instagram">
-								<a style="color:white !important" href="https://www.instagram.com/academiadeltaGijon"
-									class="icon">
-									<span style="color:white !important">Instagram</span>
-								</a>
-							</li>
+			<!-- ESTILOS (ponlo en tu CSS adicional) -->
+			<style>
+				/* 1) Permitir que los hijos de #et-info se envuelvan */
+				#et-info {
+					display: flex;
+					align-items: center;
+					gap: 20px;
+					overflow: hidden;
+					flex-wrap: wrap;
+					/* NUEVO: permite que los items bajen de línea */
+				}
 
-						</ul>
+				/* 2) El carrusel en su propia “fila” */
+				#et-info .announcement-carousel {
+					flex: 1 1 100%;
+					/* ocupa todo el ancho disponible */
+					width: 100%;
+					/* redundante, refuerza 100% */
+				}
 
+				/* (El resto de tus estilos para el carrusel siguen igual) */
+				#et-info .announcement-carousel ul {
+					display: flex;
+					padding: 0;
+					margin: 0;
+					list-style: none;
+					animation: scroll-news 55s linear infinite;
+				}
+
+				#et-info .announcement-carousel li {
+					flex: none;
+					margin-right: 50px;
+					white-space: nowrap;
+				}
+
+				@keyframes scroll-news {
+					0% {
+						transform: translateX(0);
+					}
+
+					100% {
+						transform: translateX(-100%);
+					}
+				}
+
+				@media only screen and (max-width: 767px) {
+					#et-info {
+						flex-direction: column;
+						align-items: flex-start;
+						gap: 10px;
+					}
+
+					#et-info .announcement-carousel {
+						margin-top: 10px;
+					}
+				}
+			</style>
+			<div id="et-secondary-menu">
+				<div class="et_duplicate_social_icons">
+					<ul class="et-social-icons">
+
+						<li class="et-social-icon et-social-facebook">
+							<a style="color:white !important"
+								href="https://www.facebook.com/AcademiaDeltaGijon/?locale=es_ES" class="icon">
+								<span style="color:white !important">Facebook</span>
+							</a>
+						</li>
+						<li class="et-social-icon et-social-instagram">
+							<a style="color:white !important" href="https://www.instagram.com/academiadeltaGijon"
+								class="icon">
+								<span style="color:white !important">Instagram</span>
+							</a>
+						</li>
+
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- CABECERA -->
+	<header id="main-header" data-height-onload="66">
+		<div class="container clearfix et_menu_container">
+			<div class="logo_container">
+				<span class="logo_helper"></span>
+				<a href="https://deltagijon.es/">
+					<img src="Images/Logo-Academia.jpg" width="3992" height="2934" alt="Academia La llibreta" id="logo"
+						data-height-percentage="30" />
+				</a>
+			</div>
+			<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+				<nav id="top-menu-nav">
+					<ul id="top-menu" class="nav">
+						<li id="menu-item-8873"
+							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8873">
+							<a href="index.html">Inicio</a>
+						</li>
+						<li id="menu-item-27113"
+							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27113">
+							<a href="academia.html">La academia</a>
+						</li>
+						<li id="menu-item-8868"
+							class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-has-children menu-item-8868">
+							<a href="#">Las Clases</a>
+							<ul class="sub-menu">
+								<li id="menu-item-27111"
+									class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item menu-item-27111">
+									<a href="primaria.html">Primaria</a>
+								</li>
+								<li id="menu-item-27111"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27111">
+									<a href="esobachiller.html">ESO y bachiller</a>
+								</li>
+								<li id="menu-item-27112"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27112">
+									<a href="pruebas.html">Examen de Pau</a>
+								</li>
+						</li>
+						<li id="menu-item-27113"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27113">
+							<a href="ciclos.html">Pruebas de Acceso</a>
+						</li>
+					</ul>
+					</li>
+					<li id="menu-item-35919"
+						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35919">
+						<a href="recursos.html">Recursos educativos</a>
+					</li>
+					<li id="menu-item-39979"
+						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39979"><a
+							href="trabaja.html">Trabaja con nosotros</a></li>
+					<li id="menu-item-36318"
+						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36318">
+						<a href="contacto.html" aria-current="page">Contacto</a>
+					</li>
+
+					</ul>
+				</nav>
+				<div id="et_mobile_nav_menu">
+					<div class="mobile_nav closed">
+						<span class="select_page">Seleccionar página</span>
+						<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
 					</div>
 				</div>
-
+			</div> <!-- #et-top-navigation -->
+		</div> <!-- .container -->
+		<div class="et_search_outer">
+			<div class="container et_search_form_container">
+				<form role="search" method="get" class="et-search-form" action="https://deltagijon.es/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s"
+						title="Buscar:" /><input type='hidden' name='lang' value='es' />
+				</form>
+				<span class="et_close_search_field"></span>
 			</div>
 		</div>
+	</header> <!-- #main-header -->
+	<div id="et-main-area">
 
-		<!-- CABECERA -->
-		<header id="main-header" data-height-onload="66">
-			<div class="container clearfix et_menu_container">
-				<div class="logo_container">
-					<span class="logo_helper"></span>
-					<a href="https://deltagijon.es/">
-						<img src="Images/Logo-Academia.jpg" width="3992" height="2934" alt="Academia La llibreta"
-							id="logo" data-height-percentage="30" />
-					</a>
-				</div>
-				<div id="et-top-navigation" data-height="66" data-fixed-height="40">
-					<nav id="top-menu-nav">
-						<ul id="top-menu" class="nav">
-							<li id="menu-item-8873"
-								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8873">
-								<a href="index.html">Inicio</a>
-							</li>
-							<li id="menu-item-27113"
-								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27113">
-								<a href="academia.html">La academia</a>
-							</li>
-							<li id="menu-item-8868"
-								class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-has-children menu-item-8868">
-								<a href="#">Las Clases</a>
-								<ul class="sub-menu">
-									<li id="menu-item-27111"
-										class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item menu-item-27111">
-										<a href="primaria.html">Primaria</a>
-									</li>
-									<li id="menu-item-27111"
-										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27111">
-										<a href="esobachiller.html">ESO y bachiller</a>
-									</li>
-									<li id="menu-item-27112"
-										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27112">
-										<a href="pruebas.html">Examen de Pau</a>
-									</li>
-							</li>
-							<li id="menu-item-27113"
-								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27113">
-								<a href="ciclos.html">Pruebas de Acceso</a>
-							</li>
-						</ul>
-						</li>
-						<li id="menu-item-35919"
-							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35919">
-							<a href="recursos.html">Recursos educativos</a>
-						</li>
-						<li id="menu-item-39979"
-							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39979"><a
-								href="trabaja.html">Trabaja con nosotros</a></li>
-						<li id="menu-item-36318"
-							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36318">
-							<a href="contacto.html" aria-current="page">Contacto</a>
-						</li>
-						
-						</ul>
-					</nav>
-					<div id="et_mobile_nav_menu">
-						<div class="mobile_nav closed">
-							<span class="select_page">Seleccionar página</span>
-							<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
-						</div>
-					</div>
-				</div> <!-- #et-top-navigation -->
-			</div> <!-- .container -->
-			<div class="et_search_outer">
-				<div class="container et_search_form_container">
-					<form role="search" method="get" class="et-search-form" action="https://deltagijon.es/">
-						<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s"
-							title="Buscar:" /><input type='hidden' name='lang' value='es' />
-					</form>
-					<span class="et_close_search_field"></span>
-				</div>
-			</div>
-		</header> <!-- #main-header -->
-		<div id="et-main-area">
-
-			<div id="main-content">
+		<div id="main-content">
 
 
 
 
-				<article id="post-283" class="post-283 page type-page status-publish has-post-thumbnail hentry">
+			<article id="post-283" class="post-283 page type-page status-publish has-post-thumbnail hentry">
 
 
-					<div class="entry-content">
-						<div class="et-l et-l--post">
-							<div class="et_builder_inner_content et_pb_gutters3">
-								<div class="ditty ditty--pre" data-id="36282" data-uniqid="ditty-67e991800fcbc"></div>
-								<div style="background-image: url(/Images/Primaria.jpg) !important;"
-									class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider">
+				<div class="entry-content">
+					<div class="et-l et-l--post">
+						<div class="et_builder_inner_content et_pb_gutters3">
+							<div class="ditty ditty--pre" data-id="36282" data-uniqid="ditty-67e991800fcbc"></div>
+							<div style="background-image: url(/Images/Primaria.jpg) !important;"
+								class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider">
 
-									<div class="et_pb_row et_pb_row_0 et_animated et_pb_gutters3">
+								<div class="et_pb_row et_pb_row_0 et_animated et_pb_gutters3">
+									<div
+										class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
 										<div
-											class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+											class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_center et_pb_bg_layout_dark">
 
 
 
 
-											<div
-												class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_center et_pb_bg_layout_dark">
-
-
-
-
-												<div class="et_pb_text_inner">
-													<h1 style="text-align: center;">academia de Refuerzo ESCOLAR</h1>
-													<h2>Clases de refuerzo de Educación Primaria</h2>
-												</div>
-											</div>
-											<div
-												class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_module ">
-												<!-- <a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="#PRECIOS">PRECIOS Y HORARIOS</a> -->
-											</div>
-											<div
-												class="et_pb_button_module_wrapper et_pb_button_1_wrapper et_pb_button_alignment_center et_pb_module ">
-												<a class="et_pb_button et_pb_button_1 et_animated et_pb_bg_layout_light"
-													href="#contacto">¡Me apunto!</a>
+											<div class="et_pb_text_inner">
+												<h1 style="text-align: center;">academia de Refuerzo ESCOLAR</h1>
+												<h2>Clases de refuerzo de Educación Primaria</h2>
 											</div>
 										</div>
-
-
-
-
-									</div>
-
-									<div class="et_pb_bottom_inside_divider et-no-transition"></div>
-								</div>
-								<div class="et_pb_section et_pb_section_1 et_section_regular">
-
-
-
-
-
-
-									<div class="et_pb_row et_pb_row_1 et_pb_gutters3">
 										<div
-											class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
-
-
-
-
-											<div
-												class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
-
-
-
-
-												<div class="et_pb_blurb_content">
-													<div class="et_pb_main_blurb_image"><span
-															class="et_pb_image_wrap"><span
-																style="color: #5b7dfa !important;"
-																class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
-													</div>
-													<div class="et_pb_blurb_container">
-														<h4 class="et_pb_module_header"><span>MÁS DE 25 AÑOS DE EXPERIENCIA </span></h4>
-
-													</div>
-												</div>
-											</div>
+											class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_module ">
+											<!-- <a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="#PRECIOS">PRECIOS Y HORARIOS</a> -->
 										</div>
-
-
-
-
-									</div>
-									<div class="et_pb_row et_pb_row_2 et_pb_gutters3">
 										<div
-											class="et_pb_column et_pb_column_4_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
-
-
-
-
-											<div
-												class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
-
-
-
-
-												<div class="et_pb_text_inner">
-													<p style="text-align: justify;">En Academia Delta Gijón acompañamos
-														a cada estudiante en su proceso de aprendizaje, actuando como
-														impulsores de su desarrollo académico y personal. Nuestro
-														propósito es ayudarte a ganar confianza y autonomía para que
-														puedas alcanzar tus objetivos con solidez. Aquí no solo
-														aprenderás contenidos, sino que desarrollarás habilidades para
-														pensar de forma crítica, resolver problemas con lógica y
-														comprender en profundidad cada materia desde una perspectiva
-														global y práctica.</p>
-												</div>
-											</div>
-											<div
-												class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
-
-
-
-
-												<div class="et_pb_text_inner">
-													<div
-														class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
-														<div class="et_pb_text_inner">
-															<h4 style="color: #5b7dfa !important;">¿Por qué Delta?</h4>
-															<ol>
-																<li>Nuestro equipo de profesores está formado por
-																	profesionales apasionados por la enseñanza, con
-																	experiencia y vocación, que acompañan a cada
-																	estudiante en su camino académico y personal.</li>
-																<li>Nos enfocamos en las necesidades individuales de
-																	cada alumno, brindando un acompañamiento cercano que
-																	permite potenciar sus fortalezas y reforzar las
-																	áreas que requieren mayor apoyo.</li>
-																<li>Trabajarás con tu propio material, pero si lo vemos
-																	conveniente te daremos fichas propias con
-																	<strong>resúmenes</strong> y
-																	<strong>esquemas</strong> para ayudarte a estudiar.
-																</li>
-																<li>Fomentamos la <strong>autonomía</strong> y la
-																	<strong>confianza. </strong>Asegurandonos de que
-																	cada alumno sea capaz de conseguir la meta que se
-																	proponga
-																</li>
-																<li><strong>Transmitimos nuestra pasión por el
-																		aprendizaje.</strong> Cuando se entienden las
-																	cosas, ¡Todo es mucho mas sencillo!</li>
-															</ol>
-														</div>
-													</div>
-												</div>
-											</div>
+											class="et_pb_button_module_wrapper et_pb_button_1_wrapper et_pb_button_alignment_center et_pb_module ">
+											<a class="et_pb_button et_pb_button_1 et_animated et_pb_bg_layout_light"
+												href="#contacto">¡Me apunto!</a>
 										</div>
-
-
-
-
 									</div>
+
+
 
 
 								</div>
-								<div
-									class="et_pb_with_border et_pb_section et_pb_section_2 et_pb_with_background et_section_regular">
+
+								<div class="et_pb_bottom_inside_divider et-no-transition"></div>
+							</div>
+							<div class="et_pb_section et_pb_section_1 et_section_regular">
 
 
 
 
 
 
-									<div class="et_pb_row et_pb_row_3">
+								<div class="et_pb_row et_pb_row_1 et_pb_gutters3">
+									<div
+										class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
 										<div
-											class="et_pb_column et_pb_column_4_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
+											class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
 
 
 
 
-											<div
-												class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
+											<div class="et_pb_blurb_content">
+												<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span
+															style="color: #5b7dfa !important;"
+															class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
+												</div>
+												<div class="et_pb_blurb_container">
+													<h4 class="et_pb_module_header"><span>MÁS DE 25 AÑOS DE EXPERIENCIA
+														</span></h4>
 
-
-
-
-												<div class="et_pb_blurb_content">
-													<div class="et_pb_main_blurb_image"><span
-															class="et_pb_image_wrap"><span
-																style="color: #5b7dfa !important;"
-																class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
-													</div>
-													<div class="et_pb_blurb_container">
-														<h4 style="color: #5b7dfa !important;"
-															class="et_pb_module_header"><span>¿CÓMO TRABAJAMOS?</span>
-														</h4>
-
-													</div>
 												</div>
 											</div>
 										</div>
-
-
-
-
 									</div>
-									<div class="et_pb_row et_pb_row_3 et_pb_gutters3">
+
+
+
+
+								</div>
+								<div class="et_pb_row et_pb_row_2 et_pb_gutters3">
+									<div
+										class="et_pb_column et_pb_column_4_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
 										<div
-											class="et_pb_column et_pb_column_1_3 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
+											class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
 
 
 
 
-											<div
-												class="et_pb_module et_pb_blurb et_pb_blurb_2  et_pb_text_align_justified  et_pb_blurb_position_top et_pb_bg_layout_light">
+											<div class="et_pb_text_inner">
+												<p style="text-align: justify;">En Academia Delta Gijón acompañamos
+													a cada estudiante en su proceso de aprendizaje, actuando como
+													impulsores de su desarrollo académico y personal. Nuestro
+													propósito es ayudarte a ganar confianza y autonomía para que
+													puedas alcanzar tus objetivos con solidez. Aquí no solo
+													aprenderás contenidos, sino que desarrollarás habilidades para
+													pensar de forma crítica, resolver problemas con lógica y
+													comprender en profundidad cada materia desde una perspectiva
+													global y práctica.</p>
+											</div>
+										</div>
+										<div
+											class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
 
 
 
 
-												<div class="et_pb_blurb_content">
-													<div class="et_pb_main_blurb_image"><span
-															class="et_pb_image_wrap"><span
-																style="color: #5b7dfa !important;"
-																class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
-													</div>
-													<div class="et_pb_blurb_container">
-														<h4 class="et_pb_module_header"><span>GRUPOS REDUCIDOS</span>
-														</h4>
-														<div class="et_pb_blurb_description">
-															<p>Nuestras aulas están limitadas a un máximo de 6 estudiantes por grupo. Esto nos permite adaptarlas al ritmo y nivel de cada niño, resolviendo dudas específicas, y asegurando un seguimiento cercano de su progreso. Buscamos no sólo mejorar su rendimiento escolar, sino motivar su interés por el aprendizaje en un ambiente relajado y cómodo para ellos.
-															</p>
-														</div>
+											<div class="et_pb_text_inner">
+												<div
+													class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+													<div class="et_pb_text_inner">
+														<h4 style="color: #5b7dfa !important;">¿Por qué Delta?</h4>
+														<ol>
+															<li>Nuestro equipo de profesores está formado por
+																profesionales apasionados por la enseñanza, con
+																experiencia y vocación, que acompañan a cada
+																estudiante en su camino académico y personal.</li>
+															<li>Nos enfocamos en las necesidades individuales de
+																cada alumno, brindando un acompañamiento cercano que
+																permite potenciar sus fortalezas y reforzar las
+																áreas que requieren mayor apoyo.</li>
+															<li>Trabajarás con tu propio material, pero si lo vemos
+																conveniente te daremos fichas propias con
+																<strong>resúmenes</strong> y
+																<strong>esquemas</strong> para ayudarte a estudiar.
+															</li>
+															<li>Fomentamos la <strong>autonomía</strong> y la
+																<strong>confianza. </strong>Asegurandonos de que
+																cada alumno sea capaz de conseguir la meta que se
+																proponga
+															</li>
+															<li><strong>Transmitimos nuestra pasión por el
+																	aprendizaje.</strong> Cuando se entienden las
+																cosas, ¡Todo es mucho mas sencillo!</li>
+														</ol>
 													</div>
 												</div>
 											</div>
 										</div>
+									</div>
+
+
+
+
+								</div>
+
+
+							</div>
+							<div
+								class="et_pb_with_border et_pb_section et_pb_section_2 et_pb_with_background et_section_regular">
+
+
+
+
+
+
+								<div class="et_pb_row et_pb_row_3">
+									<div
+										class="et_pb_column et_pb_column_4_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
 										<div
-											class="et_pb_column et_pb_column_1_3 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
+											class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
 
 
 
 
-											<div
-												class="et_pb_module et_pb_blurb et_pb_blurb_3  et_pb_text_align_justified  et_pb_blurb_position_top et_pb_bg_layout_light">
+											<div class="et_pb_blurb_content">
+												<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span
+															style="color: #5b7dfa !important;"
+															class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
+												</div>
+												<div class="et_pb_blurb_container">
+													<h4 style="color: #5b7dfa !important;" class="et_pb_module_header">
+														<span>¿CÓMO TRABAJAMOS?</span>
+													</h4>
+
+												</div>
+											</div>
+										</div>
+									</div>
 
 
 
 
-												<div class="et_pb_blurb_content">
-													<div class="et_pb_main_blurb_image"><span
-															class="et_pb_image_wrap"><span
-																style="color: #5b7dfa !important;"
-																class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
-													</div>
-													<div class="et_pb_blurb_container">
-														<h4 class="et_pb_module_header"><span>Materias troncales</span>
-														</h4>
-														<div class="et_pb_blurb_description">
-															<p style="text-align: justify;"><span>En primaria, los grupos trabajan de forma conjunta las áreas de mayor dificultad como son matemáticas, lengua o inglés. Acompañamos al alumno en sus tareas diarias, trabajos escolares o exposiciones asegurando que comprendan el tema y desarrollen autonomía en su trabajo. Les orientamos para realizar resúmenes, mapas conceptuales y preparar exámenes</span>
-																</span>
-															</p>
-														</div>
+								</div>
+								<div class="et_pb_row et_pb_row_3 et_pb_gutters3">
+									<div
+										class="et_pb_column et_pb_column_1_3 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
+
+
+
+
+										<div
+											class="et_pb_module et_pb_blurb et_pb_blurb_2  et_pb_text_align_justified  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+
+
+											<div class="et_pb_blurb_content">
+												<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span
+															style="color: #5b7dfa !important;"
+															class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
+												</div>
+												<div class="et_pb_blurb_container">
+													<h4 class="et_pb_module_header"><span>GRUPOS REDUCIDOS</span>
+													</h4>
+													<div class="et_pb_blurb_description">
+														<p>Nuestras aulas están limitadas a un máximo de 6 estudiantes
+															por grupo. Esto nos permite adaptarlas al ritmo y nivel de
+															cada niño, resolviendo dudas específicas, y asegurando un
+															seguimiento cercano de su progreso. Buscamos no sólo mejorar
+															su rendimiento escolar, sino motivar su interés por el
+															aprendizaje en un ambiente relajado y cómodo para ellos.
+														</p>
 													</div>
 												</div>
 											</div>
 										</div>
-										<!-- <div
+									</div>
+									<div
+										class="et_pb_column et_pb_column_1_3 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
+
+
+
+
+										<div
+											class="et_pb_module et_pb_blurb et_pb_blurb_3  et_pb_text_align_justified  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+
+
+											<div class="et_pb_blurb_content">
+												<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span
+															style="color: #5b7dfa !important;"
+															class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
+												</div>
+												<div class="et_pb_blurb_container">
+													<h4 class="et_pb_module_header"><span>Materias troncales</span>
+													</h4>
+													<div class="et_pb_blurb_description">
+														<p style="text-align: justify;"><span>En primaria, los grupos
+																trabajan de forma conjunta las áreas de mayor dificultad
+																como son matemáticas, lengua o inglés. Acompañamos al
+																alumno en sus tareas diarias, trabajos escolares o
+																exposiciones asegurando que comprendan el tema y
+																desarrollen autonomía en su trabajo. Les orientamos para
+																realizar resúmenes, mapas conceptuales y preparar
+																exámenes</span>
+															</span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- <div
 											class="et_pb_column et_pb_column_1_3 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough">
 
 
@@ -6664,76 +6740,81 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 												</div>
 											</div>
 										</div> -->
+									<div
+										class="et_pb_column et_pb_column_1_3 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
 										<div
-											class="et_pb_column et_pb_column_1_3 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
+											class="et_pb_module et_pb_blurb et_pb_blurb_5  et_pb_text_align_justified  et_pb_blurb_position_top et_pb_bg_layout_light">
 
 
 
 
-											<div
-												class="et_pb_module et_pb_blurb et_pb_blurb_5  et_pb_text_align_justified  et_pb_blurb_position_top et_pb_bg_layout_light">
-
-
-
-
-												<div class="et_pb_blurb_content">
-													<div class="et_pb_main_blurb_image"><span
-															class="et_pb_image_wrap"><span
-																style="color: #5b7dfa !important;"
-																class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
-													</div>
-													<div class="et_pb_blurb_container">
-														<h4 class="et_pb_module_header"><span>Flexibilidad de horarios</span>
-														</h4>
-														<div class="et_pb_blurb_description">
-															<p style="text-align: justify;"><span>En Academia Delta adaptamos los horarios a nuestros alumnos, de forma que puedan aprovechar al máximo las clases para sus exámenes. Así, previa consulta con dirección, es posible mover el horario, optimizando el tiempo y mejorando los resultados académicos.</span></p>
-														</div>
+											<div class="et_pb_blurb_content">
+												<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span
+															style="color: #5b7dfa !important;"
+															class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span>
+												</div>
+												<div class="et_pb_blurb_container">
+													<h4 class="et_pb_module_header"><span>Flexibilidad de
+															horarios</span>
+													</h4>
+													<div class="et_pb_blurb_description">
+														<p style="text-align: justify;"><span>En Academia Delta
+																adaptamos los horarios a nuestros alumnos, de forma que
+																puedan aprovechar al máximo las clases para sus
+																exámenes. Así, previa consulta con dirección, es posible
+																mover el horario, optimizando el tiempo y mejorando los
+																resultados académicos.</span></p>
 													</div>
 												</div>
 											</div>
 										</div>
-
-
-
-
 									</div>
+
 
 
 
 								</div>
 
+
+
 							</div>
 
 						</div>
-
-
-
 
 					</div>
 
 
 
-			</div>
-			<div class="et_pb_row et_pb_row_8">
 
-				<div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
-
-
-					<p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_">
-						<label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8"
-								maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js"
-							value="99" />
-						<script>document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());</script>
-					</p>
-					</form>
 				</div>
-				<script type="text/javascript">
-					/* <![CDATA[ */
-					gform.initializeOnLoaded(function () { gformInitSpinner(2, 'https://academialallibreta.es/wp-content/plugins/gravityforms/images/spinner.svg', true); jQuery('#gform_ajax_frame_2').on('load', function () { var contents = jQuery(this).contents().find('*').html(); var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0; if (!is_postback) { return; } var form_content = jQuery(this).contents().find('#gform_wrapper_2'); var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_2').length > 0; var is_redirect = contents.indexOf('gformRedirect(){') >= 0; var is_form = form_content.length > 0 && !is_redirect && !is_confirmation; var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100; if (is_form) { jQuery('#gform_wrapper_2').html(form_content.html()); if (form_content.hasClass('gform_validation_error')) { jQuery('#gform_wrapper_2').addClass('gform_validation_error'); } else { jQuery('#gform_wrapper_2').removeClass('gform_validation_error'); } setTimeout(function () { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ }, 50); if (window['gformInitDatepicker']) { gformInitDatepicker(); } if (window['gformInitPriceFields']) { gformInitPriceFields(); } var current_page = jQuery('#gform_source_page_number_2').val(); gformInitSpinner(2, 'https://academialallibreta.es/wp-content/plugins/gravityforms/images/spinner.svg', true); jQuery(document).trigger('gform_page_loaded', [2, current_page]); window['gf_submitting_2'] = false; } else if (!is_redirect) { var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html(); if (!confirmation_content) { confirmation_content = contents; } jQuery('#gform_wrapper_2').replaceWith(confirmation_content); jQuery(document).trigger('gform_confirmation_loaded', [2]); window['gf_submitting_2'] = false; wp.a11y.speak(jQuery('#gform_confirmation_message_2').text()); } else { jQuery('#gform_2').append(contents); if (window['gformRedirect']) { gformRedirect(); } } jQuery(document).trigger("gform_pre_post_render", [{ formId: "2", currentPage: "current_page", abort: function () { this.preventDefault(); } }]); if (event && event.defaultPrevented) { return; } const gformWrapperDiv = document.getElementById("gform_wrapper_2"); if (gformWrapperDiv) { const visibilitySpan = document.createElement("span"); visibilitySpan.id = "gform_visibility_test_2"; gformWrapperDiv.insertAdjacentElement("afterend", visibilitySpan); } const visibilityTestDiv = document.getElementById("gform_visibility_test_2"); let postRenderFired = false; function triggerPostRender() { if (postRenderFired) { return; } postRenderFired = true; gform.core.triggerPostRenderEvents(2, current_page); if (visibilityTestDiv) { visibilityTestDiv.parentNode.removeChild(visibilityTestDiv); } } function debounce(func, wait, immediate) { var timeout; return function () { var context = this, args = arguments; var later = function () { timeout = null; if (!immediate) func.apply(context, args); }; var callNow = immediate && !timeout; clearTimeout(timeout); timeout = setTimeout(later, wait); if (callNow) func.apply(context, args); }; } const debouncedTriggerPostRender = debounce(function () { triggerPostRender(); }, 200); if (visibilityTestDiv && visibilityTestDiv.offsetParent === null) { const observer = new MutationObserver((mutations) => { mutations.forEach((mutation) => { if (mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null) { debouncedTriggerPostRender(); observer.disconnect(); } }); }); observer.observe(document.body, { attributes: true, childList: false, subtree: true, attributeFilter: ['style', 'class'], }); } else { triggerPostRender(); } }); });
-					/* ]]&gt; */
-				</script>
-			</div>
+
+
+
 		</div>
+		<div class="et_pb_row et_pb_row_8">
+
+			<div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+				<p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_">
+					<label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8"
+							maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js"
+						value="99" />
+					<script>document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());</script>
+				</p>
+				</form>
+			</div>
+			<script type="text/javascript">
+				/* <![CDATA[ */
+				gform.initializeOnLoaded(function () { gformInitSpinner(2, 'https://academialallibreta.es/wp-content/plugins/gravityforms/images/spinner.svg', true); jQuery('#gform_ajax_frame_2').on('load', function () { var contents = jQuery(this).contents().find('*').html(); var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0; if (!is_postback) { return; } var form_content = jQuery(this).contents().find('#gform_wrapper_2'); var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_2').length > 0; var is_redirect = contents.indexOf('gformRedirect(){') >= 0; var is_form = form_content.length > 0 && !is_redirect && !is_confirmation; var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100; if (is_form) { jQuery('#gform_wrapper_2').html(form_content.html()); if (form_content.hasClass('gform_validation_error')) { jQuery('#gform_wrapper_2').addClass('gform_validation_error'); } else { jQuery('#gform_wrapper_2').removeClass('gform_validation_error'); } setTimeout(function () { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ }, 50); if (window['gformInitDatepicker']) { gformInitDatepicker(); } if (window['gformInitPriceFields']) { gformInitPriceFields(); } var current_page = jQuery('#gform_source_page_number_2').val(); gformInitSpinner(2, 'https://academialallibreta.es/wp-content/plugins/gravityforms/images/spinner.svg', true); jQuery(document).trigger('gform_page_loaded', [2, current_page]); window['gf_submitting_2'] = false; } else if (!is_redirect) { var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html(); if (!confirmation_content) { confirmation_content = contents; } jQuery('#gform_wrapper_2').replaceWith(confirmation_content); jQuery(document).trigger('gform_confirmation_loaded', [2]); window['gf_submitting_2'] = false; wp.a11y.speak(jQuery('#gform_confirmation_message_2').text()); } else { jQuery('#gform_2').append(contents); if (window['gformRedirect']) { gformRedirect(); } } jQuery(document).trigger("gform_pre_post_render", [{ formId: "2", currentPage: "current_page", abort: function () { this.preventDefault(); } }]); if (event && event.defaultPrevented) { return; } const gformWrapperDiv = document.getElementById("gform_wrapper_2"); if (gformWrapperDiv) { const visibilitySpan = document.createElement("span"); visibilitySpan.id = "gform_visibility_test_2"; gformWrapperDiv.insertAdjacentElement("afterend", visibilitySpan); } const visibilityTestDiv = document.getElementById("gform_visibility_test_2"); let postRenderFired = false; function triggerPostRender() { if (postRenderFired) { return; } postRenderFired = true; gform.core.triggerPostRenderEvents(2, current_page); if (visibilityTestDiv) { visibilityTestDiv.parentNode.removeChild(visibilityTestDiv); } } function debounce(func, wait, immediate) { var timeout; return function () { var context = this, args = arguments; var later = function () { timeout = null; if (!immediate) func.apply(context, args); }; var callNow = immediate && !timeout; clearTimeout(timeout); timeout = setTimeout(later, wait); if (callNow) func.apply(context, args); }; } const debouncedTriggerPostRender = debounce(function () { triggerPostRender(); }, 200); if (visibilityTestDiv && visibilityTestDiv.offsetParent === null) { const observer = new MutationObserver((mutations) => { mutations.forEach((mutation) => { if (mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null) { debouncedTriggerPostRender(); observer.disconnect(); } }); }); observer.observe(document.body, { attributes: true, childList: false, subtree: true, attributeFilter: ['style', 'class'], }); } else { triggerPostRender(); } }); });
+				/* ]]&gt; */
+			</script>
+		</div>
+	</div>
 	</div>
 
 
@@ -6970,10 +7051,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 						<div class='gf_browser_chrome gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework contact-form_wrapper'
 							data-form-theme='legacy' data-form-index='0' id='gform_wrapper_3'>
 							<div id='gf_3' class='gform_anchor' tabindex='-1'></div>
-							<form method='post' enctype='multipart/form-data' target='gform_ajax_frame_3'
-								id='gform_3' class='contact-form'
-								action='/tu-centro-de-estudios-en-valencia/Refuerzo-escolar/#gf_3' data-formid='3'
-								novalidate>
+							<form method='post' enctype='multipart/form-data' target='gform_ajax_frame_3' id='gform_3'
+								class='contact-form' action='/tu-centro-de-estudios-en-valencia/Refuerzo-escolar/#gf_3'
+								data-formid='3' novalidate>
 								<div class='gform-body gform_body'>
 									<ul id='gform_fields_3'
 										class='gform_fields top_label form_sublabel_below description_below validation_below'>
@@ -6982,10 +7062,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 											data-js-reload="field_3_9"><label class='gfield_label gform-field-label'
 												for='input_3_9'>Nombre<span class="gfield_required"><span
 														class="gfield_required gfield_required_asterisk">*</span></span></label>
-											<div class='ginput_container ginput_container_text'><input
-													name='input_9' id='input_3_9' type='text' value='' class='large'
-													placeholder='Nombre' aria-required="true"
-													aria-invalid="false" />
+											<div class='ginput_container ginput_container_text'><input name='input_9'
+													id='input_3_9' type='text' value='' class='large'
+													placeholder='Nombre' aria-required="true" aria-invalid="false" />
 											</div>
 										</li>
 										<li id="field_3_2"
@@ -6994,26 +7073,23 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 												for='input_3_2'>Email<span class="gfield_required"><span
 														class="gfield_required gfield_required_asterisk">*</span></span></label>
 											<div class='ginput_container ginput_container_email'>
-												<input name='input_2' id='input_3_2' type='email' value=''
-													class='small' placeholder='Email' aria-required="true"
-													aria-invalid="false" />
+												<input name='input_2' id='input_3_2' type='email' value='' class='small'
+													placeholder='Email' aria-required="true" aria-invalid="false" />
 											</div>
 										</li>
 										<li id="field_3_11"
 											class="gfield gfield--type-phone gfield--width-full field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"
-											data-js-reload="field_3_11"><label
-												class='gfield_label gform-field-label'
+											data-js-reload="field_3_11"><label class='gfield_label gform-field-label'
 												for='input_3_11'>Teléfono</label>
-											<div class='ginput_container ginput_container_phone'><input
-													name='input_11' id='input_3_11' type='tel' value=''
-													class='large' placeholder='Teléfono' aria-invalid="false" />
+											<div class='ginput_container ginput_container_phone'><input name='input_11'
+													id='input_3_11' type='tel' value='' class='large'
+													placeholder='Teléfono' aria-invalid="false" />
 											</div>
 										</li>
 										<li id="field_3_10"
 											class="gfield gfield--type-textarea gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"
-											data-js-reload="field_3_10"><label
-												class='gfield_label gform-field-label' for='input_3_10'>Mensaje<span
-													class="gfield_required"><span
+											data-js-reload="field_3_10"><label class='gfield_label gform-field-label'
+												for='input_3_10'>Mensaje<span class="gfield_required"><span
 														class="gfield_required gfield_required_asterisk">*</span></span></label>
 											<div class='ginput_container ginput_container_textarea'><textarea
 													name='input_10' id='input_3_10' class='textarea medium'
@@ -7023,8 +7099,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 										<li id="field_3_6"
 											class="gfield gfield--type-hidden gform_hidden field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"
 											data-js-reload="field_3_6">
-											<div class='ginput_container ginput_container_text'><input
-													name='input_6' id='input_3_6' type='hidden' class='gform_hidden'
+											<div class='ginput_container ginput_container_text'><input name='input_6'
+													id='input_3_6' type='hidden' class='gform_hidden'
 													aria-invalid="false" value='Refuerzo escolar' /></div>
 										</li>
 										<li id="field_3_8"
@@ -7047,8 +7123,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 										</li>
 										<li id="field_3_12"
 											class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible"
-											data-js-reload="field_3_12"><label
-												class='gfield_label gform-field-label'
+											data-js-reload="field_3_12"><label class='gfield_label gform-field-label'
 												for='input_3_12'>Email</label>
 											<div class='ginput_container'><input name='input_12' id='input_3_12'
 													type='text' value='' autocomplete='new-password' /></div>
@@ -7066,8 +7141,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 										value='form_id=3&amp;title=&amp;description=&amp;tabindex=0&amp;theme=legacy&amp;styles=[]&amp;hash=876896084d396af26f247204b5ac8a2a' />
 									<input type='hidden' class='gform_hidden' name='gform_submission_method'
 										data-js='gform_submission_method_3' value='iframe' />
-									<input type='hidden' class='gform_hidden' name='gform_theme'
-										data-js='gform_theme_3' id='gform_theme_3' value='legacy' />
+									<input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_3'
+										id='gform_theme_3' value='legacy' />
 									<input type='hidden' class='gform_hidden' name='gform_style_settings'
 										data-js='gform_style_settings_3' id='gform_style_settings_3' value='[]' />
 									<input type='hidden' class='gform_hidden' name='is_submit_3' value='1' />
@@ -7077,16 +7152,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 									<input type='hidden' class='gform_hidden' name='state_3'
 										value='WyJ7XCI4LjFcIjpcIjZkMjExNWFkZjc0Yjg4NTIxMTI4OTZiMWNiMjc1ODcwXCIsXCI4LjJcIjpcIjgzOTcwOWM5OGRhOTA5MDI2NDQ1OGQwMDI2NjMxMzNiXCIsXCI4LjNcIjpcIjUxYjMwNTc0MGMzOWM1NTNlYzNjZGY0NTI4MjA1MDU4XCJ9IiwiNmM2NmUzNTk4MzJlNTdmNjFjYWQ5OTQ4NjdkNjQ0NjEiXQ==' />
 									<input type='hidden' autocomplete='off' class='gform_hidden'
-										name='gform_target_page_number_3' id='gform_target_page_number_3'
-										value='0' />
+										name='gform_target_page_number_3' id='gform_target_page_number_3' value='0' />
 									<input type='hidden' autocomplete='off' class='gform_hidden'
-										name='gform_source_page_number_3' id='gform_source_page_number_3'
-										value='1' />
+										name='gform_source_page_number_3' id='gform_source_page_number_3' value='1' />
 									<input type='hidden' name='gform_field_values' value='' />
 
 								</div>
-								<p style="display: none !important;" class="akismet-fields-container"
-									data-prefix="ak_">
+								<p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_">
 									<label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8"
 											maxlength="100"></textarea></label><input type="hidden" id="ak_js_2"
 										name="ak_js" value="225" />
@@ -7094,8 +7166,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 								</p>
 							</form>
 						</div>
-						<iframe style='display:none;width:0px;height:0px;' src='about:blank'
-							name='gform_ajax_frame_3' id='gform_ajax_frame_3'
+						<iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_3'
+							id='gform_ajax_frame_3'
 							title='Este iframe contiene la lógica necesaria para gestionar formularios con ajax activado.'></iframe>
 						<script type="text/javascript">
 							/* <![CDATA[ */
@@ -7121,50 +7193,60 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	</div>
 
 
-	<footer id="main-footer" style="background-color: #1c1c1c; color: #f0f0f0; padding: 60px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px;">
-		<div class="container" style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
-		  
-		  <!-- Columna 1 -->
-		  <div class="footer-widget" style="flex: 1 1 200px;">
-			<h4 style="color: #ffffff; margin-bottom: 16px;">ACADEMIA DELTA GIJÓN</h4>
-			<a href="#" target="_blank" rel="noopener noreferrer">
-			  <img src="Images/Logo-Academia.jpg" alt="Logo Academia Delta" style="max-width: 200px; height: auto; border-radius: 6px;">
-			</a>
-		  </div>
-	  
-		  <!-- Columna 2 -->
-		  <div class="footer-widget" style="flex: 1 1 200px;">
-			<h4 style="color: #ffffff; margin-bottom: 16px;">Términos legales</h4>
-			<p><a href="privacidad.html" style="color: #5b7dfa; text-decoration: none;">Política de privacidad</a></p>
-			<p><a href="avisolegal.html" style="color: #5b7dfa; text-decoration: none;">Aviso legal</a></p>
-			<p><a href="cookies.html" style="color: #5b7dfa; text-decoration: none;">Política de cookies</a></p>
-			<p><a href="trabaja.html" style="color: #5b7dfa; text-decoration: none;">Trabaja con nosotros</a></p>
-			<p><a href="https://www.google.com/search?q=academia+delta+gijon" style="color: #5b7dfa; text-decoration: none;">Déjanos una reseña</a></p>
-		  </div>
-	  
-		  <!-- Columna 3 -->
-		  <div class="footer-widget" style="flex: 1 1 200px;">
-			<h4 style="color: #ffffff; margin-bottom: 16px;">Contacto</h4>
-			<p style="margin-bottom: 8px;">Fuente del Real 44, bajo<br>33209 Gijón, Asturias</p>
-			<p style="margin-bottom: 8px;">984 192 167 / 666 196 777</p>
-			<p style="margin-bottom: 8px;">gestion@deltagijon.es</p>
-		  </div>
-	  
-		  <!-- Columna 4 - Redes -->
-		  <div class="footer-widget" style="flex: 1 1 100px;">
-			<h4 style="color: #ffffff; margin-bottom: 16px;">Síguenos</h4>
-			<p><a href="https://www.facebook.com/AcademiaDeltaGijon" style="color: #5b7dfa; text-decoration: none;">Facebook</a></p>
-			<p><a href="https://www.instagram.com/academia_delta" style="color: #5b7dfa; text-decoration: none;">Instagram</a></p>
-			<p><a href="https://www.youtube.com/@AcademiaDeltaGijon/" style="color: #5b7dfa; text-decoration: none;">YouTube</a></p>
-		  </div>
-	  
+	<footer id="main-footer"
+		style="background-color: #1c1c1c; color: #f0f0f0; padding: 60px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px;">
+		<div class="container"
+			style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+
+			<!-- Columna 1 -->
+			<div class="footer-widget" style="flex: 1 1 200px;">
+				<h4 style="color: #ffffff; margin-bottom: 16px;">ACADEMIA DELTA GIJÓN</h4>
+				<a href="#" target="_blank" rel="noopener noreferrer">
+					<img src="Images/Logo-Academia.jpg" alt="Logo Academia Delta"
+						style="max-width: 200px; height: auto; border-radius: 6px;">
+				</a>
+			</div>
+
+			<!-- Columna 2 -->
+			<div class="footer-widget" style="flex: 1 1 200px;">
+				<h4 style="color: #ffffff; margin-bottom: 16px;">Términos legales</h4>
+				<p><a href="privacidad.html" style="color: #5b7dfa; text-decoration: none;">Política de privacidad</a>
+				</p>
+				<p><a href="avisolegal.html" style="color: #5b7dfa; text-decoration: none;">Aviso legal</a></p>
+				<p><a href="cookies.html" style="color: #5b7dfa; text-decoration: none;">Política de cookies</a></p>
+				<p><a href="trabaja.html" style="color: #5b7dfa; text-decoration: none;">Trabaja con nosotros</a></p>
+				<p><a href="https://www.google.com/search?q=academia+delta+gijon"
+						style="color: #5b7dfa; text-decoration: none;">Déjanos una reseña</a></p>
+			</div>
+
+			<!-- Columna 3 -->
+			<div class="footer-widget" style="flex: 1 1 200px;">
+				<h4 style="color: #ffffff; margin-bottom: 16px;">Contacto</h4>
+				<p style="margin-bottom: 8px;">Fuente del Real 44, bajo<br>33209 Gijón, Asturias</p>
+				<p style="margin-bottom: 8px;">984 192 167 / 666 196 777</p>
+				<p style="margin-bottom: 8px;">gestion@deltagijon.es</p>
+			</div>
+
+			<!-- Columna 4 - Redes -->
+			<div class="footer-widget" style="flex: 1 1 100px;">
+				<h4 style="color: #ffffff; margin-bottom: 16px;">Síguenos</h4>
+				<p><a href="https://www.facebook.com/AcademiaDeltaGijon"
+						style="color: #5b7dfa; text-decoration: none;">Facebook</a></p>
+				<p><a href="https://www.instagram.com/academia_delta"
+						style="color: #5b7dfa; text-decoration: none;">Instagram</a></p>
+				<p><a href="https://www.youtube.com/@AcademiaDeltaGijon/"
+						style="color: #5b7dfa; text-decoration: none;">YouTube</a></p>
+			</div>
+
 		</div>
-	  
+
 		<!-- Línea inferior -->
-		<div style="border-top: 1px solid #333; margin-top: 40px; padding-top: 20px; text-align: center; font-size: 13px; color: #999;">
-		  <p>© 2025 Academia Delta Gijón. Todos los derechos reservados. | <a href="avisolegal.html" target="_blank" style="color: #5b7dfa; text-decoration: underline;">Aviso legal</a></p>
+		<div
+			style="border-top: 1px solid #333; margin-top: 40px; padding-top: 20px; text-align: center; font-size: 13px; color: #999;">
+			<p>© 2025 Academia Delta Gijón. Todos los derechos reservados. | <a href="avisolegal.html" target="_blank"
+					style="color: #5b7dfa; text-decoration: underline;">Aviso legal</a></p>
 		</div>
-	  </footer>
+	</footer>
 	</div>
 
 
