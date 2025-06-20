@@ -6032,7 +6032,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 					<span id="et-info-phone">666 196 777</span>
 					<a style="color:white !important" href="mailto:gestion@deltagijon.es"><span
 							id="et-info-email">gestion@deltagijon.es</span></a>
-					<ul class="et-social-icons">
+							<ul class="et-social-icons">
 
 						<li class="et-social-icon et-social-facebook">
 							<a style="color:white !important"
@@ -6052,10 +6052,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 								<span style="color:white !important">Youtube</span>
 							</a>
 						</li>
-						<li>
-							<span>Horario: Mañanas de 11:00-13:00, Tardes de 15:30 a 20:30</span>
-						</li>
 					</ul>
+							<span>Horario: Mañanas de 11:00-13:00, Tardes de 15:30 a 20:30</span>
+					
 					<!-- CARRUSEL DE ANUNCIOS -->
 					<div class="announcement-carousel">
 						<ul>
@@ -6094,8 +6093,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 					padding: 0;
 					margin: 0;
 					list-style: none;
-					animation: scroll-news 55s linear infinite;
+					animation: scroll-news 25s linear infinite;
 				}
+				@media screen and (max-width: 768px) {
+				#et-info .announcement-carousel ul {
+					animation: scroll-news 10s linear infinite;
+				}}
 
 				#et-info .announcement-carousel li {
 					flex: none;
