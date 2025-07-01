@@ -6734,10 +6734,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 								<span style="color:white !important">Youtube</span>
 							</a>
 						</li>
-						<li>
-							<span>Horario: Mañanas de 11:00-13:00, Tardes de 15:30 a 20:30</span>
-						</li>
-					</ul>
+						</ul>
+							<span>Horario: del 1 al 15 de Julio, cerrado por vacaciones. A partir del 16 de Julio, mañanas de 9:30 a 13:30</span>
+						
 					<!-- CARRUSEL DE ANUNCIOS -->
 					<div class="announcement-carousel">
 						<ul>
@@ -6772,12 +6771,17 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 				/* (El resto de tus estilos para el carrusel siguen igual) */
 				#et-info .announcement-carousel ul {
-					display: flex;
-					padding: 0;
-					margin: 0;
-					list-style: none;
-					animation: scroll-news 55s linear infinite;
-				}
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    animation: scroll-news 25s linear infinite;
+  }
+  @media screen and (max-width: 768px) {
+  #et-info .announcement-carousel ul {
+    animation: scroll-news 10s linear infinite;
+  }
+   }
 
 				#et-info .announcement-carousel li {
 					flex: none;
