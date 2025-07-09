@@ -7771,38 +7771,66 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     flex-wrap: wrap;            /* NUEVO: permite que los items bajen de línea */
   }
 
-  /* 2) El carrusel en su propia “fila” */
-  #et-info .announcement-carousel {
-    flex: 1 1 100%;             /* ocupa todo el ancho disponible */
-    width: 100%;                /* redundante, refuerza 100% */
-  }
+  /* 1) El carrusel en su propia “fila” */
+#et-info .announcement-carousel {
+  flex: 1 1 100%;
+  width: 100%;
+}
 
-  /* (El resto de tus estilos para el carrusel siguen igual) */
-  #et-info .announcement-carousel ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    animation: scroll-news 25s linear infinite;
-  }
-  @media screen and (max-width: 768px) {
+/* (El resto de tus estilos para el carrusel siguen igual) */
+#et-info .announcement-carousel ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  animation: scroll-news 25s linear infinite;
+}
+
+@media screen and (max-width: 768px) {
   #et-info .announcement-carousel ul {
     animation: scroll-news 10s linear infinite;
   }
 }
-  #et-info .announcement-carousel li {
-    flex: none;
-    margin-right: 50px;
-    white-space: nowrap;
+
+#et-info .announcement-carousel li {
+  flex: none;
+  margin-right: 50px;
+  white-space: nowrap;
+}
+
+@keyframes scroll-news {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* — SOLO MÓVIL (≤767px) — */
+@media only screen and (max-width: 767px) {
+  /* Layout vertical del contenedor */
+  #et-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
+
+  /* Margin superior y recorte de overflow en el carrusel */
+  #et-info .announcement-carousel {
+    margin-top: 10px;
+    overflow: hidden;            /* oculta lo que sobresale */
+  }
+
+  /* El <ul> mide sólo lo que ocupan los <li> */
+  #et-info .announcement-carousel ul {
+    display: inline-flex;        /* inline para ajustarse al contenido */
+    width: max-content;          /* ancho = suma de todos los <li> */
+    animation: scroll-news 40s linear infinite;
+  }
+
+  /* Animación adaptada para recorrer todo el ancho real + espacio final */
   @keyframes scroll-news {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% - 50px)); }
   }
-  @media only screen and (max-width: 767px) {
-    #et-info { flex-direction: column; align-items: flex-start; gap: 10px; }
-    #et-info .announcement-carousel { margin-top: 10px; }
-  }
+}
 </style>
 				<div id="et-secondary-menu">
 					<div class="et_duplicate_social_icons">
